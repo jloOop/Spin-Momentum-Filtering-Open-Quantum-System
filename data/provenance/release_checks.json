@@ -1,6 +1,6 @@
 {
   "scope": "Repository packaging and bounded saved-array reconstruction; not scientific convergence or production authorization",
-  "status": "local_checks_passed_clean_checkout_pending",
+  "status": "passed",
   "passed": [
     "18 canonical identities and native-kernel reconstructions",
     "16 detector cohort records retained",
@@ -10,12 +10,11 @@
     "224 preparation/horizon table comparisons and3 configuration contracts",
     "source/distributed hashes including selected payloads over5MiB",
     "ZIP CRC/privacy/array-schema inspection; numerical payloads unchanged",
-    "three principal figures visually reviewed"
+    "three principal figures visually reviewed",
+    "Clean local checkout: all four exact CPU commands and release verifier returned0; generated outputs match local reference bytes"
   ],
   "failed": [],
-  "pending": [
-    "fresh local checkout exact CPU commands and final integrity verification"
-  ],
+  "pending": [],
   "skipped": [
     "production GPU/cluster simulations",
     "Task06 original full aggregate raw-array audit",
@@ -29,5 +28,27 @@
     "numpy": "2.5.4",
     "matplotlib": "3.11.2"
   },
-  "licensing_review": "Selected source/text/archive members inspected; no pre-existing license grant found. Attribution retained; no blanket license added."
+  "licensing_review": "Selected source/text/archive members inspected; no pre-existing license grant found. Attribution retained; no blanket license added.",
+  "clean_checkout": {
+    "tested_code_commit": "4039fba727b1970356f8bfe30525a8d9486ccc8f",
+    "tracked_files_changed_by_tests": false,
+    "generated_outputs_byte_matched": 22,
+    "installed_only_requirements_txt": true,
+    "commands": [
+      "python Loaders/reproduce.py --group canonical --output build/canonical",
+      "python Loaders/reproduce.py --group extensions --output build/extensions",
+      "python Loaders/reproduce.py --group finite-rate --output build/finite-rate",
+      "python Loaders/reproduce.py --group foundations --output build/foundations",
+      "python Loaders/verify_release.py"
+    ]
+  },
+  "analysis_code_sha256": {
+    "Loaders/reproduce.py": "c19c9e9f4bb78fed19d5f12ba8078181f3c7d8554efdd9964937a63f8773daee",
+    "Loaders/canonical.py": "8e14128ba6fadc604512b74fe6fcd28541fdccbf5a69e07e836260e560034bdd",
+    "Loaders/extensions.py": "47b52ec747fa7865b2a476d2d7ff08c590aa47817c129e111e1250196c9b427c",
+    "Loaders/finite_rate.py": "4492ef0255b1e595cb7166a284ebe7d3fbd63a3a42788401a6525c4ba5092615",
+    "Loaders/foundations.py": "0c6c2d7bd2e64c13e621a60ef94cb111597753e358fc28bb3dd01bbb68d8e2c9",
+    "Loaders/verify_release.py": "624c2dbc8bde9e590f2a08d88799e644682b0366d829d6f220dc9b0b6e295bd1",
+    "requirements.txt": "cd7e74e025f6b882d7f0304c617e63232236297751012eca72e7ab78f1792dbd"
+  }
 }
