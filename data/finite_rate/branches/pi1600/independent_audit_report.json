@@ -1,0 +1,287 @@
+{
+  "checkpoints": [
+    {
+      "factors": {
+        "0": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            1
+          ],
+          "trace": 0.47186575589333535
+        },
+        "1": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            764
+          ],
+          "trace": 0.018754879683665664
+        },
+        "2": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            133
+          ],
+          "trace": 0.0005505661353804812
+        },
+        "3": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            15
+          ],
+          "trace": 1.424485932080742e-05
+        },
+        "4": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            5
+          ],
+          "trace": 3.38028986679395e-07
+        }
+      },
+      "metadata_sha256": "21d3ab6ccebe2c67eefdfc2e8784fa947d051a30f681676385f76b34f380c1dd",
+      "passed": true,
+      "step": 19400,
+      "zero": {
+        "dtype": "complex128",
+        "finite": true,
+        "shape": [
+          273000,
+          1
+        ],
+        "trace": 0.49019240496966215
+      }
+    },
+    {
+      "factors": {
+        "0": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            1
+          ],
+          "trace": 0.4712494312134179
+        },
+        "1": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            754
+          ],
+          "trace": 0.01890748842443698
+        },
+        "2": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            133
+          ],
+          "trace": 0.0005605091272371548
+        },
+        "3": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            15
+          ],
+          "trace": 1.4647093277762588e-05
+        },
+        "4": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            5
+          ],
+          "trace": 3.510479687975578e-07
+        }
+      },
+      "metadata_sha256": "2ecf1be4cd6f6d87de6d6ce7ae5f76d06e71388235ffeafb30d4aa3e7dabe43f",
+      "passed": true,
+      "step": 19600,
+      "zero": {
+        "dtype": "complex128",
+        "finite": true,
+        "shape": [
+          273000,
+          1
+        ],
+        "trace": 0.4897444203631227
+      }
+    },
+    {
+      "factors": {
+        "0": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            1
+          ],
+          "trace": 0.46985123109287613
+        },
+        "1": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            759
+          ],
+          "trace": 0.01904983561183823
+        },
+        "2": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            134
+          ],
+          "trace": 0.0005704216498288574
+        },
+        "3": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            15
+          ],
+          "trace": 1.5055753671626477e-05
+        },
+        "4": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            5
+          ],
+          "trace": 3.6443808254796576e-07
+        }
+      },
+      "metadata_sha256": "583f935d46ec01812fb81468115a2f35ec745bd93abc3538bad3912173c6f36d",
+      "passed": true,
+      "step": 19800,
+      "zero": {
+        "dtype": "complex128",
+        "finite": true,
+        "shape": [
+          273000,
+          1
+        ],
+        "trace": 0.48848314395040204
+      }
+    },
+    {
+      "factors": {
+        "0": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            1
+          ],
+          "trace": 0.46745139687597786
+        },
+        "1": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            777
+          ],
+          "trace": 0.019165965495984736
+        },
+        "2": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            137
+          ],
+          "trace": 0.0005799018827938137
+        },
+        "3": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            15
+          ],
+          "trace": 1.5464170052318835e-05
+        },
+        "4": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            5
+          ],
+          "trace": 3.781013961724831e-07
+        }
+      },
+      "metadata_sha256": "8e781959f70ce5b68a41fb4e6d8c2b75fbc31995a2b116bb430b9b03f8358b56",
+      "passed": true,
+      "step": 20000,
+      "zero": {
+        "dtype": "complex128",
+        "finite": true,
+        "shape": [
+          273000,
+          1
+        ],
+        "trace": 0.48617904864787626
+      }
+    }
+  ],
+  "completed_utc": "2026-09-28T08:24:49+00:00",
+  "endpoint_metrics": {
+    "completed_step": 20000,
+    "event_first_crossing_ledger": 9.46711032393138e-09,
+    "final_rank": 935,
+    "inherited_internal_memory_peak_mib": 69988.0625,
+    "last_persisted_step": 20000,
+    "maximum_internal_memory_mib_this_job": 36702.0625,
+    "maximum_new_step_closure": 1.1984067997351513e-15,
+    "maximum_new_zero_closure": 6.219898456959888e-16,
+    "physical_time": 10.0,
+    "positive_midpoint_click_sum": 0.5127862590220708,
+    "positive_survival_retained": 0.4872131065262048,
+    "projected_overflow_bound": 3.06906515278772e-11,
+    "representation_ledger": 6.249954120994585e-07,
+    "reserve_line": 6.25e-07,
+    "reserve_margin": 4.587900541517132e-12,
+    "sector_ranks": [
+      1,
+      777,
+      137,
+      15,
+      5
+    ],
+    "zero_midpoint_click_sum": 0.5138209513649847,
+    "zero_survival": 0.48617904864787614
+  },
+  "inherited_compression_terms_preserved": 27662,
+  "inherited_event_terms_preserved": 13831,
+  "last_persisted_step": 20000,
+  "legacy_prefix_not_spectrally_reconstructed": true,
+  "passed": true,
+  "physical_acceptance": false,
+  "reconstructed_calls": 1346,
+  "reconstructed_committed_steps": 673,
+  "schema": "task09-pi1600-continuation-independent-audit-v1",
+  "scope": "New saved-spectrum decisions, complete inherited ledger, nonoverlapping histories, live child checkpoint hashes/traces; no GPU replay.",
+  "solver_status": "completed",
+  "verdict": "PASS_TASK09_PC2_PI1600_12000_TO20000_V1_INDEPENDENT_AUDIT"
+}

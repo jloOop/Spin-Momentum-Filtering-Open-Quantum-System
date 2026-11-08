@@ -1,0 +1,200 @@
+{
+  "accepted": true,
+  "checks": {
+    "B0_ground_stationarity": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 1.1102230246251565e-16
+    },
+    "B1_one_quantum_decay": {
+      "criterion": "<= 1.000e-11",
+      "pass": true,
+      "value": 2.220446049250313e-16
+    },
+    "B1_xy_isotropy": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 0.0
+    },
+    "B2_B3_infinite_law_within_declared_overflow_bound": {
+      "criterion": "<= 0",
+      "pass": true,
+      "value": -4.9998269453360715e-11
+    },
+    "B2_B3_projected_occupation_reference": {
+      "criterion": "<= 1.000e-11",
+      "pass": true,
+      "value": 4.6074255521944e-15
+    },
+    "B2_B3_projected_population_reference": {
+      "criterion": "<= 1.000e-11",
+      "pass": true,
+      "value": 8.024080429950118e-15
+    },
+    "B4_projected_detailed_balance": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 6.661339736820477e-16
+    },
+    "B4_projected_gibbs_generator_stationarity": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 1.4067631506471137e-17
+    },
+    "B4_projected_gibbs_propagated_stationarity": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 3.439278626562379e-16
+    },
+    "B5_coherent_amplitude_absolute_error": {
+      "criterion": "<= 1.000e-06",
+      "pass": true,
+      "value": 1.0810892321696366e-07
+    },
+    "B5_coherent_amplitude_within_projected_residual_bound": {
+      "criterion": "<= 5.000e-11",
+      "pass": true,
+      "value": 1.28547298070784e-16
+    },
+    "B5_coherent_projected_residual_reconstruction": {
+      "criterion": "<= 5.000e-11",
+      "pass": true,
+      "value": 1.16775911353014e-11
+    },
+    "B6_dephasing_coherence_law": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 6.890150443143121e-16
+    },
+    "B6_dephasing_energy_invariant": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 0.0
+    },
+    "B6_dephasing_population_invariants": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 1.6653345369377348e-16
+    },
+    "B7_isotropic_basis_invariance": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 4.4194085670422096e-16
+    },
+    "B8_cutoff_occupation_N12_to_N16": {
+      "criterion": "<= 1.000e-06",
+      "pass": true,
+      "value": 2.766282998223346e-07
+    },
+    "B8_cutoff_purity_N12_to_N16": {
+      "criterion": "<= 1.000e-07",
+      "pass": true,
+      "value": 1.486500011971259e-08
+    },
+    "B8_cutoff_trace_distance_N12_to_N16": {
+      "criterion": "<= 1.000e-07",
+      "pass": true,
+      "value": 2.8898015731922814e-08
+    },
+    "B8_occupation_trace_distance_consistency": {
+      "criterion": "<= 5.000e-12",
+      "pass": true,
+      "value": 0.0
+    },
+    "B8_overflow_monotonic_improvement": {
+      "criterion": "<= 1.000e-13",
+      "pass": true,
+      "value": 0.0
+    },
+    "B8_production_overflow": {
+      "criterion": "<= 1.000e-06",
+      "pass": true,
+      "value": 8.766298721596334e-07
+    },
+    "B8_production_top_shell": {
+      "criterion": "<= 1.000e-06",
+      "pass": true,
+      "value": 1.073352318275727e-07
+    },
+    "B8_top_shell_monotonic_improvement": {
+      "criterion": "<= 1.000e-13",
+      "pass": true,
+      "value": 0.0
+    },
+    "column_major_vectorization": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 1.8849380005701299e-16
+    },
+    "density_hermiticity": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 0.0
+    },
+    "density_positivity": {
+      "criterion": ">= -1.000e-11",
+      "pass": true,
+      "value": 0.0
+    },
+    "generator_hermiticity_preservation": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 3.8981326328953035e-17
+    },
+    "liouvillian_trace_preserving_row": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 4.996003610813204e-16
+    },
+    "operator_identities": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 1.5987211554602254e-14
+    },
+    "projected_event_intensity_formula": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 3.885780586188048e-16
+    },
+    "trace_preservation": {
+      "criterion": "<= 1.000e-12",
+      "pass": true,
+      "value": 1.0436096431476471e-14
+    }
+  },
+  "scope": "Detector-free finite projected bath only. This PASS does not certify any detector-bath response or replace Stage 01C.",
+  "script_version": "2026-08-02-stage03-bath-only-fock-v3-audited",
+  "stage": "03_bath_only_fock_test",
+  "thresholds": {
+    "coherent_amplitude_absolute_error_max": 1e-06,
+    "coherent_bound_excess_max": 5e-11,
+    "coherent_residual_reconstruction_error_max": 5e-11,
+    "cutoff_monotonicity_tolerance": 1e-13,
+    "cutoff_n12_n16_occupation_max": 1e-06,
+    "cutoff_n12_n16_purity_max": 1e-07,
+    "cutoff_n12_n16_trace_distance_max": 1e-07,
+    "dephasing_coherence_error_max": 1e-12,
+    "dephasing_energy_error_max": 1e-12,
+    "dephasing_population_error_max": 1e-12,
+    "detailed_balance_relative_max": 1e-12,
+    "gibbs_generator_residual_fro_max": 1e-12,
+    "gibbs_trace_distance_max": 1e-12,
+    "ground_stationarity_trace_distance_max": 1e-12,
+    "hermiticity_action_relative_max": 1e-12,
+    "hermiticity_fro_max": 1e-12,
+    "infinite_law_bound_slack": 5e-11,
+    "isotropic_action_relative_max": 1e-12,
+    "liouvillian_trace_row_max": 1e-12,
+    "minimum_eigenvalue_min": -1e-11,
+    "one_quantum_isotropy_max": 1e-12,
+    "one_quantum_occupation_error_max": 1e-11,
+    "operator_identity_max": 1e-12,
+    "production_overflow_final_max": 1e-06,
+    "production_top_shell_max": 1e-06,
+    "projected_intensity_formula_max": 1e-12,
+    "projected_occupation_error_max": 1e-11,
+    "projected_population_l1_max": 1e-11,
+    "trace_error_max": 1e-12,
+    "vectorization_action_relative_max": 1e-12
+  }
+}

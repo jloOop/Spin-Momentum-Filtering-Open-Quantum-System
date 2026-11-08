@@ -1,0 +1,156 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "authoritative_K_formula": {
+      "metric": 0.0,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1e-12
+    },
+    "authoritative_K_hermiticity": {
+      "metric": 0.0,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1e-12
+    },
+    "authoritative_K_sqrtomega_scaling": {
+      "metric": 4.440892098500626e-16,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1e-12
+    },
+    "authoritative_adjoint": {
+      "metric": 5.553085236778873e-16,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1e-12
+    },
+    "authoritative_all_ladder_actions": {
+      "metric": 0.0,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1e-12
+    },
+    "authoritative_bohr_relations": {
+      "metric": 2.167913627136071e-15,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1e-12
+    },
+    "authoritative_number_diagonal": {
+      "metric": 1.7763568394002505e-15,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1e-12
+    },
+    "authoritative_number_positivity": {
+      "metric": 0.0,
+      "passed": true,
+      "relation": ">=",
+      "threshold": -1e-11
+    },
+    "authoritative_projected_commutator_formulas": {
+      "metric": 7.105427357601002e-15,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1e-12
+    },
+    "authoritative_xy_isotropy": {
+      "metric": 0.0,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1e-12
+    },
+    "cartesian_CCR_O_eta_squared": {
+      "metric": 0.9675410684525849,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1.25
+    },
+    "cartesian_cross_commutators": {
+      "metric": 6.0441804483870235e-15,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1e-12
+    },
+    "cartesian_ladder_O_eta_squared": {
+      "metric": 0.4272000812253,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 0.75
+    },
+    "cartesian_lateral_wall_leakage": {
+      "metric": 6.036986926382528e-10,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1e-08
+    },
+    "cartesian_mode_orthonormality": {
+      "metric": 7.552074965389011e-11,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1e-08
+    },
+    "cartesian_number_positivity": {
+      "metric": -3.719268024760164e-15,
+      "passed": true,
+      "relation": ">=",
+      "threshold": -1e-11
+    },
+    "cartesian_occupation_O_eta_squared": {
+      "metric": 0.24946564181553826,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 0.5
+    },
+    "cartesian_omega_scale_collapse": {
+      "metric": 3.7470027081099033e-14,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1e-12
+    },
+    "cartesian_reference_case_present": {
+      "metric": 1.0,
+      "passed": true,
+      "relation": "==",
+      "threshold": 1.0
+    },
+    "cartesian_second_order_refinement": {
+      "metric": 1.9629740362043058,
+      "passed": true,
+      "relation": ">=",
+      "threshold": 1.9
+    },
+    "cartesian_weighted_adjoint": {
+      "metric": 6.5021651012411936e-15,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1e-12
+    },
+    "cartesian_xy_isotropy": {
+      "metric": 1.0018028073766061e-16,
+      "passed": true,
+      "relation": "<=",
+      "threshold": 1e-12
+    }
+  },
+  "declared_tolerances": {
+    "K_hermiticity": 1e-12,
+    "K_scaled_collapse": 1e-12,
+    "adjoint": 1e-12,
+    "bohr_relative": 1e-12,
+    "cartesian_CCR_coefficient_over_eta_squared": 1.25,
+    "cartesian_ladder_coefficient_over_eta_squared": 0.75,
+    "cartesian_occupation_coefficient_over_eta_squared": 0.5,
+    "exact": 1e-12,
+    "isotropy": 1e-12,
+    "minimum_second_order_convergence": 1.9,
+    "mode_overlap": 1e-08,
+    "omega_scale_collapse": 1e-12,
+    "psd_negative_floor": -1e-11,
+    "wall_leakage": 1e-08
+  },
+  "scope_statement": "A PASS certifies only the transverse ladder/operator layer.  It does not certify a detector-free Lindblad channel, detector--bath composition, scalar dynamical null, or environmental susceptibility.",
+  "stage": "02_bath_operator_tests",
+  "status": "PASS"
+}

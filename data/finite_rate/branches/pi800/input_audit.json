@@ -1,0 +1,48 @@
+{
+  "adapter_manifest_sha256": "d8e83a3972b9615a9f7e0fc183adf7b7cf29da71c47e5377bfefe9fad6df39ed",
+  "bounded_continuation": true,
+  "checkpoint": "[ARCHIVE_PATH]",
+  "checkpoint_audit": {
+    "bounded_checkpoint": false,
+    "factor_hashes_checked": true,
+    "factor_traces_checked": true,
+    "history_audit": {
+      "cumulative_reconstruction_errors": {
+        "cumulative_positive_click": 0.0,
+        "cumulative_zero_click": 0.0,
+        "event_first_crossing_ledger": 0.0,
+        "representation_ledger": 6.352747104407253e-22
+      },
+      "final_event_bound": 1.7292353740919818e-09,
+      "final_event_ledger": 0.0,
+      "final_rank": 2565,
+      "final_representation_ledger": 2.3749965122957553e-07,
+      "maximum_cumulative_probability_residual": 5.1811888113206805e-12,
+      "maximum_gmres_residual": 9.999937029851151e-11,
+      "maximum_step_residual": 3.129344360940366e-15,
+      "maximum_zero_probability_residual": 1.2025935802739696e-12,
+      "passed": true,
+      "physical_claim": false,
+      "steps": 7600,
+      "time": 3.8000000000000003
+    },
+    "manifest_sha256": "50efbbd6420e9035dc1ac62e8dc7bdf7bb6d1c728fde1e0a67a99952d8fd3e83",
+    "passed": true,
+    "step": 7600,
+    "trial_only": false,
+    "trial_restart_authorized": false
+  },
+  "no_other_rate_state_imported": true,
+  "optimization_equivalence_gate": {
+    "passed": true,
+    "path": "[ARCHIVE_PATH]",
+    "scope": "Two fresh same-parent GPU processes with identical previously qualified KL1 numerical kernels. Repeatability/admission gate, not a new performance A/B benchmark.",
+    "sha256": "f82c37d9f6ebe55ad6a93955de29f0d834fa205d99c75fb0142af2ff4ff49bb2",
+    "trial_states_imported_into_production": false
+  },
+  "origin": "same_rate_verified_checkpoint",
+  "origin_sha256": "50efbbd6420e9035dc1ac62e8dc7bdf7bb6d1c728fde1e0a67a99952d8fd3e83",
+  "passed": true,
+  "production_authorized": false,
+  "role": "production"
+}

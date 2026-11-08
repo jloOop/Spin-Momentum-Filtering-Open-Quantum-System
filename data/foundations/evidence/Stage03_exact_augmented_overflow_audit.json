@@ -1,0 +1,38 @@
+{
+  "B2_N12": {
+    "exact_augmented_overflow_budget": 1.575638973168954e-07,
+    "final_occupation": 0.4908421076415319,
+    "final_top_shell_population": 2.8881319641171285e-08,
+    "final_trace": 0.9999999999999986
+  },
+  "B2_N16": {
+    "exact_augmented_overflow_budget": 3.48555836339155e-10,
+    "final_occupation": 0.4908421803829638,
+    "final_top_shell_population": 5.692853490073609e-11,
+    "final_trace": 1.0000000000000047
+  },
+  "B2_N8": {
+    "exact_augmented_overflow_budget": 6.168431463014925e-05,
+    "final_occupation": 0.49081625286803987,
+    "final_top_shell_population": 1.3273114405319992e-05,
+    "final_trace": 0.9999999999999981
+  },
+  "B3_N12": {
+    "exact_augmented_overflow_budget": 8.766369798855872e-07,
+    "final_occupation": 0.5274732275613028,
+    "final_top_shell_population": 5.0077072889153224e-08,
+    "final_trace": 0.9999999999999989
+  },
+  "B3_N16": {
+    "exact_augmented_overflow_budget": 2.212088468510022e-09,
+    "final_occupation": 0.5274734576707302,
+    "final_top_shell_population": 1.1586304086337307e-10,
+    "final_trace": 1.000000000000007
+  },
+  "B3_N8": {
+    "exact_augmented_overflow_budget": 0.00029235444006400605,
+    "final_occupation": 0.5274090586998115,
+    "final_top_shell_population": 1.923674303037661e-05,
+    "final_trace": 0.9999999999999984
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "checkpoint_path": "[ARCHIVE_PATH]",
+  "checkpoint_payload_hashes": {
+    "checkpoint_manifest.json": "12a3e8fa9ebd687f32b941d6ee945e8f7d1042c4d616880f583c56074c9a3cf9",
+    "checkpoint_metadata.json": "dbfb0ee0be77a69ce8b2a8b489b5fdab287b3c6c0ae7c754e0a48f6b819e8b79",
+    "histories.npz": "8c51bd6f4228cb255a948c52fa826798fb83763865e282df30928ba5c53643e5",
+    "sector_0.npy": "d4d52a74abe6e6b42a88af0d44f4f3244442d20f3edcd8e8ca8094b9381beff9",
+    "sector_1.npy": "83ca2edcae8100fb636ca9763f400e76266b8abf6b116ce1806738b90c72e806",
+    "sector_2.npy": "267f35cf42c589775abb156a4734fb5cb7ad9a170ab951d9f89999c28523d208",
+    "sector_3.npy": "9b4014fb46098d91457ec562fa528bd2778d63972ce8c7e92897187c830e903f",
+    "sector_4.npy": "5156fb2058d9aedaa75695d98b94ca8ed6e6762be7eb132eed6e9bdabd7fa755",
+    "zero_state.npy": "3a39b9b5757bc03cc17aa05b86349293c42d1f6156d27104ceb4e9c2e4f72d97"
+  },
+  "exact_restart_step": 11845,
+  "factor_audit": {
+    "0": {
+      "dtype": "complex128",
+      "finite": true,
+      "shape": [
+        273000,
+        1
+      ],
+      "trace": 0.5238977232433282
+    },
+    "1": {
+      "dtype": "complex128",
+      "finite": true,
+      "shape": [
+        273000,
+        1904
+      ],
+      "trace": 0.006592598464426597
+    },
+    "2": {
+      "dtype": "complex128",
+      "finite": true,
+      "shape": [
+        273000,
+        190
+      ],
+      "trace": 5.997121371704247e-05
+    },
+    "3": {
+      "dtype": "complex128",
+      "finite": true,
+      "shape": [
+        273000,
+        10
+      ],
+      "trace": 4.7384015580582913e-07
+    },
+    "4": {
+      "dtype": "complex128",
+      "finite": true,
+      "shape": [
+        273000,
+        4
+      ],
+      "trace": 6.2791672440127e-10
+    }
+  },
+  "live_factors_hashed_now": true,
+  "live_factors_traced_now": true,
+  "next_global_call": 23691,
+  "next_reserve_line": 7.97473532524182e-08,
+  "no_rebase": true,
+  "ordered_event_terms": 8745,
+  "ordered_representation_terms": 17490,
+  "parent_full_result_hashed": true,
+  "parent_full_spectra_reaudited_locally": false,
+  "parent_heavy_factors_available_locally": false,
+  "parent_numerical_audit_rerun": false,
+  "parent_phase_inputs_hashed": 8799,
+  "passed": true,
+  "phase": "recovery",
+  "physical_steps_performed": 0,
+  "recorded_independent_audit_passed": true,
+  "recorded_stop_reason": "PREDICTIVE_WALLTIME_RESOURCE_GUARD",
+  "remaining_original_policy_calls_verified": 310,
+  "retained_evidence_members_verified": 49,
+  "separate_user_quota_assessed": false,
+  "source_job": "2969484",
+  "state_modified": false,
+  "zero_crossrun_future_claimed": false,
+  "zero_crossrun_maximum_prefix_difference": 1.9079393620557994e-10,
+  "zero_crossrun_reference_available_through_step": 5600,
+  "zero_state_audit": {
+    "dtype": "complex128",
+    "finite": true,
+    "shape": [
+      273000,
+      1
+    ],
+    "trace": 0.5300283700766036
+  }
+}

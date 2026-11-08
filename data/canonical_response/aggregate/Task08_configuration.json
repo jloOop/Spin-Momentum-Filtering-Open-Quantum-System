@@ -1,0 +1,391 @@
+{
+  "CPU_only": true,
+  "Jupyter_safe": true,
+  "Task05_input_paths": [
+    "[ARCHIVE_PATH]",
+    "[ARCHIVE_PATH]",
+    "[ARCHIVE_PATH]",
+    "[ARCHIVE_PATH]",
+    "[ARCHIVE_PATH]",
+    "[ARCHIVE_PATH]",
+    "[ARCHIVE_PATH]",
+    "[ARCHIVE_PATH]",
+    "[ARCHIVE_PATH]",
+    "[ARCHIVE_PATH]",
+    "[ARCHIVE_PATH]"
+  ],
+  "Task08_finite_model_verdict_is_separate_from_publication_level_project_closure": true,
+  "allow_missing_per_case_loader": false,
+  "attached_master_Task05_06_status": "QUALIFIED_PASS_FULL_CLOSURE_PENDING",
+  "attached_master_publication_level_status": "PROVISIONAL_UNTIL_RESIDUAL_TASK05_06_CLOSURE_IS_RECORDED_IN_AN_UPDATED_MASTER",
+  "authority_audit": {
+    "authority_precedence": [
+      "current numerical master audit",
+      "final Task-07 to Task-08 handoff for corrected v8 contract",
+      "frozen Task-07 v8 raw products reconstructed independently"
+    ],
+    "explicit_authority_paths_supplied": true,
+    "files": {
+      "Task07_Task08_handoff": {
+        "actual_sha256": "c4529a79558c9a5f61ea8019987991c10177e1d97edc4b16883ff93c4042a84e",
+        "expected_sha256": "c4529a79558c9a5f61ea8019987991c10177e1d97edc4b16883ff93c4042a84e",
+        "path": "[ARCHIVE_PATH]",
+        "status": "PASS",
+        "verified": true
+      },
+      "master_audit": {
+        "actual_sha256": "ce01921758baf2407c61de9d77b431d80d4f983837be33383d943660b8e21702",
+        "expected_sha256": "ce01921758baf2407c61de9d77b431d80d4f983837be33383d943660b8e21702",
+        "path": "[ARCHIVE_PATH]",
+        "status": "PASS",
+        "verified": true
+      }
+    },
+    "passed": true
+  },
+  "canonical_role_count": 15,
+  "case_status_vocabulary": [
+    "MISSING",
+    "LOCAL_PASS",
+    "RERUN_PENDING",
+    "FAILED",
+    "CLOSED"
+  ],
+  "copied_loader_source_sha256": "3ef1c325d4e3220f924e725411eeeceb3a32987ad27e7e394f348e6986431861",
+  "created_utc": "2026-08-10T14:39:10+00:00",
+  "expected_Task07_script_version": "2026-08-05-task07-environmental-response-v8-unified-manual-full-production",
+  "final_refinement_aware_amendment": true,
+  "frozen_15_case_matrix": [
+    {
+      "dt": 0.0005,
+      "environment_direction": "downward",
+      "initial_mode": "00",
+      "insertion_dt": 0.1,
+      "matrix_id": "D1",
+      "n_shell": 12,
+      "omega": 100.0,
+      "propagator_type": "scalar_factorized",
+      "role": "scalar_exact_null",
+      "t_final": 10.0
+    },
+    {
+      "dt": 0.0005,
+      "environment_direction": "downward",
+      "initial_mode": "00",
+      "insertion_dt": 0.1,
+      "matrix_id": "D2",
+      "n_shell": 12,
+      "omega": 100.0,
+      "propagator_type": "spinor",
+      "role": "principal_baseline",
+      "t_final": 10.0
+    },
+    {
+      "dt": 0.001,
+      "environment_direction": "downward",
+      "initial_mode": "00",
+      "insertion_dt": 0.1,
+      "matrix_id": "D3",
+      "n_shell": 12,
+      "omega": 1.0,
+      "propagator_type": "spinor",
+      "role": "weak_confinement_control",
+      "t_final": 10.0
+    },
+    {
+      "dt": 0.00025,
+      "environment_direction": "downward",
+      "initial_mode": "00",
+      "insertion_dt": 0.1,
+      "matrix_id": "D4",
+      "n_shell": 12,
+      "omega": 100.0,
+      "propagator_type": "spinor",
+      "role": "time_step_control",
+      "t_final": 10.0
+    },
+    {
+      "dt": 0.0005,
+      "environment_direction": "downward",
+      "initial_mode": "00",
+      "insertion_dt": 0.1,
+      "matrix_id": "D5",
+      "n_shell": 16,
+      "omega": 100.0,
+      "propagator_type": "spinor",
+      "role": "shell_cutoff_control",
+      "t_final": 10.0
+    },
+    {
+      "dt": 0.0005,
+      "environment_direction": "upward",
+      "initial_mode": "00",
+      "insertion_dt": 0.1,
+      "matrix_id": "U1",
+      "n_shell": 12,
+      "omega": 100.0,
+      "propagator_type": "scalar_factorized",
+      "role": "scalar_exact_null",
+      "t_final": 10.0
+    },
+    {
+      "dt": 0.0005,
+      "environment_direction": "upward",
+      "initial_mode": "00",
+      "insertion_dt": 0.1,
+      "matrix_id": "U2",
+      "n_shell": 12,
+      "omega": 100.0,
+      "propagator_type": "spinor",
+      "role": "principal_baseline",
+      "t_final": 10.0
+    },
+    {
+      "dt": 0.001,
+      "environment_direction": "upward",
+      "initial_mode": "00",
+      "insertion_dt": 0.1,
+      "matrix_id": "U3",
+      "n_shell": 12,
+      "omega": 1.0,
+      "propagator_type": "spinor",
+      "role": "weak_confinement_control",
+      "t_final": 10.0
+    },
+    {
+      "dt": 0.00025,
+      "environment_direction": "upward",
+      "initial_mode": "00",
+      "insertion_dt": 0.1,
+      "matrix_id": "U4",
+      "n_shell": 12,
+      "omega": 100.0,
+      "propagator_type": "spinor",
+      "role": "time_step_control",
+      "t_final": 10.0
+    },
+    {
+      "dt": 0.0005,
+      "environment_direction": "upward",
+      "initial_mode": "00",
+      "insertion_dt": 0.1,
+      "matrix_id": "U5",
+      "n_shell": 16,
+      "omega": 100.0,
+      "propagator_type": "spinor",
+      "role": "shell_cutoff_control",
+      "t_final": 10.0
+    },
+    {
+      "dt": 0.0005,
+      "environment_direction": "dephasing",
+      "initial_mode": "00",
+      "insertion_dt": 0.1,
+      "matrix_id": "P1",
+      "n_shell": 12,
+      "omega": 100.0,
+      "propagator_type": "scalar_factorized",
+      "role": "scalar_exact_null",
+      "t_final": 10.0
+    },
+    {
+      "dt": 0.0005,
+      "environment_direction": "dephasing",
+      "initial_mode": "00",
+      "insertion_dt": 0.1,
+      "matrix_id": "P2",
+      "n_shell": 12,
+      "omega": 100.0,
+      "propagator_type": "spinor",
+      "role": "principal_baseline",
+      "t_final": 10.0
+    },
+    {
+      "dt": 0.001,
+      "environment_direction": "dephasing",
+      "initial_mode": "00",
+      "insertion_dt": 0.1,
+      "matrix_id": "P3",
+      "n_shell": 12,
+      "omega": 1.0,
+      "propagator_type": "spinor",
+      "role": "weak_confinement_control",
+      "t_final": 10.0
+    },
+    {
+      "dt": 0.00025,
+      "environment_direction": "dephasing",
+      "initial_mode": "00",
+      "insertion_dt": 0.1,
+      "matrix_id": "P4",
+      "n_shell": 12,
+      "omega": 100.0,
+      "propagator_type": "spinor",
+      "role": "time_step_control",
+      "t_final": 10.0
+    },
+    {
+      "dt": 0.0005,
+      "environment_direction": "dephasing",
+      "initial_mode": "00",
+      "insertion_dt": 0.1,
+      "matrix_id": "P5",
+      "n_shell": 16,
+      "omega": 100.0,
+      "propagator_type": "spinor",
+      "role": "shell_cutoff_control",
+      "t_final": 10.0
+    }
+  ],
+  "frozen_Task07_per_case_loader_sha256": "3ec8f9699b2182ebd73e17e64bfbd6fc783df5d9e1ee9dc29cfd7f64c0f91d14",
+  "frozen_Task07_v8_numerical_core_sha256": "827fd4993707152393a8adcf891df59d7b4d02310a06e89dd5263c0fd37369af",
+  "imports_or_executes_Task07": false,
+  "imports_or_executes_Task07_per_case_loader": false,
+  "inherited_bounds_path": "[ARCHIVE_PATH]",
+  "inherited_bounds_record": {
+    "adoption_status": "DATED_OPERATIONAL_TRANSFER_AMENDMENT_2026-08-10",
+    "by_direction": {
+      "dephasing": {
+        "epsilon_repr": null,
+        "epsilon_z": null
+      },
+      "downward": {
+        "epsilon_repr": null,
+        "epsilon_z": null
+      },
+      "upward": {
+        "epsilon_repr": null,
+        "epsilon_z": null
+      }
+    },
+    "global": {
+      "epsilon_repr": null,
+      "epsilon_repr_relative_to_accepted_response_norm": 0.02354,
+      "epsilon_z": null,
+      "epsilon_z_relative_to_accepted_response_norm": 0.004
+    },
+    "interpretation": "Direction-specific absolute bounds are derived at runtime by multiplying the accepted ds=0.05 complete signed-response norm by predeclared relative envelopes. This is an operational inherited-bound amendment, not a direct Cartesian response rerun or direct Nz=2000 response calculation.",
+    "provenance": {
+      "bound_definition": "relative inherited transfer envelope multiplied by the accepted insertion-refined complete signed-response norm",
+      "limitations": [
+        "The representation envelope is transferred from the audited static first-shell response contrast, not measured directly for each dynamical environmental direction.",
+        "The longitudinal envelope is transferred from a demanding zero-bath observable, not measured directly on the Task-07 response kernel.",
+        "The final Part-I publication audit should retain this qualification or replace it with direct response-level representation and longitudinal-grid refinements."
+      ],
+      "longitudinal_relative_envelope": 0.004,
+      "longitudinal_source": "Accepted spinor-ABC supplementary convergence record: Nz=1500 to Nz=2000 changes the demanding-regime restricted mean by less than 0.4 percent.",
+      "notes": "Selecting this file explicitly adopts the dated operational transfer amendment for Task-08 and Task-09 finite-rate-validation authorization. It does not close the final publication-level representation/grid audit.",
+      "representation_relative_envelope": 0.02354,
+      "representation_source": "Current Task-05/06 master audit, Cartesian--oscillator recovery section: the omega=100 first-shell response contrast differs by 2.354 percent between representations; individual-curve discrepancies are retained separately."
+    },
+    "schema": "Task08_inherited_bounds_v2"
+  },
+  "input_paths": [
+    "[ARCHIVE_PATH]"
+  ],
+  "insertion_policy": {
+    "final_gate": "independent ds=0.1 versus ds=0.05",
+    "fine_panel_mapping": "sum adjacent 0.05 signed panels onto 0.1 panels",
+    "internal_factor_two_coarsening": "diagnostic_only"
+  },
+  "loader_self_scope_audit": {
+    "forbidden_execution_calls": [],
+    "forbidden_imports": [],
+    "imports": [
+      "__future__",
+      "argparse",
+      "csv",
+      "dataclasses",
+      "datetime",
+      "hashlib",
+      "importlib.util",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pathlib",
+      "shutil",
+      "sys",
+      "traceback",
+      "typing",
+      "zipfile"
+    ],
+    "read_only_CPU_loader_without_Task07_import_or_execution": true
+  },
+  "loader_source_sha256": "3ef1c325d4e3220f924e725411eeeceb3a32987ad27e7e394f348e6986431861",
+  "loader_version": "2026-08-10-task08-final-refinement-aware-v3.0",
+  "output_contract": [
+    "Task08_configuration.json",
+    "Task08_input_inventory.json",
+    "Task08_case_identity_table.csv",
+    "Task08_case_integrity_audit.json",
+    "Task08_per_case_metrics.csv",
+    "Task08_scalar_null_audit.json",
+    "Task08_downward_family_audit.json",
+    "Task08_upward_family_audit.json",
+    "Task08_dephasing_family_audit.json",
+    "Task08_time_step_convergence.csv",
+    "Task08_shell_convergence.csv",
+    "Task08_confinement_comparison.csv",
+    "Task08_prompt_late_metrics.csv",
+    "Task08_complete_response_curves.csv",
+    "Task08_uncertainty_budget.json",
+    "Task08_evidence_classification.json",
+    "Task08_reproducibility_coverage.json",
+    "Task08_channel_superposition_audit.json",
+    "Task08_aggregate_report.md",
+    "Task08_compact_results.npz",
+    "Task08_output_hashes.json",
+    "Task08_run_status.json",
+    "Task08_loader.py",
+    "Task08_share.zip",
+    "Task08_diagnostic_share.zip"
+  ],
+  "output_directory": "[ARCHIVE_PATH]",
+  "partial_incremental_dataset_supported": true,
+  "read_only_input_policy": true,
+  "role_core_policy": {
+    "high_accuracy_core_sha256": "d665b92be5d1efb6954968833f4cf008672add6e8ed5194e9d8a55a2a498d796",
+    "high_accuracy_roles": [
+      "U2",
+      "U4",
+      "U2-I"
+    ],
+    "standard_core_sha256": "827fd4993707152393a8adcf891df59d7b4d02310a06e89dd5263c0fd37369af"
+  },
+  "scientific_and_rerun_status_are_orthogonal": true,
+  "stage": "08_environmental_response_aggregate_loader_final",
+  "strict_reruns": false,
+  "supplemental_role_count": 3,
+  "supplemental_roles": [
+    "D2-I",
+    "U2-I",
+    "P2-I"
+  ],
+  "synthetic_mode": false,
+  "thresholds": {
+    "Task05_reference_array": 5e-11,
+    "Task05_source_curve": 5e-10,
+    "array_reconstruction": 5e-12,
+    "benchmark_absolute": 5e-10,
+    "benchmark_relative": 1e-07,
+    "closure_pilot": 1e-10,
+    "evidence_factor": 5.0,
+    "insertion_absolute": 5e-09,
+    "insertion_relative": 0.05,
+    "kernel_closure": 5e-08,
+    "launch_source": 1e-12,
+    "operator": 1e-12,
+    "scalar_integrated": 1e-08,
+    "scalar_pointwise": 5e-09,
+    "source_trace": 5e-11,
+    "tangent_closure_absolute": 5e-10,
+    "tangent_closure_relative": 1e-07,
+    "time_shell_absolute": 5e-09,
+    "time_shell_relative": 0.05,
+    "true_residual": 1e-08,
+    "upward_launch_absolute": 5e-08,
+    "upward_launch_relative": 1e-06
+  },
+  "trusts_saved_PASS_flags_as_evidence": false
+}

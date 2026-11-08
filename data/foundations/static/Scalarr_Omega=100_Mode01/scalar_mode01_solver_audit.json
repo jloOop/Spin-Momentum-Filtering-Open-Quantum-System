@@ -1,0 +1,106 @@
+{
+  "T_final": 10.0,
+  "case_id": "scalar_mode01",
+  "completed_utc": "2026-08-02T18:32:15+00:00",
+  "configuration_sha256": "0c7e1ee10133039e3fbfe1da7f60605edf088c9aaa1ba7b03a17a789ac6ff763",
+  "cumulative_clamp_loss": 0.0,
+  "cumulative_preclamp_minus_roof_residual": 3.962446244864301e-07,
+  "cumulative_preclamp_norm_loss": 0.9067838922285606,
+  "cumulative_roof_midpoint_loss": 0.906783495983936,
+  "cumulative_total_step_loss": 0.9067838922285606,
+  "decomposed_probability_closure": 0.0,
+  "detector": "scalar",
+  "dt": 0.0005,
+  "elapsed_seconds": 7937.062558174133,
+  "final_survival": 0.09321618948612354,
+  "gmres_failure_count": 0,
+  "initial_minus_final_survival": 0.9067838922285606,
+  "initial_survival": 1.0000000817146841,
+  "maximum_abs_cast_loss_at_audit_steps": 4.360165561934082e-10,
+  "maximum_abs_preclamp_minus_roof_step_residual": 6.232176996689986e-10,
+  "maximum_abs_solver_flux_residual_at_audit_steps": 1.684674622026705e-10,
+  "maximum_boundary_amplitude_before_clamp": 0.0,
+  "maximum_single_step_clamp_loss": 0.0,
+  "maximum_true_relative_residual_at_audit_steps": 9.749133400273676e-09,
+  "minimum_roof_midpoint_step_loss": 0.0,
+  "minimum_total_step_loss": -6.184883716287004e-10,
+  "mode_basis_audit": {
+    "ideal_mode_formula": {
+      "00": "exp[-omega*((x-xc)^2+(y-yc)^2)/2]",
+      "01": "sqrt(2*omega)*(y-yc)*mode00",
+      "10": "sqrt(2*omega)*(x-xc)*mode00"
+    },
+    "maximum_abs_diagonal_minus_one": 1.837121454961732e-09,
+    "maximum_abs_offdiagonal_overlap": 2.9180273357553536e-08,
+    "mode_order": [
+      "00",
+      "10",
+      "01"
+    ],
+    "normalized_overlap_matrix": {
+      "imag": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "real": [
+        [
+          0.9999999981628785,
+          -2.9180273357553536e-08,
+          -2.9180273291133514e-08
+        ],
+        [
+          -2.9180273357553536e-08,
+          0.9999999990417721,
+          -6.96140749680816e-10
+        ],
+        [
+          -2.9180273291133514e-08,
+          -6.96140749680816e-10,
+          0.9999999990417722
+        ]
+      ]
+    },
+    "raw_norm_squared_after_sidewall_clamp": {
+      "00": 0.03141592528320209,
+      "01": 0.03141592508251194,
+      "10": 0.03141592508251194
+    },
+    "selected_mode": "01"
+  },
+  "monotonicity_tolerance": 1e-12,
+  "num_steps": 20000,
+  "number_of_negative_roof_steps_below_tolerance": 0,
+  "number_of_negative_total_steps_below_tolerance": 866,
+  "number_of_reference_probability_samples": 1199,
+  "number_of_residual_audit_steps": 201,
+  "omega": 100.0,
+  "operator_audit": {
+    "C_hermiticity_max_abs_residual": 0.0,
+    "C_nnz": 76048,
+    "L_x_hermiticity_max_abs_residual": 0.0,
+    "L_y_hermiticity_max_abs_residual": 0.0,
+    "L_z_loss_structure_max_abs_residual": 0.0
+  },
+  "parent_stage00_sha256": "959ef34a718d1df3e2370cb72245bd8ae4b48f75696094cdf4b095191b42c115",
+  "physics_solver_configuration_sha256": "c2eda7c09c3c07817060ca2a635d9cb69e3c3c9dd0b94c45f3eab5dd90b1498f",
+  "reference_sha256": "815a470da8ec7664ee613f830f384050247f949dac5fa8ab4e0cfd8f331cfbfe",
+  "roof_probability_closure_residual": -3.9624462455645215e-07,
+  "script_sha256": "9f76dc9f9b45c742f000cbc7c19668d2816cfaa4d13c6692a737fac1232ddfde",
+  "stage": "01_static_mode_library",
+  "status": "completed",
+  "telescoping_probability_closure": 0.0,
+  "transverse_mode": "01"
+}

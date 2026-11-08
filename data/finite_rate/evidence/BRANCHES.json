@@ -1,0 +1,812 @@
+{
+  "pi1600": {
+    "authoritative_history": "pi1600_raw/analysis_core/A136/Task09_Pi1600_S19327_To1000_PC2_H100_v1_IO200_Result_3463660/OUTPUT/block_histories.npz",
+    "history_sha256": "486f5af572ecac7fb4f90a5dd9b86edd1be48b69da0b5d6533e8523f29b276c4",
+    "coverage": {
+      "times": {
+        "n": 20001,
+        "first": 0.0,
+        "last": 10.0,
+        "min": 0.0,
+        "max": 10.0
+      }
+    },
+    "schema": {
+      "times": {
+        "shape": [
+          20001
+        ],
+        "dtype": "float64"
+      },
+      "positive_survival": {
+        "shape": [
+          20001
+        ],
+        "dtype": "float64"
+      },
+      "zero_survival": {
+        "shape": [
+          20001
+        ],
+        "dtype": "float64"
+      },
+      "cumulative_positive_click": {
+        "shape": [
+          20001
+        ],
+        "dtype": "float64"
+      },
+      "cumulative_zero_click": {
+        "shape": [
+          20001
+        ],
+        "dtype": "float64"
+      },
+      "representation_ledger": {
+        "shape": [
+          20001
+        ],
+        "dtype": "float64"
+      },
+      "representation_ceiling": {
+        "shape": [
+          20001
+        ],
+        "dtype": "float64"
+      },
+      "event_first_crossing_ledger": {
+        "shape": [
+          20001
+        ],
+        "dtype": "float64"
+      },
+      "cumulative_overflow_bound": {
+        "shape": [
+          20001
+        ],
+        "dtype": "float64"
+      },
+      "total_rank": {
+        "shape": [
+          20001
+        ],
+        "dtype": "int64"
+      },
+      "sector_traces": {
+        "shape": [
+          20001,
+          5
+        ],
+        "dtype": "float64"
+      },
+      "sector_ranks": {
+        "shape": [
+          20001,
+          5
+        ],
+        "dtype": "int64"
+      },
+      "analytic_event_tail_bound": {
+        "shape": [
+          20001
+        ],
+        "dtype": "float64"
+      },
+      "top_shell_population": {
+        "shape": [
+          20001
+        ],
+        "dtype": "float64"
+      },
+      "positive_step_click": {
+        "shape": [
+          20000
+        ],
+        "dtype": "float64"
+      },
+      "zero_step_click": {
+        "shape": [
+          20000
+        ],
+        "dtype": "float64"
+      },
+      "gmres_max_residual": {
+        "shape": [
+          20000
+        ],
+        "dtype": "float64"
+      },
+      "batch_sample_relative_error": {
+        "shape": [
+          20000
+        ],
+        "dtype": "float64"
+      },
+      "complete_step_ledger_closure": {
+        "shape": [
+          20000
+        ],
+        "dtype": "float64"
+      },
+      "zero_step_closure": {
+        "shape": [
+          20000
+        ],
+        "dtype": "float64"
+      },
+      "step_wall_seconds": {
+        "shape": [
+          20000
+        ],
+        "dtype": "float64"
+      },
+      "representation_increment": {
+        "shape": [
+          20000
+        ],
+        "dtype": "float64"
+      },
+      "event_increment": {
+        "shape": [
+          20000
+        ],
+        "dtype": "float64"
+      },
+      "detector_number_rhs": {
+        "shape": [
+          20000
+        ],
+        "dtype": "int64"
+      },
+      "detector_number_batches": {
+        "shape": [
+          20000
+        ],
+        "dtype": "int64"
+      },
+      "detector_maximum_actual_batch_columns": {
+        "shape": [
+          20000
+        ],
+        "dtype": "int64"
+      },
+      "detector_batch64_contract_passed": {
+        "shape": [
+          20000
+        ],
+        "dtype": "int8"
+      }
+    },
+    "result_archive": {
+      "id": "A136",
+      "name": "Task09_Pi1600_S19327_To1000_PC2_H100_v1_IO200_Result_3463660.zip",
+      "job": "3463660",
+      "parent": "2966988",
+      "rate": "pi1600",
+      "physical": {
+        "d_channels": 182,
+        "dimension": 273000,
+        "dt": 0.0005,
+        "h_z": 0.013333333656191826,
+        "l_z": 20.0,
+        "max_event_sector": 4,
+        "n_shell": 12,
+        "n_z": 1500,
+        "omega": 100.0,
+        "rate_label": "lambda0_over_4",
+        "rate_lambda": 0.001963495408493621
+      },
+      "status": {
+        "completed_step": 20000,
+        "start_step": 19327,
+        "target_step": 20000,
+        "status": "completed",
+        "classification": "CERTIFIED_PI1600_CONTINUATION_TO1000"
+      },
+      "coverage": {}
+    },
+    "raw_archive_destination": "pi1600_raw/lineage_raw/A136/Task09_Pi1600_S19327_To1000_PC2_H100_v1_IO200_Result_3463660.zip",
+    "state_payloads_copied": false
+  },
+  "pi0": {
+    "authoritative_history": "pi0_core/A100/SESSION/block_histories.npz",
+    "history_sha256": "55f112967afcfc080fbacdbd20ec59d0e9268e926c8479ced5b769749980cca3",
+    "coverage": {
+      "times": {
+        "n": 7201,
+        "first": 0.0,
+        "last": 3.6,
+        "min": 0.0,
+        "max": 3.6
+      },
+      "midpoint_times": {
+        "n": 7200,
+        "first": 0.00025,
+        "last": 3.5997500000000002,
+        "min": 0.00025,
+        "max": 3.5997500000000002
+      }
+    },
+    "schema": {
+      "times": {
+        "shape": [
+          7201
+        ],
+        "dtype": "float64"
+      },
+      "zero_survival": {
+        "shape": [
+          7201
+        ],
+        "dtype": "float64"
+      },
+      "cumulative_zero_click": {
+        "shape": [
+          7201
+        ],
+        "dtype": "float64"
+      },
+      "restricted_mean_trapezoid": {
+        "shape": [
+          7201
+        ],
+        "dtype": "float64"
+      },
+      "probability_closure": {
+        "shape": [
+          7201
+        ],
+        "dtype": "float64"
+      },
+      "top_shell_population": {
+        "shape": [
+          7201
+        ],
+        "dtype": "float64"
+      },
+      "total_rank": {
+        "shape": [
+          7201
+        ],
+        "dtype": "int64"
+      },
+      "representation_ledger": {
+        "shape": [
+          7201
+        ],
+        "dtype": "float64"
+      },
+      "event_first_crossing_ledger": {
+        "shape": [
+          7201
+        ],
+        "dtype": "float64"
+      },
+      "analytic_event_tail_bound": {
+        "shape": [
+          7201
+        ],
+        "dtype": "float64"
+      },
+      "cumulative_overflow_bound": {
+        "shape": [
+          7201
+        ],
+        "dtype": "float64"
+      },
+      "reference_compared": {
+        "shape": [
+          7201
+        ],
+        "dtype": "bool"
+      },
+      "reference_difference": {
+        "shape": [
+          7201
+        ],
+        "dtype": "float64"
+      },
+      "midpoint_times": {
+        "shape": [
+          7200
+        ],
+        "dtype": "float64"
+      },
+      "zero_click_probability": {
+        "shape": [
+          7200
+        ],
+        "dtype": "float64"
+      },
+      "click_density_midpoint": {
+        "shape": [
+          7200
+        ],
+        "dtype": "float64"
+      },
+      "zero_step_closure": {
+        "shape": [
+          7200
+        ],
+        "dtype": "float64"
+      },
+      "gmres_max_residual": {
+        "shape": [
+          7200
+        ],
+        "dtype": "float64"
+      },
+      "independent_gmres_max_residual": {
+        "shape": [
+          7200
+        ],
+        "dtype": "float64"
+      },
+      "sample_state_relative_error": {
+        "shape": [
+          7200
+        ],
+        "dtype": "float64"
+      },
+      "sample_click_abs_difference": {
+        "shape": [
+          7200
+        ],
+        "dtype": "float64"
+      },
+      "gmres_failure_count": {
+        "shape": [
+          7200
+        ],
+        "dtype": "int64"
+      },
+      "independent_gmres_failure_count": {
+        "shape": [
+          7200
+        ],
+        "dtype": "int64"
+      },
+      "step_wall_seconds": {
+        "shape": [
+          7200
+        ],
+        "dtype": "float64"
+      }
+    },
+    "result_archive": {
+      "id": "A100",
+      "name": "Task09_Lambda0_v1_Result_2878654.zip",
+      "job": "2878654",
+      "parent": "",
+      "rate": "pi0",
+      "physical": {
+        "bath_microsteps_per_half": 1,
+        "d_channels": 182,
+        "dimension": 273000,
+        "dt": 0.0005,
+        "h_z": 0.013333333656191826,
+        "l_z": 20.0,
+        "max_event_sector": 0,
+        "n_shell": 12,
+        "n_z": 1500,
+        "omega": 100.0,
+        "rate_label": "zero",
+        "rate_lambda": 0.0
+      },
+      "status": {
+        "completed_step": 7200,
+        "start_step": 0
+      },
+      "coverage": {}
+    },
+    "raw_archive_destination": "",
+    "state_payloads_copied": false
+  },
+  "pi3200": {
+    "authoritative_history": "pi3200_core/A148/Task09_Pi3200_11845_To12000_v2_Result_3464181_Compact/OUTPUT/recovery/block_histories.npz",
+    "history_sha256": "dfb31d05c1fdbc39481c3388a72d568fd7a36e8d6768e54ed62ab0efaa6e0597",
+    "coverage": {
+      "times": {
+        "n": 12001,
+        "first": 0.0,
+        "last": 6.0,
+        "min": 0.0,
+        "max": 6.0
+      }
+    },
+    "schema": {
+      "times": {
+        "shape": [
+          12001
+        ],
+        "dtype": "float64"
+      },
+      "positive_survival": {
+        "shape": [
+          12001
+        ],
+        "dtype": "float64"
+      },
+      "zero_survival": {
+        "shape": [
+          12001
+        ],
+        "dtype": "float64"
+      },
+      "positive_step_click": {
+        "shape": [
+          12000
+        ],
+        "dtype": "float64"
+      },
+      "zero_step_click": {
+        "shape": [
+          12000
+        ],
+        "dtype": "float64"
+      },
+      "cumulative_positive_click": {
+        "shape": [
+          12001
+        ],
+        "dtype": "float64"
+      },
+      "cumulative_zero_click": {
+        "shape": [
+          12001
+        ],
+        "dtype": "float64"
+      },
+      "representation_ledger": {
+        "shape": [
+          12001
+        ],
+        "dtype": "float64"
+      },
+      "representation_ceiling": {
+        "shape": [
+          12001
+        ],
+        "dtype": "float64"
+      },
+      "event_first_crossing_ledger": {
+        "shape": [
+          12001
+        ],
+        "dtype": "float64"
+      },
+      "analytic_event_tail_bound": {
+        "shape": [
+          12001
+        ],
+        "dtype": "float64"
+      },
+      "cumulative_overflow_bound": {
+        "shape": [
+          12001
+        ],
+        "dtype": "float64"
+      },
+      "top_shell_population": {
+        "shape": [
+          12001
+        ],
+        "dtype": "float64"
+      },
+      "total_rank": {
+        "shape": [
+          12001
+        ],
+        "dtype": "int64"
+      },
+      "sector_traces": {
+        "shape": [
+          12001,
+          5
+        ],
+        "dtype": "float64"
+      },
+      "sector_ranks": {
+        "shape": [
+          12001,
+          5
+        ],
+        "dtype": "int64"
+      },
+      "gmres_max_residual": {
+        "shape": [
+          12000
+        ],
+        "dtype": "float64"
+      },
+      "batch_sample_relative_error": {
+        "shape": [
+          12000
+        ],
+        "dtype": "float64"
+      },
+      "complete_step_ledger_closure": {
+        "shape": [
+          12000
+        ],
+        "dtype": "float64"
+      },
+      "zero_step_closure": {
+        "shape": [
+          12000
+        ],
+        "dtype": "float64"
+      },
+      "step_wall_seconds": {
+        "shape": [
+          12000
+        ],
+        "dtype": "float64"
+      },
+      "representation_increment": {
+        "shape": [
+          12000
+        ],
+        "dtype": "float64"
+      },
+      "event_increment": {
+        "shape": [
+          12000
+        ],
+        "dtype": "float64"
+      },
+      "detector_number_rhs": {
+        "shape": [
+          12000
+        ],
+        "dtype": "int64"
+      },
+      "detector_number_batches": {
+        "shape": [
+          12000
+        ],
+        "dtype": "int64"
+      },
+      "detector_maximum_actual_batch_columns": {
+        "shape": [
+          12000
+        ],
+        "dtype": "int64"
+      },
+      "detector_batch64_contract_passed": {
+        "shape": [
+          12000
+        ],
+        "dtype": "int8"
+      }
+    },
+    "result_archive": {
+      "id": "A148",
+      "name": "Task09_Pi3200_11845_To12000_v2_Result_3464181_Compact.zip",
+      "job": "3464181",
+      "parent": "2969484",
+      "rate": "pi3200",
+      "physical": {
+        "d_channels": 182,
+        "dimension": 273000,
+        "dt": 0.0005,
+        "h_z": 0.013333333656191826,
+        "l_z": 20.0,
+        "max_event_sector": 4,
+        "n_shell": 12,
+        "n_z": 1500,
+        "omega": 100.0,
+        "rate_label": "lambda0_over_8",
+        "rate_lambda": 0.0009817477042468104
+      },
+      "status": {
+        "classification": "DECLARED_TARGET_COMPLETED"
+      },
+      "coverage": {}
+    },
+    "raw_archive_destination": "",
+    "state_payloads_copied": false
+  },
+  "pi800": {
+    "authoritative_history": "pi800_core/A162/SESSION/block_histories.npz",
+    "history_sha256": "2511c61ffe9cf61e8fbd8dd92d0ee6ed698bdf32db72e705c1e581cd7e5e702a",
+    "coverage": {
+      "times": {
+        "n": 7651,
+        "first": 0.0,
+        "last": 3.825,
+        "min": 0.0,
+        "max": 3.825
+      }
+    },
+    "schema": {
+      "times": {
+        "shape": [
+          7651
+        ],
+        "dtype": "float64"
+      },
+      "positive_survival": {
+        "shape": [
+          7651
+        ],
+        "dtype": "float64"
+      },
+      "zero_survival": {
+        "shape": [
+          7651
+        ],
+        "dtype": "float64"
+      },
+      "positive_step_click": {
+        "shape": [
+          7650
+        ],
+        "dtype": "float64"
+      },
+      "zero_step_click": {
+        "shape": [
+          7650
+        ],
+        "dtype": "float64"
+      },
+      "cumulative_positive_click": {
+        "shape": [
+          7651
+        ],
+        "dtype": "float64"
+      },
+      "cumulative_zero_click": {
+        "shape": [
+          7651
+        ],
+        "dtype": "float64"
+      },
+      "representation_ledger": {
+        "shape": [
+          7651
+        ],
+        "dtype": "float64"
+      },
+      "representation_ceiling": {
+        "shape": [
+          7651
+        ],
+        "dtype": "float64"
+      },
+      "event_first_crossing_ledger": {
+        "shape": [
+          7651
+        ],
+        "dtype": "float64"
+      },
+      "analytic_event_tail_bound": {
+        "shape": [
+          7651
+        ],
+        "dtype": "float64"
+      },
+      "cumulative_overflow_bound": {
+        "shape": [
+          7651
+        ],
+        "dtype": "float64"
+      },
+      "top_shell_population": {
+        "shape": [
+          7651
+        ],
+        "dtype": "float64"
+      },
+      "total_rank": {
+        "shape": [
+          7651
+        ],
+        "dtype": "int64"
+      },
+      "sector_traces": {
+        "shape": [
+          7651,
+          7
+        ],
+        "dtype": "float64"
+      },
+      "sector_ranks": {
+        "shape": [
+          7651,
+          7
+        ],
+        "dtype": "int64"
+      },
+      "gmres_max_residual": {
+        "shape": [
+          7650
+        ],
+        "dtype": "float64"
+      },
+      "batch_sample_relative_error": {
+        "shape": [
+          7650
+        ],
+        "dtype": "float64"
+      },
+      "complete_step_ledger_closure": {
+        "shape": [
+          7650
+        ],
+        "dtype": "float64"
+      },
+      "zero_step_closure": {
+        "shape": [
+          7650
+        ],
+        "dtype": "float64"
+      },
+      "step_wall_seconds": {
+        "shape": [
+          7650
+        ],
+        "dtype": "float64"
+      },
+      "representation_increment": {
+        "shape": [
+          7650
+        ],
+        "dtype": "float64"
+      },
+      "event_increment": {
+        "shape": [
+          7650
+        ],
+        "dtype": "float64"
+      },
+      "detector_number_rhs": {
+        "shape": [
+          7650
+        ],
+        "dtype": "int64"
+      },
+      "detector_number_batches": {
+        "shape": [
+          7650
+        ],
+        "dtype": "int64"
+      },
+      "detector_maximum_actual_batch_columns": {
+        "shape": [
+          7650
+        ],
+        "dtype": "int64"
+      },
+      "detector_batch64_contract_passed": {
+        "shape": [
+          7650
+        ],
+        "dtype": "int8"
+      }
+    },
+    "result_archive": {
+      "id": "A162",
+      "name": "Task09_Pi800_KL2_Result_3465589.zip",
+      "job": "3465589",
+      "parent": "",
+      "rate": "pi800",
+      "physical": {
+        "rate_lambda": 0.003926990816987242,
+        "physical_time": 3.8125,
+        "completed_step": 7625,
+        "max_event_sector": 6
+      },
+      "status": {
+        "completed_step": 7650,
+        "start_step": 7600,
+        "target_step": 7650,
+        "status": "completed",
+        "classification": "COMPLETED_REQUESTED_PI800_GRID_PREFIX_NOT_PHYSICAL_ACCEPTANCE"
+      },
+      "coverage": {}
+    },
+    "raw_archive_destination": "",
+    "state_payloads_copied": false
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "checkpoint_audit": {
+    "bounded_checkpoint": true,
+    "factor_hashes_checked": true,
+    "factor_traces_checked": true,
+    "history_audit": {
+      "cumulative_reconstruction_errors": {
+        "cumulative_positive_click": 0.0,
+        "cumulative_zero_click": 0.0,
+        "event_first_crossing_ledger": 0.0,
+        "representation_ledger": 6.352747104407253e-22
+      },
+      "final_event_bound": 1.8084615267299453e-09,
+      "final_event_ledger": 0.0,
+      "final_rank": 2593,
+      "final_representation_ledger": 2.390624502478613e-07,
+      "maximum_cumulative_probability_residual": 5.219380483367786e-12,
+      "maximum_gmres_residual": 9.999937029851151e-11,
+      "maximum_step_residual": 3.129344360940366e-15,
+      "maximum_zero_probability_residual": 1.2081446953970953e-12,
+      "passed": true,
+      "physical_claim": false,
+      "steps": 7650,
+      "time": 3.825
+    },
+    "manifest_sha256": "04ded2cedb5dcc0736f82c69ca76637a1c4771fe74ede7af125387a4e54827a9",
+    "passed": true,
+    "step": 7650,
+    "trial_only": false,
+    "trial_restart_authorized": false
+  },
+  "completed_full_target": true,
+  "historical_tolerance_increased": false,
+  "historical_zero_reference_max_difference": 1.7561446741254372e-09,
+  "historical_zero_reference_tolerance": 2e-09,
+  "history": {
+    "cumulative_reconstruction_errors": {
+      "cumulative_positive_click": 0.0,
+      "cumulative_zero_click": 0.0,
+      "event_first_crossing_ledger": 0.0,
+      "representation_ledger": 6.352747104407253e-22
+    },
+    "final_event_bound": 1.8084615267299453e-09,
+    "final_event_ledger": 0.0,
+    "final_rank": 2593,
+    "final_representation_ledger": 2.390624502478613e-07,
+    "maximum_cumulative_probability_residual": 5.219380483367786e-12,
+    "maximum_gmres_residual": 9.999937029851151e-11,
+    "maximum_step_residual": 3.129344360940366e-15,
+    "maximum_zero_probability_residual": 1.2081446953970953e-12,
+    "passed": true,
+    "physical_claim": false,
+    "steps": 7650,
+    "time": 3.825
+  },
+  "latest_checkpoint": "[ARCHIVE_PATH]",
+  "latest_checkpoint_manifest_sha256": "04ded2cedb5dcc0736f82c69ca76637a1c4771fe74ede7af125387a4e54827a9",
+  "passed": true,
+  "physical_claim": false,
+  "reconstructed_rank_decisions": 100,
+  "scope": "Array, checkpoint, signed probability accounting and recorded positive-spectrum decisions. Not GPU replay or convergence proof.",
+  "status": "completed",
+  "task10_eligible": false,
+  "zero_direct_benchmark_click_l1_difference": 0.0,
+  "zero_direct_benchmark_max_difference": 4.440892098500626e-16
+}

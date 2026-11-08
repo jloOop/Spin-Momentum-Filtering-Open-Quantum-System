@@ -1,0 +1,165 @@
+{
+  "checkpoints": [
+    {
+      "factors": {
+        "0": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            1
+          ],
+          "trace": 0.5233989736237188
+        },
+        "1": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            1902
+          ],
+          "trace": 0.006615221592185274
+        },
+        "2": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            191
+          ],
+          "trace": 6.04525595729499e-05
+        },
+        "3": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            10
+          ],
+          "trace": 4.799045210206013e-07
+        },
+        "4": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            4
+          ],
+          "trace": 6.78308316255891e-10
+        }
+      },
+      "metadata_sha256": "d5222fb672e92561cacc64d4e19def849aca0c88dcad18267743738f810f23ea",
+      "passed": true,
+      "step": 11900,
+      "zero": {
+        "dtype": "complex128",
+        "finite": true,
+        "shape": [
+          273000,
+          1
+        ],
+        "trace": 0.5295523830910003
+      }
+    },
+    {
+      "factors": {
+        "0": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            1
+          ],
+          "trace": 0.5225438302278195
+        },
+        "1": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            1909
+          ],
+          "trace": 0.006656210145700967
+        },
+        "2": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            192
+          ],
+          "trace": 6.132916467211958e-05
+        },
+        "3": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            10
+          ],
+          "trace": 4.910276868952641e-07
+        },
+        "4": {
+          "dtype": "complex128",
+          "finite": true,
+          "shape": [
+            273000,
+            4
+          ],
+          "trace": 7.71488201002651e-10
+        }
+      },
+      "metadata_sha256": "87853ce3df55831808e0b42de69559e45bfdc6260fbea82e78acd7952076d719",
+      "passed": true,
+      "step": 12000,
+      "zero": {
+        "dtype": "complex128",
+        "finite": true,
+        "shape": [
+          273000,
+          1
+        ],
+        "trace": 0.528739101608382
+      }
+    }
+  ],
+  "completed_utc": "2026-09-28T05:40:11+00:00",
+  "endpoint_metrics": {
+    "completed_step": 12000,
+    "event_first_crossing_ledger": 1.2931476558018796e-12,
+    "final_rank": 2116,
+    "inherited_internal_memory_peak_mib": 81022.0625,
+    "last_persisted_step": 12000,
+    "maximum_internal_memory_mib_this_job": 81030.0625,
+    "maximum_new_step_closure": 4.619118235468749e-16,
+    "maximum_new_zero_closure": 3.213897111766992e-16,
+    "physical_time": 6.0,
+    "positive_midpoint_click_sum": 0.4707380583242869,
+    "positive_survival_retained": 0.5292618613373676,
+    "projected_overflow_bound": 1.0584458320491348e-11,
+    "representation_ledger": 8.033560243979999e-08,
+    "reserve_line": 8.033616179378696e-08,
+    "reserve_margin": 5.593539869696544e-13,
+    "sector_ranks": [
+      1,
+      1909,
+      192,
+      10,
+      4
+    ],
+    "zero_midpoint_click_sum": 0.47126089838738605,
+    "zero_survival": 0.5287391016083818
+  },
+  "inherited_compression_terms_preserved": 17490,
+  "inherited_event_terms_preserved": 8745,
+  "last_persisted_step": 12000,
+  "legacy_prefix_not_spectrally_reconstructed": true,
+  "passed": true,
+  "physical_acceptance": false,
+  "reconstructed_calls": 310,
+  "reconstructed_committed_steps": 155,
+  "schema": "task09-half-rate-continuation-independent-audit-v1",
+  "scope": "New saved-spectrum decisions, complete inherited ledger, nonoverlapping histories, live child checkpoint hashes/traces; no GPU replay.",
+  "solver_status": "completed",
+  "verdict": "PASS_TASK09_PC2_PI3200_11845_TO12000_V2_INDEPENDENT_AUDIT"
+}

@@ -1,0 +1,18 @@
+{
+  "automatic_resume": false,
+  "classification": "COMPLETED_REQUESTED_PI800_GRID_PREFIX_NOT_PHYSICAL_ACCEPTANCE",
+  "completed_step": 7600,
+  "completed_utc": "2026-09-28T07:52:49+00:00",
+  "elapsed_seconds": 35229.86341977306,
+  "last_persisted_step": 7600,
+  "passed": true,
+  "physical_claim": false,
+  "production_authorized": false,
+  "schema": "task09-pi800-session-status-v1",
+  "start_step": 7488,
+  "started_utc": "2026-09-27T22:05:39+00:00",
+  "status": "completed",
+  "target_step": 7600,
+  "task10_eligible": false,
+  "verdict": "PASS_TASK09_PC2_PI800_7200_TO12000_GATED_V1_NONACCEPTING"
+}

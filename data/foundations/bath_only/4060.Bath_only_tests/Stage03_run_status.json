@@ -1,0 +1,23 @@
+{
+  "T_final": 20.0,
+  "acceptance_check_count": 32,
+  "accepted": true,
+  "completed_utc": "2026-08-02T22:24:15+00:00",
+  "cutoffs": [
+    8,
+    12,
+    16
+  ],
+  "elapsed_seconds": 10.316842034999809,
+  "number_of_output_times": 101,
+  "omega": 1.0,
+  "output_directory": "[ARCHIVE_PATH]",
+  "output_directory_contract": "4060.Bath_only_tests",
+  "production_cutoff": 12,
+  "propagated_case_count": 12,
+  "script_sha256": "5e621ee346604d8eef4765c07532ab3b525783af2b9a52d80fa408ef38c65bbe",
+  "script_version": "2026-08-02-stage03-bath-only-fock-v3-audited",
+  "stage": "03_bath_only_fock_test",
+  "started_utc": "2026-08-02T22:24:04+00:00",
+  "status": "completed"
+}

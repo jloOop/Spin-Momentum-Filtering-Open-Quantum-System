@@ -1,0 +1,10 @@
+{
+  "03_bath_only_fock_test.py": "5e621ee346604d8eef4765c07532ab3b525783af2b9a52d80fa408ef38c65bbe",
+  "Stage03_acceptance.json": "6d90ee8db963a189471a9c7d099648244631fcaaf7269a7735e6b3ae3bc24b9a",
+  "Stage03_case_metrics.csv": "bbe3468f86e90c8ceee414545b3b47ad65963fba848d66ec7742cb3564ed0dba",
+  "Stage03_configuration.json": "b3b7752bb2e1906ddcac6bd7c25ec5611bdc50576c650188818fa1c5af493584",
+  "Stage03_cutoff_metrics.csv": "cee67aac556bfa9269ced31c3d666da66ce2d3d15fa708846adb73498742415a",
+  "Stage03_operator_audit.json": "4fa2fd11b4587b4ec9d8fee3c7cc62fcff0d78209e3e4e9bb38b87984cd567bb",
+  "Stage03_solver_audit.json": "b6daf81ae29849a804e368865ee0e0d1d1ec590261a5b92e5eadda4aa5bd9204",
+  "Stage03_time_series.npz": "fe1a591de7c33fc8432888a4a36bb67c3798ee6328012df590628659eb8daa14"
+}

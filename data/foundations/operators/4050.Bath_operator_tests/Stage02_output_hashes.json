@@ -1,0 +1,17 @@
+{
+  "files": {
+    "4050_bath_operator_tests_solver.py": "2ed0daf88dca64d33896d42e53d93c1e57b85d7e22391498babd4f7588b273b2",
+    "Stage02_acceptance.json": "27261f2ab9644f19418fcce747913726755438ce4d0a7459bf4549d8c4ccd058",
+    "Stage02_authoritative_audit.json": "1f0ecd2190483992088b2f0d85434a367a9f40ae36baa2d434727903282b0865",
+    "Stage02_authoritative_operators.npz": "71b1108e63d5b7f377b0c9c9dc4363d6156e54f2736838e3d8ed4e02d0e38f61",
+    "Stage02_cartesian_case_metrics.csv": "c7de0bab539fc6a9f7a3f464b521a159492eba26c3b3a6730f807dbdc81ac76b",
+    "Stage02_cartesian_convergence_metrics.csv": "df4aa6930102729242bb02bc92e323e0a3d29e68afb3f9cc594477b599de2e3e",
+    "Stage02_cartesian_omega_collapse_metrics.csv": "36c5dd5a9641d49d5eeb4510ad57dfda25b6917fb4edd80e358a53f2b67216c9",
+    "Stage02_cartesian_reference_arrays.npz": "07a42afc036c40d7d8ce8b724c6a33c965880b8259d9661a5eca69437b1f3dec",
+    "Stage02_configuration.json": "f100432b6bbfdea7d2e21fe97777b60362db518b8ff4b8067cbeebe1452b8ae5",
+    "Stage02_solver_audit.json": "4ee63bea3aaa984a79a69301c8e098ab858eef1734a8b77944a28e7107b364f9"
+  },
+  "generated_utc": "2026-08-02T21:08:03+00:00",
+  "hash_algorithm": "SHA-256",
+  "stage": "02_bath_operator_tests"
+}

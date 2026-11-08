@@ -1,0 +1,20 @@
+{
+  "completed_step": 7200,
+  "cumulative_click": 0.36604364470997414,
+  "driver_sha256": "af9f2dfdf0103c9699bc152fd0d4026bfbe4b52561900d40f8d0db5b64f28448",
+  "event_first_crossing_ledger": 0.0,
+  "history_interval_count": 7200,
+  "history_node_count": 7201,
+  "max_event_sector": 0,
+  "model_adapter_sha256": "4570a1e2a3d0f6888f210bad6ec9b0265e6ddbbb22e48ca9986fe6b64245a2bf",
+  "physical_time": 3.6,
+  "rank": 1,
+  "rate_lambda": 0.0,
+  "reason": "requested_endpoint",
+  "representation_ledger": 0.0,
+  "schema": "task09-lambda0-fromzero-checkpoint-v1",
+  "scientific_identity": "3da973c320247d564ed8e710fc6e92a1c91b7dc2b26b595d6cb1461c5055da71",
+  "survival": 0.6339563552887758,
+  "trace_restoration_applied": false,
+  "utc": "2026-09-06T11:21:30+00:00"
+}

@@ -1,0 +1,62 @@
+{
+  "B2_N12": {
+    "delta_t_diagnostic": 0.002,
+    "final_occupation": 0.49084210764153163,
+    "final_overflow_budget": 1.5756389754277375e-07,
+    "final_top_shell_population": 2.8881319641171322e-08,
+    "maximum_omitted_upward_intensity": 2.0216923748819927e-08,
+    "maximum_top_shell_population": 2.8881319641171322e-08,
+    "maximum_trace_error": 3.6637359812630166e-15,
+    "points": 10001
+  },
+  "B2_N16": {
+    "delta_t_diagnostic": 0.002,
+    "final_occupation": 0.49084218038296,
+    "final_overflow_budget": 3.485558371175362e-10,
+    "final_top_shell_population": 5.6928534900735746e-11,
+    "maximum_omitted_upward_intensity": 5.1235681410662174e-11,
+    "maximum_top_shell_population": 5.6928534900735746e-11,
+    "maximum_trace_error": 2.7755575615628914e-15,
+    "points": 10001
+  },
+  "B2_N8": {
+    "delta_t_diagnostic": 0.002,
+    "final_occupation": 0.4908162528680424,
+    "final_overflow_budget": 6.168431467740718e-05,
+    "final_top_shell_population": 1.3273114405320065e-05,
+    "maximum_omitted_upward_intensity": 6.636557202660032e-06,
+    "maximum_top_shell_population": 1.3273114405320065e-05,
+    "maximum_trace_error": 3.1086244689504383e-15,
+    "points": 10001
+  },
+  "B3_N12": {
+    "delta_t_diagnostic": 0.002,
+    "final_occupation": 0.527473227561303,
+    "final_overflow_budget": 8.766369791748067e-07,
+    "final_top_shell_population": 5.007707288915327e-08,
+    "maximum_omitted_upward_intensity": 7.515232821442779e-08,
+    "maximum_top_shell_population": 1.0736046887775398e-07,
+    "maximum_trace_error": 2.1094237467877974e-15,
+    "points": 10001
+  },
+  "B3_N16": {
+    "delta_t_diagnostic": 0.002,
+    "final_occupation": 0.5274734576707255,
+    "final_overflow_budget": 2.212088466038637e-09,
+    "final_top_shell_population": 1.1586304086337213e-10,
+    "maximum_omitted_upward_intensity": 1.9754358773873526e-10,
+    "maximum_top_shell_population": 2.1949287526526139e-10,
+    "maximum_trace_error": 3.552713678800501e-15,
+    "points": 10001
+  },
+  "B3_N8": {
+    "delta_t_diagnostic": 0.002,
+    "final_occupation": 0.5274090586998142,
+    "final_overflow_budget": 0.00029235443991753907,
+    "final_top_shell_population": 1.9236743030376705e-05,
+    "maximum_omitted_upward_intensity": 2.458619710903258e-05,
+    "maximum_top_shell_population": 4.917239421806516e-05,
+    "maximum_trace_error": 3.552713678800501e-15,
+    "points": 10001
+  }
+}

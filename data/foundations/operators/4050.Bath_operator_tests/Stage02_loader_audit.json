@@ -1,0 +1,235 @@
+{
+  "all_checks_passed": true,
+  "authoritative_metrics": {
+    "dimension": 91.0,
+    "maximum_H_perp_formula_defect": 0.0,
+    "maximum_K_formula_defect": 0.0,
+    "maximum_K_hermiticity_defect": 0.0,
+    "maximum_K_scaled_collapse_defect": 4.440892098500626e-16,
+    "maximum_adjoint_defect": 5.553085236778873e-16,
+    "maximum_all_mode_ladder_residual": 0.0,
+    "maximum_bohr_relative_residual": 2.167913627136071e-15,
+    "maximum_isotropy_defect": 0.0,
+    "maximum_number_identity_defect": 1.7763568394002505e-15,
+    "maximum_projected_commutator_formula_defect": 7.105427357601002e-15,
+    "minimum_number_eigenvalue": 0.0
+  },
+  "completed_utc": "2026-08-02T21:08:10+00:00",
+  "configuration_audit": {
+    "configuration_sha256": "f171150a34efdd2d3fbc89ddd91e86caca422eb89a9b0b320654082c7bfefb07",
+    "frozen_configuration_verified": true,
+    "physics_configuration_sha256": "77fb21375eb68ae94d0bce955d4dc46e95d79cfa1c9174c73758b995b402158f",
+    "solver_script_sha256": "2ed0daf88dca64d33896d42e53d93c1e57b85d7e22391498babd4f7588b273b2"
+  },
+  "elapsed_seconds": 0.17375922203063965,
+  "hash_audit": {
+    "all_hashes_match": true,
+    "mismatches": {},
+    "verified": {
+      "4050_bath_operator_tests_solver.py": "2ed0daf88dca64d33896d42e53d93c1e57b85d7e22391498babd4f7588b273b2",
+      "Stage02_acceptance.json": "27261f2ab9644f19418fcce747913726755438ce4d0a7459bf4549d8c4ccd058",
+      "Stage02_authoritative_audit.json": "1f0ecd2190483992088b2f0d85434a367a9f40ae36baa2d434727903282b0865",
+      "Stage02_authoritative_operators.npz": "71b1108e63d5b7f377b0c9c9dc4363d6156e54f2736838e3d8ed4e02d0e38f61",
+      "Stage02_cartesian_case_metrics.csv": "c7de0bab539fc6a9f7a3f464b521a159492eba26c3b3a6730f807dbdc81ac76b",
+      "Stage02_cartesian_convergence_metrics.csv": "df4aa6930102729242bb02bc92e323e0a3d29e68afb3f9cc594477b599de2e3e",
+      "Stage02_cartesian_omega_collapse_metrics.csv": "36c5dd5a9641d49d5eeb4510ad57dfda25b6917fb4edd80e358a53f2b67216c9",
+      "Stage02_cartesian_reference_arrays.npz": "07a42afc036c40d7d8ce8b724c6a33c965880b8259d9661a5eca69437b1f3dec",
+      "Stage02_configuration.json": "f100432b6bbfdea7d2e21fe97777b60362db518b8ff4b8067cbeebe1452b8ae5",
+      "Stage02_solver_audit.json": "4ee63bea3aaa984a79a69301c8e098ab858eef1734a8b77944a28e7107b364f9"
+    },
+    "verified_file_count": 10
+  },
+  "independent_acceptance": {
+    "all_checks_passed": true,
+    "checks": {
+      "authoritative_K_formula": {
+        "metric": 0.0,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_K_hermiticity": {
+        "metric": 0.0,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_K_sqrtomega_scaling": {
+        "metric": 4.440892098500626e-16,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_adjoint": {
+        "metric": 5.553085236778873e-16,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_all_ladder_actions": {
+        "metric": 0.0,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_bohr_relations": {
+        "metric": 2.167913627136071e-15,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_number_diagonal": {
+        "metric": 1.7763568394002505e-15,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_number_positivity": {
+        "metric": 0.0,
+        "passed": true,
+        "relation": ">=",
+        "threshold": -1e-11
+      },
+      "authoritative_projected_commutator_formulas": {
+        "metric": 7.105427357601002e-15,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_xy_isotropy": {
+        "metric": 0.0,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "cartesian_CCR_O_eta_squared": {
+        "metric": 0.9675410684525849,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1.25
+      },
+      "cartesian_cross_commutators": {
+        "metric": 6.111750380015654e-15,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "cartesian_ladder_O_eta_squared": {
+        "metric": 0.42720008122530034,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 0.75
+      },
+      "cartesian_lateral_wall_leakage": {
+        "metric": 6.036986926382529e-10,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-08
+      },
+      "cartesian_mode_orthonormality": {
+        "metric": 7.552074965389011e-11,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-08
+      },
+      "cartesian_number_positivity": {
+        "metric": -3.719268024760164e-15,
+        "passed": true,
+        "relation": ">=",
+        "threshold": -1e-11
+      },
+      "cartesian_occupation_O_eta_squared": {
+        "metric": 0.24946564181553826,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 0.5
+      },
+      "cartesian_omega_scale_collapse": {
+        "metric": 3.7470027081099033e-14,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "cartesian_reference_case_present": {
+        "metric": 1.0,
+        "passed": true,
+        "relation": "==",
+        "threshold": 1.0
+      },
+      "cartesian_second_order_refinement": {
+        "metric": 1.9629740362038535,
+        "passed": true,
+        "relation": ">=",
+        "threshold": 1.9
+      },
+      "cartesian_weighted_adjoint": {
+        "metric": 6.5021651012411936e-15,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "cartesian_xy_isotropy": {
+        "metric": 9.996344030316351e-17,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      }
+    },
+    "stage": "02_bath_operator_tests",
+    "status": "PASS"
+  },
+  "loader_script_sha256": "398a66b51c21e72216da38ef446c4e0e0012b0c23e2d6114b12b19e54e4bfc0b",
+  "runtime": {
+    "numpy_version": "2.3.5",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]"
+  },
+  "script_version": "2026-08-02-bath-operator-tests-loader-v3-audited",
+  "solver_comparison": {
+    "acceptance": {
+      "check_names_match": true,
+      "loader_status": "PASS",
+      "maximum_relative_metric_difference": 2.304181572910081e-13,
+      "maximum_relative_threshold_difference": 0.0,
+      "pass_mismatches": [],
+      "passed": true,
+      "relation_mismatches": [],
+      "solver_status": "PASS"
+    },
+    "case_csv": {
+      "maximum_relative_difference": 8.881784197001252e-14,
+      "passed": true,
+      "row_count_loader": 6,
+      "row_count_solver": 6
+    },
+    "convergence_csv": {
+      "maximum_relative_difference": 2.305312737157838e-13,
+      "passed": true,
+      "row_count_loader": 12,
+      "row_count_solver": 12
+    },
+    "omega_csv": {
+      "maximum_relative_difference": 7.771561172376096e-16,
+      "passed": true,
+      "row_count_loader": 30,
+      "row_count_solver": 30
+    },
+    "solver_audit_status": "PASS"
+  },
+  "solver_run_status": {
+    "all_checks_passed": true,
+    "completed_utc": "2026-08-02T21:08:03+00:00",
+    "elapsed_seconds": 0.2741696834564209,
+    "output_directory": "[ARCHIVE_PATH]",
+    "output_hash_manifest": "Stage02_output_hashes.json",
+    "script_sha256": "2ed0daf88dca64d33896d42e53d93c1e57b85d7e22391498babd4f7588b273b2",
+    "script_version": "2026-08-02-bath-operator-tests-solver-v3-audited",
+    "solver_audit_file": "Stage02_solver_audit.json",
+    "stage": "02_bath_operator_tests",
+    "started_utc": "2026-08-02T21:08:03+00:00",
+    "status": "completed"
+  },
+  "solver_script_sha256": "2ed0daf88dca64d33896d42e53d93c1e57b85d7e22391498babd4f7588b273b2",
+  "stage": "02_bath_operator_tests",
+  "status": "PASS"
+}

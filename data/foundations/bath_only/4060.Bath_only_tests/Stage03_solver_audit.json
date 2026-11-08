@@ -1,0 +1,50 @@
+{
+  "acceptance_check_count": 32,
+  "acceptance_pass_count": 32,
+  "accepted": true,
+  "b7_metrics": {
+    "case_id": "B7",
+    "cutoff": 12,
+    "description": "isotropic bath-basis invariance",
+    "dimension": 91,
+    "matrix_count_per_unitary": 5,
+    "maximum_annihilation_relative_action_defect": 4.4194085670422096e-16,
+    "maximum_creation_relative_action_defect": 4.372484632039765e-16,
+    "unitary_count": 5
+  },
+  "completed_utc": "2026-08-02T22:24:14+00:00",
+  "cutoff_pair_count": 4,
+  "elapsed_seconds": 10.316842034999809,
+  "implementation_guards": {
+    "density_dtype": "complex128",
+    "density_vectorization": "column-major order='F'",
+    "detector_present": false,
+    "longitudinal_coordinate_present": false,
+    "monte_carlo_present": false,
+    "operator_backend": "SciPy sparse CPU",
+    "positivity_clipping_present": false,
+    "propagator": "scipy.sparse.linalg.expm_multiply",
+    "trace_renormalization_present": false
+  },
+  "isotropic_matrix_count_per_unitary": 5,
+  "isotropic_unitary_count": 5,
+  "maximum_hermiticity_fro": 0.0,
+  "maximum_projected_intensity_formula_error": 3.885780586188048e-16,
+  "maximum_trace_error": 1.0436096431476471e-14,
+  "minimum_eigenvalue": 0.0,
+  "parent_stage02_loader_sha256": "398a66b51c21e72216da38ef446c4e0e0012b0c23e2d6114b12b19e54e4bfc0b",
+  "parent_stage02_solver_sha256": "2ed0daf88dca64d33896d42e53d93c1e57b85d7e22391498babd4f7588b273b2",
+  "propagated_case_count": 12,
+  "reviewed_source_sha256": {
+    "4002_reference_regression(3).py": "facecb007572b5409d9d1ddb34c874a234f0d70059780551dc2179a7d66d8b48",
+    "4022_static_mode_library(1).py": "4dc7d26e891b4903c9a697018b169d08d4f3cd847f30cb9dc788dac1cbadc0f5",
+    "4031_static_mode_library(1).py": "eee0326442a7ddde4cc423f63c916810adec6f77202a72817db5f60f384b7dea",
+    "4032_static_mode_library(1).py": "11a7316ed997aa36f271ea47c2f1272dae86606053da6a84df958630e7fbf9b9",
+    "750.Ref(2).py": "8cf2095b2d760a0b702c930fe5690fe762d08ad7c721a8c53b5ed498d1744009",
+    "NUM_Open_System_PartI_Master_Audit_Stage00_to_Stage02_and_Next_Workflow_2026-08-02.md": "7bccf00d4e9189bdc8ce7a67d93a4ee6ba56c09cc46ade1ffdfced35532522dd"
+  },
+  "script_sha256": "5e621ee346604d8eef4765c07532ab3b525783af2b9a52d80fa408ef38c65bbe",
+  "script_version": "2026-08-02-stage03-bath-only-fock-v3-audited",
+  "stage": "03_bath_only_fock_test",
+  "status": "completed"
+}

@@ -1,0 +1,11 @@
+# Research-reference context
+
+This repository accompanies **Environmental Susceptibility of a Spin–Momentum Absorbing-Boundary Detector**, the open-system extension of [Boundary Spin–Momentum Filtering Data](https://github.com/jloOop/Boundary-Spin-Momentum-Filtering-Data). The detector-only study concerns the spin-coupled boundary response and detector-present roof-flux law. Here an independent, unobserved transverse environment acts on the surviving state while the roof remains the sole monitored loss mechanism.
+
+The supplied local framing source was **Spin_Momentum_Impedance_and_Filtering_Closed_Quantum_Open_SystemV10.pdf**, a 153-page research-reference compilation. Its Abstract/Chapter 0 identifies revision R2 dated 28 September 2026. The associated Chapters 1–6 are research-reference R1 texts; the preparation/horizon discussion in Chapter 5 is dated 29 September 2026 and the numerical-evidence discussion in Chapter 6 is dated 30 September 2026. These are document revision dates, not repository release or journal publication dates. The adjacent chapter TeX records were consulted as guides.
+
+V10 separates the physical organizing equation, finite transverse-channel theory, longitudinal discretization and implemented finite-step maps. It motivates the scalar factorization null, causal response kernels, finite-window censoring, preparation mixing and the distinction between clicks and numerical loss. The repository preserves that hierarchy.
+
+Some V10 numerical summaries describe older selected snapshots. In particular, its pi800 table uses T=3.744 and does not certify later prepared continuations. This repository's branch-support claims are checked against the actually bundled histories and endpoint metadata, including the later pi800 record through T=3.825. Older report tables are not silently relabelled as later calculations.
+
+The working PDF and manuscript drafts are **not redistributed** here. Numerical evidence supporting the selected repository figures and tables is linked from the main README and recorded in data/provenance/release_manifest.csv. See PROJECT_SCOPE.md for acceptance boundaries and REPRODUCING.md for the supported CPU analyses. Repository authorship is Alireza Jozani; CITATION.cff describes this repository without borrowing a DOI from related work or asserting a publication status.

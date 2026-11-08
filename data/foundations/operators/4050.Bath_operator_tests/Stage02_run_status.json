@@ -1,0 +1,13 @@
+{
+  "all_checks_passed": true,
+  "completed_utc": "2026-08-02T21:08:03+00:00",
+  "elapsed_seconds": 0.2741696834564209,
+  "output_directory": "[ARCHIVE_PATH]",
+  "output_hash_manifest": "Stage02_output_hashes.json",
+  "script_sha256": "2ed0daf88dca64d33896d42e53d93c1e57b85d7e22391498babd4f7588b273b2",
+  "script_version": "2026-08-02-bath-operator-tests-solver-v3-audited",
+  "solver_audit_file": "Stage02_solver_audit.json",
+  "stage": "02_bath_operator_tests",
+  "started_utc": "2026-08-02T21:08:03+00:00",
+  "status": "completed"
+}

@@ -1,0 +1,116 @@
+{
+  "acceptance_thresholds": {
+    "coherent_amplitude_absolute_error_max": 1e-06,
+    "coherent_bound_excess_max": 5e-11,
+    "coherent_residual_reconstruction_error_max": 5e-11,
+    "cutoff_monotonicity_tolerance": 1e-13,
+    "cutoff_n12_n16_occupation_max": 1e-06,
+    "cutoff_n12_n16_purity_max": 1e-07,
+    "cutoff_n12_n16_trace_distance_max": 1e-07,
+    "dephasing_coherence_error_max": 1e-12,
+    "dephasing_energy_error_max": 1e-12,
+    "dephasing_population_error_max": 1e-12,
+    "detailed_balance_relative_max": 1e-12,
+    "gibbs_generator_residual_fro_max": 1e-12,
+    "gibbs_trace_distance_max": 1e-12,
+    "ground_stationarity_trace_distance_max": 1e-12,
+    "hermiticity_action_relative_max": 1e-12,
+    "hermiticity_fro_max": 1e-12,
+    "infinite_law_bound_slack": 5e-11,
+    "isotropic_action_relative_max": 1e-12,
+    "liouvillian_trace_row_max": 1e-12,
+    "minimum_eigenvalue_min": -1e-11,
+    "one_quantum_isotropy_max": 1e-12,
+    "one_quantum_occupation_error_max": 1e-11,
+    "operator_identity_max": 1e-12,
+    "production_overflow_final_max": 1e-06,
+    "production_top_shell_max": 1e-06,
+    "projected_intensity_formula_max": 1e-12,
+    "projected_occupation_error_max": 1e-11,
+    "projected_population_l1_max": 1e-11,
+    "trace_error_max": 1e-12,
+    "vectorization_action_relative_max": 1e-12
+  },
+  "basis": {
+    "complete_shell_cutoffs": [
+      8,
+      12,
+      16
+    ],
+    "ordering": "shell ascending, n_x descending within each shell",
+    "orthonormal": true,
+    "production_shell_for_this_certification": 12
+  },
+  "case_matrix": {
+    "B0": "N12, |00>, gamma_down=0.2, gamma_up=gamma_phi=0",
+    "B1x": "N12, |10>, gamma_down=0.2",
+    "B1y": "N12, |01>, gamma_down=0.2",
+    "B2": "N8/N12/N16, |00>, gamma_down=0.25, gamma_up=0.05",
+    "B3": "N8/N12/N16, |20>, gamma_down=0.25, gamma_up=0.05",
+    "B4": "N12 projected Gibbs q=0.2",
+    "B5": "N12 projected coherent state alpha_x=0.4 with an exact projected Heisenberg-residual audit",
+    "B6": "N12 (|00>+|10>)/sqrt(2), gamma_phi=0.2",
+    "B7": "N12 random U(2) isotropic dissipator-action tests",
+    "B8": "pairwise N8->N12 and N12->N16 convergence for B2/B3"
+  },
+  "configuration_sha256": "1d35605eab035cde944a25ff25c898f906b50e0a5a96e1d61deb493dbcbfbb7c",
+  "directory_contract": {
+    "fixed_directory_name": "4060.Bath_only_tests",
+    "parameter_generated_directories": false,
+    "rerun_policy": "replace fixed Stage-03 products in the same directory",
+    "timestamped_directories": false
+  },
+  "parameters": {
+    "T_final": 20.0,
+    "alpha_x_imag": 0.0,
+    "alpha_x_real": 0.4,
+    "alpha_y_imag": 0.0,
+    "alpha_y_real": 0.0,
+    "gamma_down_thermal": 0.25,
+    "gamma_net_thermal": 0.2,
+    "gamma_phi": 0.2,
+    "gamma_up_thermal": 0.05,
+    "gamma_zero_temperature": 0.2,
+    "hbar": 1.0,
+    "mass": 1.0,
+    "nbar_one_mode": 0.25,
+    "number_of_output_times": 101,
+    "omega": 1.0,
+    "q_thermal": 0.2,
+    "rng_seed": 20260802
+  },
+  "provenance": {
+    "parent_stage02_loader_sha256": "398a66b51c21e72216da38ef446c4e0e0012b0c23e2d6114b12b19e54e4bfc0b",
+    "parent_stage02_solver_sha256": "2ed0daf88dca64d33896d42e53d93c1e57b85d7e22391498babd4f7588b273b2",
+    "reviewed_source_sha256": {
+      "4002_reference_regression(3).py": "facecb007572b5409d9d1ddb34c874a234f0d70059780551dc2179a7d66d8b48",
+      "4022_static_mode_library(1).py": "4dc7d26e891b4903c9a697018b169d08d4f3cd847f30cb9dc788dac1cbadc0f5",
+      "4031_static_mode_library(1).py": "eee0326442a7ddde4cc423f63c916810adec6f77202a72817db5f60f384b7dea",
+      "4032_static_mode_library(1).py": "11a7316ed997aa36f271ea47c2f1272dae86606053da6a84df958630e7fbf9b9",
+      "750.Ref(2).py": "8cf2095b2d760a0b702c930fe5690fe762d08ad7c721a8c53b5ed498d1744009",
+      "NUM_Open_System_PartI_Master_Audit_Stage00_to_Stage02_and_Next_Workflow_2026-08-02.md": "7bccf00d4e9189bdc8ce7a67d93a4ee6ba56c09cc46ade1ffdfced35532522dd"
+    }
+  },
+  "scientific_scope": {
+    "bath_only": true,
+    "cartesian_grid_present": false,
+    "detector_present": false,
+    "longitudinal_coordinate_present": false,
+    "trace_preserving_required": true,
+    "transverse_only": true
+  },
+  "script_sha256": "5e621ee346604d8eef4765c07532ab3b525783af2b9a52d80fa408ef38c65bbe",
+  "script_version": "2026-08-02-stage03-bath-only-fock-v3-audited",
+  "software": {
+    "numpy": "2.3.5",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+    "scipy": "1.17.0"
+  },
+  "stage": "03_bath_only_fock_test",
+  "vectorization": {
+    "identity": "vec(A rho B) = (B^T kron A) vec(rho)",
+    "liouvillian_hamiltonian": "-i (I kron H - H^T kron I)",
+    "numpy_order": "F"
+  }
+}

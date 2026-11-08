@@ -1,0 +1,13 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "checkpoint_metadata.json": "a1ce7ff1eb19a2717c6818b8b01c8af61e8bb3bce668192a4b5ba8a8955483c1",
+    "histories.npz": "31b6b79a43a7c59d674201038f7e8477169a8bc07fb6c67eedcaa94c9e43e35d",
+    "sector_0.npy": "d159ca2461b83e621562a636643d837d8a251ea185b3e7d0aaffc3767e326c8b",
+    "sector_1.npy": "e5f50af57c04b17558df5ec59986c66b1df683f5513c917525333f9fd1ed290b",
+    "sector_2.npy": "8775eeb40fc19fb3922dafcce16b5480122ad1ccec192d781999af47a0cbc224",
+    "sector_3.npy": "e30673cd9851015a312e2d51f79933fc476bc72429a95ff60b886f3570064854",
+    "sector_4.npy": "98dbacedca39287f820767b38abcbcc57234d73a72d2940a8346e6eaed04de96",
+    "zero_state.npy": "13f38e46c6d6556cbb81a3a3470f5b46e5072a10f64b7d343ec798c0cba3d40d"
+  }
+}

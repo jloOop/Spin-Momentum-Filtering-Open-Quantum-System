@@ -1,0 +1,16 @@
+{
+  "accepted": true,
+  "all_required_hashes_match": true,
+  "completed_utc": "2026-08-03T07:15:01+00:00",
+  "elapsed_seconds": 14.239908687000025,
+  "fixed_directory_contract": "4060.Bath_only_tests",
+  "independent_acceptance_check_count": 32,
+  "independent_acceptance_pass_count": 32,
+  "loader_sha256": "cf0246ee8767dbb8862d637a4225952c9625392281d3856a616e69fea22c7d9c",
+  "loader_version": "2026-08-03-stage03-independent-loader-v1-audited",
+  "output_directory": "[ARCHIVE_PATH]",
+  "solver_loader_acceptance_agreement": true,
+  "stage": "04_bath_only_fock_loader",
+  "started_utc": "2026-08-03T07:14:47+00:00",
+  "status": "completed"
+}

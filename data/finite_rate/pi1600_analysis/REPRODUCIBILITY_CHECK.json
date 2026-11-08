@@ -1,0 +1,9 @@
+{
+  "standalone_partial_sum_prefixes_checked_against_math_fsum": 1406,
+  "reanalysis_from_preserved_originals_and_included_tangent_without_source_archive": true,
+  "all_numerical_metrics_identical": true,
+  "all_CSV_columns_exact_roundtrip": true,
+  "python_source_compile_passed": true,
+  "bash_syntax_passed": true,
+  "new_physical_or_GPU_propagation": false
+}

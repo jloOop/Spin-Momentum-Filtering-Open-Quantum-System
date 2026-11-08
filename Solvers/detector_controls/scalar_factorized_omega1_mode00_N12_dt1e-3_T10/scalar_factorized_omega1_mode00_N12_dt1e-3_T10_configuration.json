@@ -1,0 +1,140 @@
+{
+  "L_z": 20.0,
+  "M_N": 91,
+  "N_shell": 12,
+  "N_z": 1500,
+  "T_final": 10.0,
+  "authority_source_fingerprints": {
+    "audit02_final_solver": "2ed0daf88dca64d33896d42e53d93c1e57b85d7e22391498babd4f7588b273b2",
+    "master_audit_attached": "86b559aa9d277c63d3b49991d0a59e75a21286808531cc9194cb3adc42bea64f",
+    "reference_750_attached": "8cf2095b2d760a0b702c930fe5690fe762d08ad7c721a8c53b5ed498d1744009",
+    "representative_stage01_script": "eee0326442a7ddde4cc423f63c916810adec6f77202a72817db5f60f384b7dea",
+    "stage01_archive": "e9699883149c6f45732fc392e5f3f5b37ed3c79f251c98f212ba6047389cc4f2",
+    "stage02_archive": "0840ea0daeadf0f3557af01900239ab3ba93b72a6b582427129b3e6f18202fc2",
+    "v5_manuscript": "ccb019f44c334898729ca5efb02e2b39f25021ed1ab945aed0a82044c8448e7f"
+  },
+  "automatic_production_sweep": false,
+  "backend_metadata": {
+    "backend": "cupy",
+    "cuda_compute_capability": [
+      9,
+      0
+    ],
+    "cuda_device_id": 0,
+    "cuda_device_name": "NVIDIA H200",
+    "cuda_driver_version": 13020,
+    "cuda_runtime_version": 13020,
+    "cuda_total_memory_bytes": 150111977472,
+    "cupy_version": "14.1.1",
+    "numpy_version": "2.5.1",
+    "platform": "Linux-5.14.0-687.29.1.el9_8.x86_64-x86_64-with-glibc2.34",
+    "python": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]",
+    "scipy_version": "1.17.1"
+  },
+  "case_prefix": "scalar_factorized_omega1_mode00_N12_dt1e-3_T10",
+  "configuration_sha256": "045dfae11a9daa473d20c227f86640afec520d91c8fb0248076ae0c3a9983f6b",
+  "copied_source_file": "scalar_factorized_omega1_mode00_N12_dt1e-3_T10_05_oscillator_channel_detector_test.py",
+  "copied_source_sha256": "25c8c4fba8eba7e5efc87d11aeeb5bb3a8f254241b1562772c061918a704725b",
+  "d_channels": 182,
+  "detector_label": "scalar",
+  "dt": 0.001,
+  "endpoint": false,
+  "fixed_stage_directory": "4512.Oscillator_channel_detector_tests_1_00_scalar_factorized",
+  "gmres": {
+    "atol": 0.0,
+    "maxiter": 1000,
+    "preconditioner": "inverse diagonal of the Cayley left matrix",
+    "restart": 30,
+    "rtol": 1e-08,
+    "x0": "previous no-click state"
+  },
+  "grid_construction_dtype": "float32 (literal 750.Ref grid convention)",
+  "h_z": 0.013333333656191826,
+  "historical_750_hash_quoted_by_master": "815a470da8ec7664ee613f830f384050247f949dac5fa8ab4e0cfd8f331cfbfe",
+  "initial_mode": "00",
+  "k0": 3.141592653589793,
+  "kappa": 3.141592653589793,
+  "manual_single_case_policy": true,
+  "matrix_dtype": "complex128",
+  "num_steps": 10000,
+  "omega": 1.0,
+  "oscillator_channel_differences_from_cartesian_reference": [
+    "No Cartesian x/y grid and no hard lateral walls.",
+    "The transverse complete-shell basis is orthonormal; roof probability has no h_x*h_y factor.",
+    "All propagated amplitudes and sparse solves use complex128; no complex64 cast is made.",
+    "The spinor roof coupling is the projected K_N matrix acting only at the roof node.",
+    "Cartesian--oscillator representation discrepancy is retained as a separate recovery error."
+  ],
+  "output_root": "[ARCHIVE_PATH]",
+  "phi": 0.0,
+  "physical_spinor_formula": [
+    "cos(theta/2)",
+    "sin(theta/2)*exp(i*phi)"
+  ],
+  "probability_convention": {
+    "factorized_scalar_midpoint": "pre/post longitudinal detector-Cayley substep; transverse phase applied afterward",
+    "integrated_detector_probabilities": "direct sums of midpoint step probabilities",
+    "monolithic_and_spinor_midpoint": "pre/post complete Cayley step",
+    "roof_step_probability": "dt*kappa*sum_(s,mu)|q(s,mu,z_roof)|^2; no h_x*h_y factor",
+    "survival": "h_z*sum_(s,mu,k_z)|psi|^2"
+  },
+  "propagator_interpretation": "authoritative finite-step scalar control",
+  "propagator_type": "scalar_factorized",
+  "reduction_dtype": "float64",
+  "script_version": "2026-08-03-task05-oscillator-channel-detector-v1",
+  "sigma_parallel_probability": 0.35355339059327373,
+  "sigma_z_amplitude": 0.5,
+  "smoke_test": false,
+  "source_guard": {
+    "active_environmental_or_density_matrix_code_absent": true,
+    "forbidden_callable_names_found": [],
+    "forbidden_exact_executable_names_found": [],
+    "forbidden_imports_found": [],
+    "method": "Python AST executable-symbol audit; comments and docstrings excluded"
+  },
+  "source_inconsistencies_and_resolutions": [
+    {
+      "finding": "The attached final Audit-02 source enumerates n_x ascending within each shell and constructs K_N in orbital-tensor-spin order.",
+      "resolution": "The higher-priority current Task-05 handoff freezes n_x descending and spin-major storage.  The script reconstructs both and requires explicit permutation equivalence.",
+      "topic": "Audit-02 ordering"
+    },
+    {
+      "finding": "The attached 750.Ref source has SHA-256 8cf2095b2d760a0b702c930fe5690fe762d08ad7c721a8c53b5ed498d1744009, whereas the master file quotes historical hash 815a470da8ec7664ee613f830f384050247f949dac5fa8ab4e0cfd8f331cfbfe.",
+      "resolution": "The attached code body is used for the longitudinal grid, L_z, packet formula, spinor initialization formula, Cayley matrices, and GMRES conventions; both hashes are recorded.",
+      "topic": "750.Ref fingerprint"
+    },
+    {
+      "finding": "The L_z docstring writes partial_z psi + i*kappa*psi = 0, but the implemented roof diagonal -i*kappa/(2*h_z) corresponds to the physical entrance law partial_z psi = +i*kappa*psi.",
+      "resolution": "The implemented matrix, positive outward loss identity, master handoff, and manuscript are mutually consistent; the contradictory docstring sign is treated as a prose error.",
+      "topic": "750.Ref roof-condition prose versus matrix"
+    },
+    {
+      "finding": "The attached reflection-check 750.Ref file contains the Cayley/GMRES core but does not itself calculate or save the midpoint roof probability or probability-closure audit.",
+      "resolution": "The exact midpoint formula is reconstructed from the same Cayley matrix and roof loss operator, and follows the higher-priority master audit, audited Stage-01 solver, and V5 equations.",
+      "topic": "Midpoint detector audit provenance"
+    },
+    {
+      "finding": "The attached 750.Ref uses theta=0 and T=20, while the current Task-05 recovery handoff uses theta=pi/6 and T=10 for the Stage-01 recovery campaign.",
+      "resolution": "The master Task-05 handoff supersedes those run-specific defaults.",
+      "topic": "Run-specific defaults"
+    },
+    {
+      "finding": "V5 discusses 4e-4 and 2e-4 for a separate Gaussian production convention, whereas Task 05 requires manually selected Audit-01 recovery steps 1e-3 or 5e-4 and refinements.",
+      "resolution": "The manually declared Task-05 DT is authoritative for the selected case.",
+      "topic": "V5 time-step defaults"
+    },
+    {
+      "finding": "For a split factorized scalar map, the exact detector loss belongs to the longitudinal Cayley substep; the full-map endpoint midpoint would include an irrelevant transverse phase.",
+      "resolution": "The saved roof probability uses the pre/post detector-substep midpoint, then applies the exact trace-preserving transverse phase.  Monolithic and spinor maps use the full Cayley midpoint.",
+      "topic": "Factorized scalar midpoint"
+    }
+  ],
+  "source_sha256": "25c8c4fba8eba7e5efc87d11aeeb5bb3a8f254241b1562772c061918a704725b",
+  "stage": "05_oscillator_channel_detector_test",
+  "state_dtype": "complex128",
+  "state_index_formula": "index(s,mu,k_z)=(s*M_N+mu)*N_z+k_z",
+  "theta": 0.5235987755982988,
+  "z0": 10.0,
+  "z_roof_grid": 19.986665725708008,
+  "zero_ambient_bath": true
+}

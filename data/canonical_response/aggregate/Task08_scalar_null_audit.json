@@ -1,0 +1,37 @@
+{
+  "D1": {
+    "available": true,
+    "integrated_pass": true,
+    "matrix_id": "D1",
+    "pointwise_click_kernel_max": 0.0,
+    "pointwise_pass": true,
+    "response_component_max": 0.0,
+    "scientific_admissible": true,
+    "survival_kernel_max": 0.0
+  },
+  "P1": {
+    "available": true,
+    "integrated_pass": true,
+    "matrix_id": "P1",
+    "pointwise_click_kernel_max": 0.0,
+    "pointwise_pass": true,
+    "response_component_max": 0.0,
+    "scientific_admissible": true,
+    "survival_kernel_max": 0.0
+  },
+  "U1": {
+    "available": true,
+    "integrated_pass": true,
+    "matrix_id": "U1",
+    "pointwise_click_kernel_max": 1.9914625504213728e-13,
+    "pointwise_pass": true,
+    "response_component_max": 7.179166983117824e-13,
+    "scientific_admissible": true,
+    "survival_kernel_max": 4.32542890393961e-13
+  },
+  "U1_is_mandatory_nontrivial_null": true,
+  "thresholds": {
+    "pointwise_click_kernel": 5e-09,
+    "survival_and_integrated_response": 1e-08
+  }
+}

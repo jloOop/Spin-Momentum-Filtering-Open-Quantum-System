@@ -1,0 +1,214 @@
+{
+  "N_shell": 12,
+  "acceptance_gate": {
+    "all_checks_passed": true,
+    "checks": {
+      "authoritative_K_formula": {
+        "metric": 0.0,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_K_hermiticity": {
+        "metric": 0.0,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_K_sqrtomega_scaling": {
+        "metric": 4.440892098500626e-16,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_adjoint": {
+        "metric": 5.553085236778873e-16,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_all_ladder_actions": {
+        "metric": 0.0,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_bohr_relations": {
+        "metric": 2.167913627136071e-15,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_number_diagonal": {
+        "metric": 1.7763568394002505e-15,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_number_positivity": {
+        "metric": 0.0,
+        "passed": true,
+        "relation": ">=",
+        "threshold": -1e-11
+      },
+      "authoritative_projected_commutator_formulas": {
+        "metric": 7.105427357601002e-15,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "authoritative_xy_isotropy": {
+        "metric": 0.0,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "cartesian_CCR_O_eta_squared": {
+        "metric": 0.9675410684525849,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1.25
+      },
+      "cartesian_cross_commutators": {
+        "metric": 6.0441804483870235e-15,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "cartesian_ladder_O_eta_squared": {
+        "metric": 0.4272000812253,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 0.75
+      },
+      "cartesian_lateral_wall_leakage": {
+        "metric": 6.036986926382528e-10,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-08
+      },
+      "cartesian_mode_orthonormality": {
+        "metric": 7.552074965389011e-11,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-08
+      },
+      "cartesian_number_positivity": {
+        "metric": -3.719268024760164e-15,
+        "passed": true,
+        "relation": ">=",
+        "threshold": -1e-11
+      },
+      "cartesian_occupation_O_eta_squared": {
+        "metric": 0.24946564181553826,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 0.5
+      },
+      "cartesian_omega_scale_collapse": {
+        "metric": 3.7470027081099033e-14,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "cartesian_reference_case_present": {
+        "metric": 1.0,
+        "passed": true,
+        "relation": "==",
+        "threshold": 1.0
+      },
+      "cartesian_second_order_refinement": {
+        "metric": 1.9629740362043058,
+        "passed": true,
+        "relation": ">=",
+        "threshold": 1.9
+      },
+      "cartesian_weighted_adjoint": {
+        "metric": 6.5021651012411936e-15,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      },
+      "cartesian_xy_isotropy": {
+        "metric": 1.0018028073766061e-16,
+        "passed": true,
+        "relation": "<=",
+        "threshold": 1e-12
+      }
+    },
+    "declared_tolerances": {
+      "K_hermiticity": 1e-12,
+      "K_scaled_collapse": 1e-12,
+      "adjoint": 1e-12,
+      "bohr_relative": 1e-12,
+      "cartesian_CCR_coefficient_over_eta_squared": 1.25,
+      "cartesian_ladder_coefficient_over_eta_squared": 0.75,
+      "cartesian_occupation_coefficient_over_eta_squared": 0.5,
+      "exact": 1e-12,
+      "isotropy": 1e-12,
+      "minimum_second_order_convergence": 1.9,
+      "mode_overlap": 1e-08,
+      "omega_scale_collapse": 1e-12,
+      "psd_negative_floor": -1e-11,
+      "wall_leakage": 1e-08
+    },
+    "scope_statement": "A PASS certifies only the transverse ladder/operator layer.  It does not certify a detector-free Lindblad channel, detector--bath composition, scalar dynamical null, or environmental susceptibility.",
+    "stage": "02_bath_operator_tests",
+    "status": "PASS"
+  },
+  "cartesian_grid_sizes": [
+    50,
+    100,
+    200
+  ],
+  "complete_shell_dimension": 91,
+  "completed_utc": "2026-08-02T21:08:03+00:00",
+  "configuration_sha256": "f171150a34efdd2d3fbc89ddd91e86caca422eb89a9b0b320654082c7bfefb07",
+  "elapsed_seconds": 0.2741696834564209,
+  "maximum_omega_scale_collapse_difference": 3.7470027081099033e-14,
+  "minimum_observed_cartesian_order": 1.9629740362043058,
+  "omega_cases": [
+    1.0,
+    100.0
+  ],
+  "physics_configuration_sha256": "77fb21375eb68ae94d0bce955d4dc46e95d79cfa1c9174c73758b995b402158f",
+  "reference_case": {
+    "Lx": 1.0,
+    "Ly": 1.0,
+    "N_grid": 100,
+    "Nx": 100,
+    "Ny": 100,
+    "analytic_ground_probability_outside_actual_clamped_rectangle": 5.756284338076512e-12,
+    "analytic_mode01_probability_outside_actual_clamped_rectangle": 1.4825973781995572e-10,
+    "analytic_mode10_probability_outside_actual_clamped_rectangle": 1.4825973781995572e-10,
+    "ccr_error_coefficient_over_eta_squared": 0.9654272391610554,
+    "eta_sqrtomega_h": 0.1,
+    "eta_squared": 0.010000000000000002,
+    "hx": 0.01,
+    "hy": 0.01,
+    "ladder_error_coefficient_over_eta_squared": 0.42601955171570527,
+    "maximum_ccr_action_residual": 0.009654272391610557,
+    "maximum_cross_commutator_action_residual": 1.625214184515707e-15,
+    "maximum_ladder_action_residual": 0.004260195517157054,
+    "maximum_mode_overlap_defect": 1.4612502796266186e-11,
+    "maximum_occupation_abs_error": 0.0024787283398912674,
+    "maximum_wall_leakage_metric": 1.4825973781995572e-10,
+    "maximum_wall_node_probability_fraction": 1.4332912538065305e-10,
+    "maximum_weighted_adjoint_defect": 4.726604209672303e-16,
+    "maximum_xy_isotropy_defect": 1.734723475976807e-18,
+    "minimum_number_operator_eigenvalue": 7.283019673454127e-15,
+    "mode00_Nx": 2.5951120231300243e-06,
+    "mode00_Ny": 2.5951120231301454e-06,
+    "mode01_Nx": 2.595112022933809e-06,
+    "mode01_Ny": 0.9975212716601087,
+    "mode10_Nx": 0.9975212716601087,
+    "mode10_Ny": 2.5951120229335787e-06,
+    "occupation_error_coefficient_over_eta_squared": 0.24787283398912668,
+    "omega": 100.0,
+    "trace_commutator_x": 0.0,
+    "trace_commutator_y": 0.0
+  },
+  "script_sha256": "2ed0daf88dca64d33896d42e53d93c1e57b85d7e22391498babd4f7588b273b2",
+  "stage": "02_bath_operator_tests",
+  "status": "PASS"
+}

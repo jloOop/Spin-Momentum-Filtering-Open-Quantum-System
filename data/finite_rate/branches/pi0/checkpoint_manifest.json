@@ -1,0 +1,9 @@
+{
+  "files": {
+    "checkpoint_metadata.json": "4388b6de123e9a65ff8e33760dd414d08d921e7b11c1831ba58ba9e7255e779a",
+    "histories.npz": "55f112967afcfc080fbacdbd20ec59d0e9268e926c8479ced5b769749980cca3",
+    "state_diagnostics.npz": "52f948067cab047c21b3b1a271ab5b87a21f7781c677665071339727e2a5e8e2",
+    "zero_state.npy": "7f268e5d240c1ebd22a9142652f054ce1cd23015a3de1d4f74b2abf9206c6391"
+  },
+  "schema": "task09-lambda0-fromzero-checkpoint-v1-manifest"
+}

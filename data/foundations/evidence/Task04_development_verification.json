@@ -1,0 +1,78 @@
+{
+  "compile_pass": true,
+  "exact_refinement": {
+    "B3_N12_exact_overflow": 8.766369798855872e-07,
+    "B3_N12_highres_max_top_shell": 1.0736046887775397e-07,
+    "B3_N12_overflow_threshold": 1e-06,
+    "B3_N12_top_shell_threshold": 1e-06,
+    "maximum_exact_minus_trapezoid_overflow": 1.464661757817013e-09,
+    "maximum_final_density_series_error": 6.661338147750939e-16,
+    "maximum_independent_population_curve_error": 7.382983113757291e-15,
+    "maximum_initial_density_error": 0.0,
+    "maximum_operator_json_numeric_difference": 2.8222461731752813e-18
+  },
+  "execution": {
+    "in_place_execution": {
+      "exit_status": 0,
+      "source_preserved": true,
+      "source_sha256": "cf0246ee8767dbb8862d637a4225952c9625392281d3856a616e69fea22c7d9c"
+    },
+    "run_1": {
+      "exit_status": 0,
+      "maximum_resident_set_kib": 187972,
+      "system_seconds": 0.12,
+      "user_seconds": 18.3,
+      "wall_clock": "0:15.29"
+    },
+    "run_2": {
+      "exit_status": 0,
+      "maximum_resident_set_kib": 187436,
+      "system_seconds": 0.14,
+      "user_seconds": 18.18,
+      "wall_clock": "0:15.12"
+    },
+    "same_directory_stable_output_hashes_identical": true
+  },
+  "final_loader_acceptance": true,
+  "independent_refined_acceptance": {
+    "accepted": true,
+    "check_count": 32,
+    "pass_count": 32
+  },
+  "infrastructure_pass": true,
+  "negative_tests": {
+    "coordinated_metric_and_manifest_tamper": {
+      "detected_by_independent_metric_reconstruction": true,
+      "expected_exit_status": 2
+    },
+    "simple_hash_tamper": {
+      "detected": true,
+      "expected_exit_status": 1,
+      "stale_pass_products_removed": true
+    }
+  },
+  "required_solver_hashes_match": true,
+  "scientific_scope": "Independent detector-free Stage-03 bath-only loader. This does not authorize scientific Stage 04 unless Stage 01C also passes.",
+  "script": "04_bath_only_fock_loader.py",
+  "script_sha256": "cf0246ee8767dbb8862d637a4225952c9625392281d3856a616e69fea22c7d9c",
+  "solver_equivalent_acceptance": {
+    "accepted": true,
+    "check_count": 32,
+    "pass_count": 32
+  },
+  "solver_loader_acceptance_agreement": true,
+  "stable_loader_output_hashes": {
+    "04_bath_only_fock_loader.py": "cf0246ee8767dbb8862d637a4225952c9625392281d3856a616e69fea22c7d9c",
+    "Stage03_bath_only_report.md": "52e73ce0c55c623091a0a96425b79d08ca0e8e3097cfc127aa2ded0d193a7e31",
+    "Stage03_loader_audit.json": "d44c429c4a5fe42cfdd0c1ccd8884fb6eaf422423869ad64032171172b3df69b",
+    "Stage03_loader_case_metrics.csv": "ef105a722872716267d7ee8ac3c48dd70af7d3922960916fa3d603bb0d243b01",
+    "Stage03_loader_cutoff_metrics.csv": "24022372f499bedc7248e93d6bd02ad01d49818f38ae1fa563d269c14feb6744"
+  },
+  "stable_solver_files_verified": 8,
+  "task": "Implementation Task 04 \u2014 independent Stage-03 bath-only loader",
+  "workflow_status": {
+    "bath_branch_task04_closed": true,
+    "remaining_gate": "Stage 01C PASS",
+    "scientific_stage04_authorized": false
+  }
+}

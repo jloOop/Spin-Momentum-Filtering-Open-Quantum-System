@@ -1,0 +1,1101 @@
+{
+  "backend": {
+    "backend": "cupy",
+    "cuda_device_id": 0,
+    "cuda_device_name": "NVIDIA H100",
+    "cuda_driver_version": 13020,
+    "cuda_runtime_version": 12090,
+    "cupy_version": "14.0.1",
+    "free_bytes": 99397992448,
+    "numpy_version": "2.4.2",
+    "platform": "Linux-5.14.0-687.26.1.el9_8.x86_64-x86_64-with-glibc2.34",
+    "python": "3.11.5 (main, May  2 2025, 22:16:49) [GCC 13.2.0]",
+    "scipy_version": "1.17.1",
+    "total_bytes": 99951706112
+  },
+  "bath_completeness_residual": 3.3306690738754696e-16,
+  "dead_temporary_lifetime_optimized": true,
+  "h_z": 0.013333333656191826,
+  "operator_audit": {
+    "Pauli_matrices": {
+      "sigma_x": {
+        "imag": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "real": [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ]
+      },
+      "sigma_y": {
+        "imag": [
+          [
+            0.0,
+            -1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        "real": [
+          [
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "sigma_z": {
+        "imag": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "real": [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.0
+          ]
+        ]
+      }
+    },
+    "all_checks_passed": true,
+    "audit02_native_K_order": "orbital complete-shell basis tensor physical spin",
+    "audit02_native_mode_order": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        10,
+        1
+      ],
+      [
+        11,
+        0
+      ],
+      [
+        0,
+        12
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        8,
+        4
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        12,
+        0
+      ]
+    ],
+    "audit02_native_ordering_rule": "literal final Audit-02 source: shell ascending; n_x ascending within shell",
+    "authority_conflict_resolution": "The master Task-05 handoff and current explicit requirement freeze n_x-descending and spin-major storage.  The final Audit-02 source is reconstructed in its literal native ordering and related to the Task-05 matrices by an explicit unitary permutation.",
+    "checks": {
+      "H_perp_construction": true,
+      "K_hermiticity": true,
+      "K_ladder_momentum_formula": true,
+      "K_sqrt_omega_proportionality": true,
+      "Pauli_matrices": true,
+      "adjoint_identities": true,
+      "audit02_physical_equivalence_under_explicit_permutation": true,
+      "complete_shell_dimension_and_ordering": true,
+      "exact_projected_commutators_and_Bohr_relations": true,
+      "ladder_actions": true,
+      "matrix_dimensions_and_dtypes": true,
+      "number_operator_positivity_and_diagonal": true,
+      "source_norm_formulas": true,
+      "tensor_ordering": true
+    },
+    "dimension": 91,
+    "low_mode_number_controls": {
+      "mode00_Nx": 0.0,
+      "mode00_Ny": 0.0,
+      "mode01_Nx": 0.0,
+      "mode01_Ny": 1.0,
+      "mode10_Nx": 1.0,
+      "mode10_Ny": 0.0
+    },
+    "metrics": {
+      "H_perp_formula_residual": 2.2737367544323206e-13,
+      "K_explicit_spinmajor_action_residual": 7.601634501004138e-14,
+      "K_hermiticity_residual": 0.0,
+      "K_ladder_momentum_formula_residual": 0.0,
+      "K_sqrt_omega_proportionality_residual": 4.440892098500626e-16,
+      "adjoint_x_residual": 0.0,
+      "adjoint_y_residual": 0.0,
+      "audit02_K_tensor_permutation_residual": 0.0,
+      "audit02_orbital_ax_permutation_residual": 0.0,
+      "audit02_orbital_ay_permutation_residual": 0.0,
+      "audit02_to_task05_permutation_unitarity_residual": 0.0,
+      "dimension_formula_residual": 0,
+      "matrix_shapes_and_complex128_dtypes_exact": true,
+      "maximum_exact_projected_commutator_residual": 7.105427357601002e-15,
+      "maximum_interior_raising_action_residual": 0.0,
+      "maximum_lowering_action_residual": 0.0,
+      "maximum_oscillator_Bohr_relation_absolute_residual": 1.1937117960769683e-12,
+      "maximum_oscillator_Bohr_relation_relative_residual": 2.167913627136071e-15,
+      "maximum_top_shell_projected_raising_norm": 0.0,
+      "minimum_number_operator_eigenvalue": 0.0,
+      "number_x_diagonal_residual": 1.7763568394002505e-15,
+      "number_y_diagonal_residual": 1.7763568394002505e-15,
+      "ordering_exact": true,
+      "random_state_s_phi": 21.7257882319443,
+      "sigma_x_hermiticity": 0.0,
+      "sigma_x_sigma_y_commutator_minus_2i_sigma_z": 0.0,
+      "sigma_x_squared_minus_I": 0.0,
+      "sigma_y_hermiticity": 0.0,
+      "sigma_y_squared_minus_I": 0.0,
+      "sigma_z_hermiticity": 0.0,
+      "sigma_z_squared_minus_I": 0.0,
+      "source_down_norm_formula_relative_residual": 0.0,
+      "source_up_norm_formula_relative_residual": 0.0,
+      "tensor_order_index_formula_exact": true
+    },
+    "representation": "orthonormal_complete_shell_oscillator_basis",
+    "spin_resolved_channel_dimension": 182,
+    "task05_channel_order": "physical spin major, oscillator mode minor",
+    "task05_full_state_order": "index(s,mu,k_z)=(s*M_N+mu)*N_z+k_z; z fastest",
+    "task05_mode_order": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        9,
+        0
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        11,
+        0
+      ],
+      [
+        10,
+        1
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        8,
+        4
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        0,
+        12
+      ]
+    ],
+    "task05_ordering_rule": "shell ascending; n_x descending within each shell",
+    "tensor_index_samples": [
+      {
+        "formula_index": 0,
+        "mu": 0,
+        "raveled_index": 0,
+        "spin": 0
+      },
+      {
+        "formula_index": 45,
+        "mu": 45,
+        "raveled_index": 45,
+        "spin": 0
+      },
+      {
+        "formula_index": 90,
+        "mu": 90,
+        "raveled_index": 90,
+        "spin": 0
+      },
+      {
+        "formula_index": 91,
+        "mu": 0,
+        "raveled_index": 91,
+        "spin": 1
+      },
+      {
+        "formula_index": 136,
+        "mu": 45,
+        "raveled_index": 136,
+        "spin": 1
+      },
+      {
+        "formula_index": 181,
+        "mu": 90,
+        "raveled_index": 181,
+        "spin": 1
+      }
+    ]
+  },
+  "parent_identity": {
+    "cssf_core_sha256": "fcf82f3344cd2190efb465b82ec669c1da7270ab48e926b037f7f799bca6cc45",
+    "cssf_propagation_imported": false,
+    "cssf_source_sha256": "d0bcd5af9b12b4d21ec897b87151006a1d9e1a7e035172ddf73c1c41c8a111c7",
+    "frozen_detector_bath_and_gmres_constants": true,
+    "g1p_core_sha256": "f6c872c9f023f9ed51e0b3a90d12d93e600e349de546079fc6c44fa34adad10e",
+    "g1p_source_sha256": "39f1306b371f2664a9ed89b25efc1967bae9b15c8b8dc5a3e2934815ce1a7a02"
+  },
+  "positive_detector_bath_compression_arithmetic_unchanged": true,
+  "rate_lambda": 0.003926990816987242,
+  "roof_audit": {
+    "K_contributes_no_antihermitian_loss": true,
+    "boundary_relation": "partial_z u = (i*kappa*I - K_N) u",
+    "derived_reactive_roof_coefficient": 37.49999909196051,
+    "derived_reactive_roof_sign": "+",
+    "detector_loss_operator_roof_identity_residual": 0.0,
+    "full_state_index_formula_exact": true,
+    "full_state_index_samples": [
+      {
+        "formula_index": 0,
+        "k_z": 0,
+        "mu": 0,
+        "raveled_index": 0,
+        "spin": 0
+      },
+      {
+        "formula_index": 750,
+        "k_z": 750,
+        "mu": 0,
+        "raveled_index": 750,
+        "spin": 0
+      },
+      {
+        "formula_index": 1499,
+        "k_z": 1499,
+        "mu": 0,
+        "raveled_index": 1499,
+        "spin": 0
+      },
+      {
+        "formula_index": 67500,
+        "k_z": 0,
+        "mu": 45,
+        "raveled_index": 67500,
+        "spin": 0
+      },
+      {
+        "formula_index": 68250,
+        "k_z": 750,
+        "mu": 45,
+        "raveled_index": 68250,
+        "spin": 0
+      },
+      {
+        "formula_index": 68999,
+        "k_z": 1499,
+        "mu": 45,
+        "raveled_index": 68999,
+        "spin": 0
+      },
+      {
+        "formula_index": 135000,
+        "k_z": 0,
+        "mu": 90,
+        "raveled_index": 135000,
+        "spin": 0
+      },
+      {
+        "formula_index": 135750,
+        "k_z": 750,
+        "mu": 90,
+        "raveled_index": 135750,
+        "spin": 0
+      },
+      {
+        "formula_index": 136499,
+        "k_z": 1499,
+        "mu": 90,
+        "raveled_index": 136499,
+        "spin": 0
+      },
+      {
+        "formula_index": 136500,
+        "k_z": 0,
+        "mu": 0,
+        "raveled_index": 136500,
+        "spin": 1
+      },
+      {
+        "formula_index": 137250,
+        "k_z": 750,
+        "mu": 0,
+        "raveled_index": 137250,
+        "spin": 1
+      },
+      {
+        "formula_index": 137999,
+        "k_z": 1499,
+        "mu": 0,
+        "raveled_index": 137999,
+        "spin": 1
+      },
+      {
+        "formula_index": 204000,
+        "k_z": 0,
+        "mu": 45,
+        "raveled_index": 204000,
+        "spin": 1
+      },
+      {
+        "formula_index": 204750,
+        "k_z": 750,
+        "mu": 45,
+        "raveled_index": 204750,
+        "spin": 1
+      },
+      {
+        "formula_index": 205499,
+        "k_z": 1499,
+        "mu": 45,
+        "raveled_index": 205499,
+        "spin": 1
+      },
+      {
+        "formula_index": 271500,
+        "k_z": 0,
+        "mu": 90,
+        "raveled_index": 271500,
+        "spin": 1
+      },
+      {
+        "formula_index": 272250,
+        "k_z": 750,
+        "mu": 90,
+        "raveled_index": 272250,
+        "spin": 1
+      },
+      {
+        "formula_index": 272999,
+        "k_z": 1499,
+        "mu": 90,
+        "raveled_index": 272999,
+        "spin": 1
+      }
+    ],
+    "ghost_elimination_derivation": "Using the centered ghost derivative u_{R+1}-u_{R-1}=2*h_z*(i*kappa*I-K_N)u_R inside the validated half-weight roof row gives -i*kappa/(2*h_z)I + K_N/(2*h_z).",
+    "longitudinal_and_full_matrix_complex128": true,
+    "midpoint_identity": "dt*h_z*<q,G_D q> = dt*kappa*sum_(s,mu)|q_(s,mu)(z_roof)|^2",
+    "negative_sign_candidate_max_abs_residual": 1837.1172626027146,
+    "negative_sign_candidate_rejected": true,
+    "plus_sign_roof_block_max_abs_residual": 0.0,
+    "random_matrix_action_absolute_residual": 3.0808087146583353e-12,
+    "random_matrix_action_relative_residual": 1.4524802752764462e-16,
+    "random_matrix_action_scale": 21210.67505768348,
+    "roof_neighbor_block_max_abs_residual": 0.0,
+    "spinor_roof_term_sign_passed": true
+  },
+  "source_identity_pins": {
+    "PARENT_Task09_ES_G1P_production_one_step_event_sectors_nonaccepting.py": "39f1306b371f2664a9ed89b25efc1967bae9b15c8b8dc5a3e2934815ce1a7a02",
+    "PARENT_Task09_ES_G2P_prefix155_event_sectors_nonaccepting.py": "f423324063207d2143fb42920ec76695f70b70b4065cc8118b0ad7bd278efb70",
+    "Task09_4901_U2_low_v4_nonaccepting_D2PR2G1FMP_BATCH64_REPAIRED_RANK_WHOLEHALF_G0.py": "d0bcd5af9b12b4d21ec897b87151006a1d9e1a7e035172ddf73c1c41c8a111c7"
+  },
+  "zero_reference_solver": {
+    "benchmark_click_l1_tolerance": 5e-11,
+    "benchmark_survival_tolerance": 5e-11,
+    "cumulative_closure_limit": 5e-10,
+    "historical_tolerance_unchanged": 2e-09,
+    "method": "sparse_direct_cayley_superlu_complex128",
+    "permutation": "COLAMD",
+    "step_closure_limit": 5e-12,
+    "true_relative_residual_limit": 5e-13
+  }
+}

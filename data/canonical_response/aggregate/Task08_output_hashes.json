@@ -1,0 +1,33 @@
+{
+  "files": {
+    "Task08_aggregate_report.md": "7311f3134e1a527f67285ee4bb1fb20af48a5da9d1c67e256b55f6096af1a594",
+    "Task08_case_identity_table.csv": "46416bb4a1da889d2ea2f3073cd4ff517c3a47170ce248b05950c9e039d5e0ae",
+    "Task08_case_integrity_audit.json": "219fbdcc6617f1a39497f0af7a6c7e0a955074a67563e890ad40deb2f68d39f8",
+    "Task08_channel_superposition_audit.json": "311ae5c4ca35d93b6b81d92e47db193ed587aca4c4d107e4228463797dbf1511",
+    "Task08_compact_results.npz": "a50b08e91d64e4352f2b634c3055f9b59a45345c5b9b192dd21a2823f54443ce",
+    "Task08_complete_response_curves.csv": "ce445838167d07aca7a13f946db83670e650cbfbbb4e36b7d5766a97cbe25b30",
+    "Task08_configuration.json": "e5e1e824d6f0e918784f99ac2a983ee3792be9bc723e13758e2d6fda646c0c05",
+    "Task08_confinement_comparison.csv": "8cde85f89e0cd97f158e909c5c7a67cceabe3b7b2d87ee4cd1aa980bcb7dcb06",
+    "Task08_dephasing_family_audit.json": "5efcb554c01e481eafb5113968fe10203d73772b3387ebb2b3edbba5ea9206c4",
+    "Task08_downward_family_audit.json": "8ec3b6aea2c4993d9e94822505ac074905938ef88185860cda089f5c6694eaf8",
+    "Task08_evidence_classification.json": "dd69633d6f9f23204d634cace044557f80275387929d57b3df4a6aba61864dd3",
+    "Task08_input_inventory.json": "cb1aeada64fe22b02fa7f2f60b5eedef06511ffa8cb95f046186f1b00383d4f1",
+    "Task08_insertion_refinement.csv": "b748b25ab9393e566ec5656516753e71bf514c8c9a38ec8b1f83c6094dce172b",
+    "Task08_loader.py": "3ef1c325d4e3220f924e725411eeeceb3a32987ad27e7e394f348e6986431861",
+    "Task08_per_case_metrics.csv": "770f3123fdda4a13fe3810da260ccf48ed7b0d313d15b72e0d851b5737a12dd6",
+    "Task08_prompt_late_metrics.csv": "13658069ff75d40c8bb103189520abd6b74dfe039b3e745ab6f4a1295d592f1d",
+    "Task08_refinement_compact_results.npz": "6829bd5183709b8dd8b93e4bb38f51ba1f13f55c135d066c21bd1cd0fad7342b",
+    "Task08_reproducibility_coverage.json": "4444bc7975f0b9876d3999cbba24d03848947222933fc2bc33443fef39eeb4eb",
+    "Task08_scalar_null_audit.json": "b29fcd2ae1d6d0ce6cbf2ca24cb91d571bbd221ce5a0adb88f5d6de8e8b1e820",
+    "Task08_shell_convergence.csv": "96694a31f477d9adb4b0dd96d01fd19fcffc1f10d92af3636ba97f932c9d781d",
+    "Task08_supplemental_case_integrity.json": "edd2fbf3da2fb489e8e9b283f142f573e64d28f18e8d171d07f1306a02181af1",
+    "Task08_time_step_convergence.csv": "a57bce86a8f3a0896476f3aedcb0ab1427f2bc1ffa48d09335cf8658c01d635f",
+    "Task08_uncertainty_budget.json": "d96d61d60745c481336722424fda11f5d7c6e67b5c064ea6028673052befe647",
+    "Task08_upward_family_audit.json": "c3debdc2a213a2d4e9b85d2db4486af40f97bbf3ebea178d8957fca371324b48",
+    "Task08_v26_base.py": "c557cf5af72d29560397c582b81501d651709d0d60e888d0c8dc18888ef8967f"
+  },
+  "generated_utc": "2026-08-10T14:39:10+00:00",
+  "hash_algorithm": "SHA-256",
+  "loader_version": "2026-08-10-task08-final-refinement-aware-v3.0",
+  "scientific_verdict": "PASS_TASK08_LINEAR_RESPONSE"
+}

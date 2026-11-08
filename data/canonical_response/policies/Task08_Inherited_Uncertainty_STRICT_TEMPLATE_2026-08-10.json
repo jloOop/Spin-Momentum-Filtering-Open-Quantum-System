@@ -1,0 +1,31 @@
+{
+  "schema": "Task08_inherited_bounds_v2",
+  "adoption_status": "STRICT_UNPOPULATED_TEMPLATE",
+  "interpretation": "Null keeps the corresponding final Task-08 evidence budget incomplete and is never treated as zero.",
+  "global": {
+    "epsilon_repr": null,
+    "epsilon_z": null,
+    "epsilon_repr_relative_to_accepted_response_norm": null,
+    "epsilon_z_relative_to_accepted_response_norm": null
+  },
+  "by_direction": {
+    "downward": {
+      "epsilon_repr": null,
+      "epsilon_z": null
+    },
+    "upward": {
+      "epsilon_repr": null,
+      "epsilon_z": null
+    },
+    "dephasing": {
+      "epsilon_repr": null,
+      "epsilon_z": null
+    }
+  },
+  "provenance": {
+    "source_audit_or_report": null,
+    "source_sha256": null,
+    "bound_definition": "complete signed censored-response-law distance or a demonstrably conservative upper bound in the same response units",
+    "notes": "Use this file for the structural/refinement-aware audit. It is expected to leave the evidence classification BUDGET_INCOMPLETE and must not authorize Task-09."
+  }
+}

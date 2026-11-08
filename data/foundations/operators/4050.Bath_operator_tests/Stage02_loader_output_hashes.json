@@ -1,0 +1,13 @@
+{
+  "files": {
+    "4051_bath_operator_tests_loader.py": "398a66b51c21e72216da38ef446c4e0e0012b0c23e2d6114b12b19e54e4bfc0b",
+    "Stage02_bath_operator_report.md": "463579edddef765587d42a102371253d248cc9d922cb3d69f2499a209ebe2d2f",
+    "Stage02_loader_audit.json": "a09d6061e96eeda93abf83b4f6b23c4a27767251d82aa4e2fe9f00e0274354ed",
+    "Stage02_loader_case_metrics.csv": "44f73d5d446aef3ea0152d906a7120d24ddb98249d57368095419fe76ad05042",
+    "Stage02_loader_convergence_metrics.csv": "0c50f3d9f61dae3f14e74e45f28539edfb67cb23238eb1e0109d86c5adfc6bbf",
+    "Stage02_loader_omega_collapse_metrics.csv": "0c81a087be1f0879f8ad4bf397bffe5442e456d199b3c1374ceabca4934a841e"
+  },
+  "generated_utc": "2026-08-02T21:08:10+00:00",
+  "hash_algorithm": "SHA-256",
+  "stage": "02_bath_operator_tests"
+}

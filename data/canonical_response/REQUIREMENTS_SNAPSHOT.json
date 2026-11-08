@@ -1,0 +1,27 @@
+{
+  "packages": [
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.11.1"
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0"
+    },
+    {
+      "name": "pandas",
+      "version": "not-installed"
+    },
+    {
+      "name": "scipy",
+      "version": "not-installed"
+    }
+  ],
+  "platform": "macOS-15.6.1-arm64-arm-64bit",
+  "python_executable": "[ARCHIVE_PATH]",
+  "python_version": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 17.0.0 (clang-1700.6.3.2)]"
+}

@@ -1,0 +1,15 @@
+{
+  "budget_extension_is_prospective_only": true,
+  "derivation": "NEW nonaccepting prospective allowance: 3.75e-7*(10/6)=6.25e-7. Global line anchored at the actual job2894739 step12000 ledger; unchanged across later manually requested allocations. Not a convergence bound or an error-growth theorem.",
+  "end_call": 40000,
+  "event_sectors": 4,
+  "final_ceiling_decimal": "6.25e-7",
+  "forward_ledger_convention": "Original math.fsum anchored at step5496; retain all13008 representation and6504 event charges through12000. Append only committed charges. Never rebase either ledger or the global allowance at an allocation boundary.",
+  "future_borrowing": false,
+  "legacy_prefix_ledger_inherited_unchanged": true,
+  "name": "H10_Post600_ProspectiveLinearReserveTo1000_v1",
+  "previous_ceiling_decimal": "3.75e-7",
+  "start_call": 24001,
+  "start_ledger_decimal": "3.749992628669547e-07",
+  "trace_restoration": false
+}

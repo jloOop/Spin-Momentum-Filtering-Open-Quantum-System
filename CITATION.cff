@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this research code or compact data, cite this repository and identify the commit used."
+type: software
+title: "Environmental Susceptibility of a Spin–Momentum Absorbing-Boundary Detector"
+authors:
+  - family-names: Jozani
+    given-names: Alireza
+repository-code: "https://github.com/jloOop/Spin-Momentum-Filtering-Open-System"
+url: "https://github.com/jloOop/Spin-Momentum-Filtering-Open-System"
+abstract: >-
+  Research code, compact numerical records, and CPU postprocessing for
+  environmental response of a spin–momentum absorbing-boundary detector.
+  The repository distinguishes historical scientific evidence from
+  saved-array reductions and release-integrity checks.

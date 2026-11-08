@@ -1,0 +1,15 @@
+{
+  "completed_utc": "2026-09-28T05:40:11+00:00",
+  "configuration_file": "CONFIG.json",
+  "configuration_sha256": "061568f578f9f0de273598f1576708f55c5bb80e354b353f6839694c5404bdd5",
+  "device_gate_sha256": "0603590fa604fc3dae1744a97170a2e5b15d02129cfb428859362e0e8256e883",
+  "job_id": "3464181",
+  "last_persisted_step": 12000,
+  "numerical_audit_sha256": "2333f9c1b03661d5477219eb1f946a125abe390d29691e986676d9e0d9cc8422",
+  "passed": true,
+  "phase": "recovery",
+  "phase_audit_input_manifest_sha256": "7ee12bd17f1801f78f383eb087f77150bb44945d1bcf9712c66f256a6f03b0a3",
+  "physical_acceptance": false,
+  "platform_smoke_sha256": "5caad5607b15f143c4d2ac9df9164144ce13a1079aee1b0ee576954e41877966",
+  "verdict": "PASS_TASK09_11845_PHASE_PORT_AUDIT"
+}

@@ -1,0 +1,134 @@
+{
+  "DTYPE_C": "complex64",
+  "DTYPE_R": "float32",
+  "GMRES_internal_dtype": "complex128",
+  "Lx": 1.0,
+  "Ly": 1.0,
+  "Lz": 20.0,
+  "Nx": 100,
+  "Ny": 100,
+  "Nz": 1500,
+  "T_final": 10.0,
+  "V0z": 0.0,
+  "Vxy0": 10000.0,
+  "alpha": 0.0,
+  "case_id": "scalar_mode01",
+  "checkpoint_every": 1000,
+  "configuration_sha256": "0c7e1ee10133039e3fbfe1da7f60605edf088c9aaa1ba7b03a17a789ac6ff763",
+  "detector": "scalar",
+  "dt": 0.0005,
+  "ell": 10.0,
+  "gmres_atol": 0.0,
+  "gmres_maxiter": 1000,
+  "gmres_restart": 30,
+  "gmres_rtol": 1e-08,
+  "gpu_and_software": {
+    "cuda_compute_capability": [
+      9,
+      0
+    ],
+    "cuda_device_id": 0,
+    "cuda_device_name": "NVIDIA H200",
+    "cuda_driver_version": 13020,
+    "cuda_free_memory_bytes_at_start": 114170855424,
+    "cuda_runtime_version": 13020,
+    "cuda_total_memory_bytes": 150111977472,
+    "cupy_version": "14.1.1",
+    "numpy_version": "2.5.1",
+    "platform": "Linux-5.14.0-687.29.1.el9_8.x86_64-x86_64-with-glibc2.34",
+    "python": "3.12.12 | packaged by conda-forge | (main, Jan 26 2026, 23:51:32) [GCC 14.3.0]"
+  },
+  "hx": 0.009999999776482582,
+  "hy": 0.009999999776482582,
+  "hz": 0.013333333656191826,
+  "initial_boundary_report": {
+    "rho_bottom_plane_max": 0.0,
+    "rho_detector_plane_max": 0.0,
+    "rho_sidewall_x0_max": 0.0,
+    "rho_sidewall_y0_max": 0.0
+  },
+  "initial_survival": 1.0000000817146841,
+  "k0": 3.141592653589793,
+  "k_bc": 3.141592653589793,
+  "mode_basis_audit": {
+    "ideal_mode_formula": {
+      "00": "exp[-omega*((x-xc)^2+(y-yc)^2)/2]",
+      "01": "sqrt(2*omega)*(y-yc)*mode00",
+      "10": "sqrt(2*omega)*(x-xc)*mode00"
+    },
+    "maximum_abs_diagonal_minus_one": 1.837121454961732e-09,
+    "maximum_abs_offdiagonal_overlap": 2.9180273357553536e-08,
+    "mode_order": [
+      "00",
+      "10",
+      "01"
+    ],
+    "normalized_overlap_matrix": {
+      "imag": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "real": [
+        [
+          0.9999999981628785,
+          -2.9180273357553536e-08,
+          -2.9180273291133514e-08
+        ],
+        [
+          -2.9180273357553536e-08,
+          0.9999999990417721,
+          -6.96140749680816e-10
+        ],
+        [
+          -2.9180273291133514e-08,
+          -6.96140749680816e-10,
+          0.9999999990417722
+        ]
+      ]
+    },
+    "raw_norm_squared_after_sidewall_clamp": {
+      "00": 0.03141592528320209,
+      "01": 0.03141592508251194,
+      "10": 0.03141592508251194
+    },
+    "selected_mode": "01"
+  },
+  "num_steps": 20000,
+  "omega": 100.0,
+  "operator_audit": {
+    "C_hermiticity_max_abs_residual": 0.0,
+    "C_nnz": 76048,
+    "L_x_hermiticity_max_abs_residual": 0.0,
+    "L_y_hermiticity_max_abs_residual": 0.0,
+    "L_z_loss_structure_max_abs_residual": 0.0
+  },
+  "parent_stage00_sha256": "959ef34a718d1df3e2370cb72245bd8ae4b48f75696094cdf4b095191b42c115",
+  "phi": 0.0,
+  "physics_solver_configuration_sha256": "c2eda7c09c3c07817060ca2a635d9cb69e3c3c9dd0b94c45f3eab5dd90b1498f",
+  "progress_every": 100,
+  "reference_sha256": "815a470da8ec7664ee613f830f384050247f949dac5fa8ab4e0cfd8f331cfbfe",
+  "residual_every": 100,
+  "script_sha256": "9f76dc9f9b45c742f000cbc7c19668d2816cfaa4d13c6692a737fac1232ddfde",
+  "script_version": "2026-08-02-static-mode-library-solver-v1",
+  "sigma_parallel_probability": 0.35355339059327373,
+  "sigma_z_amplitude": 0.5,
+  "stage": "01_static_mode_library",
+  "theta": 0.5235987755982988,
+  "transverse_mode": "01",
+  "z0": 10.0,
+  "z_roof_grid": 19.986665725708008,
+  "zero_ambient_bath": true
+}

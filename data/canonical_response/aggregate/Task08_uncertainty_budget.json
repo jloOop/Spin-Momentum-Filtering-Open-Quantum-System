@@ -1,0 +1,262 @@
+{
+  "by_direction": {
+    "dephasing": {
+      "accepted_response_matrix_id": "P2-I",
+      "accepted_response_used": "P2-I",
+      "baseline_matrix_id": "P2",
+      "complete": true,
+      "components": {
+        "epsilon_MC": 0.0,
+        "epsilon_N": 2.9080900985208433e-07,
+        "epsilon_core_family_bridge": 0.0,
+        "epsilon_dt": 5.052790544856358e-05,
+        "epsilon_init": 0.0,
+        "epsilon_repr": 0.00010963310538703028,
+        "epsilon_s_quad": 0.00018253411999079972,
+        "epsilon_solve": 9.156896665330381e-11,
+        "epsilon_z": 1.8629244755655106e-05
+      },
+      "conservative_sum_rule": true,
+      "epsilon_lin": {
+        "status": "NOT_APPLICABLE_TO_EXACT_ZERO_RATE_DERIVATIVE; required only before finite-rate extrapolation in Tasks 09-10",
+        "value": null
+      },
+      "epsilon_total_zero_rate": 0.0003616152761608674,
+      "inherited_bounds_source": {
+        "adoption_status": "DATED_OPERATIONAL_TRANSFER_AMENDMENT_2026-08-10",
+        "by_direction": {
+          "dephasing": {
+            "epsilon_repr": null,
+            "epsilon_z": null
+          },
+          "downward": {
+            "epsilon_repr": null,
+            "epsilon_z": null
+          },
+          "upward": {
+            "epsilon_repr": null,
+            "epsilon_z": null
+          }
+        },
+        "global": {
+          "epsilon_repr": null,
+          "epsilon_repr_relative_to_accepted_response_norm": 0.02354,
+          "epsilon_z": null,
+          "epsilon_z_relative_to_accepted_response_norm": 0.004
+        },
+        "interpretation": "Direction-specific absolute bounds are derived at runtime by multiplying the accepted ds=0.05 complete signed-response norm by predeclared relative envelopes. This is an operational inherited-bound amendment, not a direct Cartesian response rerun or direct Nz=2000 response calculation.",
+        "provenance": {
+          "bound_definition": "relative inherited transfer envelope multiplied by the accepted insertion-refined complete signed-response norm",
+          "limitations": [
+            "The representation envelope is transferred from the audited static first-shell response contrast, not measured directly for each dynamical environmental direction.",
+            "The longitudinal envelope is transferred from a demanding zero-bath observable, not measured directly on the Task-07 response kernel.",
+            "The final Part-I publication audit should retain this qualification or replace it with direct response-level representation and longitudinal-grid refinements."
+          ],
+          "longitudinal_relative_envelope": 0.004,
+          "longitudinal_source": "Accepted spinor-ABC supplementary convergence record: Nz=1500 to Nz=2000 changes the demanding-regime restricted mean by less than 0.4 percent.",
+          "notes": "Selecting this file explicitly adopts the dated operational transfer amendment for Task-08 and Task-09 finite-rate-validation authorization. It does not close the final publication-level representation/grid audit.",
+          "representation_relative_envelope": 0.02354,
+          "representation_source": "Current Task-05/06 master audit, Cartesian--oscillator recovery section: the omega=100 first-shell response contrast differs by 2.354 percent between representations; individual-curve discrepancies are retained separately."
+        },
+        "schema": "Task08_inherited_bounds_v2"
+      },
+      "longitudinal_bound_derivation": {
+        "accepted_response_norm": 0.004657311188913776,
+        "derived_absolute_bound": 1.8629244755655106e-05,
+        "mode": "relative_to_accepted_response_norm",
+        "relative_envelope": 0.004
+      },
+      "missing_required_components": [],
+      "representation_bound_derivation": {
+        "accepted_response_norm": 0.004657311188913776,
+        "derived_absolute_bound": 0.00010963310538703028,
+        "mode": "relative_to_accepted_response_norm",
+        "relative_envelope": 0.02354
+      },
+      "solve_component_detail": {
+        "components": {
+          "Krylov_residual_bound": 5.181354634316387e-11,
+          "final_tangent_closure_bound": 3.9754258045199276e-11,
+          "reduced_benchmark_complete_measure_bound": 2.117582368135751e-22,
+          "source_trace_horizon_bound": 1.1622647289044608e-15
+        },
+        "epsilon_solve": 9.156896665330381e-11,
+        "formula": "max(Krylov residual)*max(response norm,1) + T*max source trace + conservative reduced-benchmark complete-measure discrepancy + final tangent closure",
+        "observed_maximum_branch_true_relative_residual": 5.181354634316387e-11,
+        "observed_maximum_reference_true_relative_residual": 7.000003532102677e-14
+      }
+    },
+    "downward": {
+      "accepted_response_matrix_id": "D2-I",
+      "accepted_response_used": "D2-I",
+      "baseline_matrix_id": "D2",
+      "complete": true,
+      "components": {
+        "epsilon_MC": 0.0,
+        "epsilon_N": 6.514743309949284e-08,
+        "epsilon_core_family_bridge": 0.0,
+        "epsilon_dt": 1.773318331592685e-05,
+        "epsilon_init": 0.0,
+        "epsilon_repr": 6.72344212341507e-05,
+        "epsilon_s_quad": 7.486248158666004e-05,
+        "epsilon_solve": 4.83507717213387e-11,
+        "epsilon_z": 1.1424710490085081e-05
+      },
+      "conservative_sum_rule": true,
+      "epsilon_lin": {
+        "status": "NOT_APPLICABLE_TO_EXACT_ZERO_RATE_DERIVATIVE; required only before finite-rate extrapolation in Tasks 09-10",
+        "value": null
+      },
+      "epsilon_total_zero_rate": 0.00017131999241069387,
+      "inherited_bounds_source": {
+        "adoption_status": "DATED_OPERATIONAL_TRANSFER_AMENDMENT_2026-08-10",
+        "by_direction": {
+          "dephasing": {
+            "epsilon_repr": null,
+            "epsilon_z": null
+          },
+          "downward": {
+            "epsilon_repr": null,
+            "epsilon_z": null
+          },
+          "upward": {
+            "epsilon_repr": null,
+            "epsilon_z": null
+          }
+        },
+        "global": {
+          "epsilon_repr": null,
+          "epsilon_repr_relative_to_accepted_response_norm": 0.02354,
+          "epsilon_z": null,
+          "epsilon_z_relative_to_accepted_response_norm": 0.004
+        },
+        "interpretation": "Direction-specific absolute bounds are derived at runtime by multiplying the accepted ds=0.05 complete signed-response norm by predeclared relative envelopes. This is an operational inherited-bound amendment, not a direct Cartesian response rerun or direct Nz=2000 response calculation.",
+        "provenance": {
+          "bound_definition": "relative inherited transfer envelope multiplied by the accepted insertion-refined complete signed-response norm",
+          "limitations": [
+            "The representation envelope is transferred from the audited static first-shell response contrast, not measured directly for each dynamical environmental direction.",
+            "The longitudinal envelope is transferred from a demanding zero-bath observable, not measured directly on the Task-07 response kernel.",
+            "The final Part-I publication audit should retain this qualification or replace it with direct response-level representation and longitudinal-grid refinements."
+          ],
+          "longitudinal_relative_envelope": 0.004,
+          "longitudinal_source": "Accepted spinor-ABC supplementary convergence record: Nz=1500 to Nz=2000 changes the demanding-regime restricted mean by less than 0.4 percent.",
+          "notes": "Selecting this file explicitly adopts the dated operational transfer amendment for Task-08 and Task-09 finite-rate-validation authorization. It does not close the final publication-level representation/grid audit.",
+          "representation_relative_envelope": 0.02354,
+          "representation_source": "Current Task-05/06 master audit, Cartesian--oscillator recovery section: the omega=100 first-shell response contrast differs by 2.354 percent between representations; individual-curve discrepancies are retained separately."
+        },
+        "schema": "Task08_inherited_bounds_v2"
+      },
+      "longitudinal_bound_derivation": {
+        "accepted_response_norm": 0.0028561776225212703,
+        "derived_absolute_bound": 1.1424710490085081e-05,
+        "mode": "relative_to_accepted_response_norm",
+        "relative_envelope": 0.004
+      },
+      "missing_required_components": [],
+      "representation_bound_derivation": {
+        "accepted_response_norm": 0.0028561776225212703,
+        "derived_absolute_bound": 6.72344212341507e-05,
+        "mode": "relative_to_accepted_response_norm",
+        "relative_envelope": 0.02354
+      },
+      "solve_component_detail": {
+        "components": {
+          "Krylov_residual_bound": 2.085666446941945e-11,
+          "final_tangent_closure_bound": 2.749356081341303e-11,
+          "reduced_benchmark_complete_measure_bound": 6.1128647267668745e-22,
+          "source_trace_horizon_bound": 5.464378949326942e-16
+        },
+        "epsilon_solve": 4.83507717213387e-11,
+        "formula": "max(Krylov residual)*max(response norm,1) + T*max source trace + conservative reduced-benchmark complete-measure discrepancy + final tangent closure",
+        "observed_maximum_branch_true_relative_residual": 2.085666446941945e-11,
+        "observed_maximum_reference_true_relative_residual": 7.000003532102677e-14
+      }
+    },
+    "upward": {
+      "accepted_response_matrix_id": "U2-I",
+      "accepted_response_used": "U2-I",
+      "baseline_matrix_id": "U2",
+      "complete": true,
+      "components": {
+        "epsilon_MC": 0.0,
+        "epsilon_N": 5.1935348258511496e-05,
+        "epsilon_core_family_bridge": 1.06524463868837e-09,
+        "epsilon_dt": 0.013544073539555888,
+        "epsilon_init": 0.0,
+        "epsilon_repr": 0.01613633127073631,
+        "epsilon_s_quad": 0.0002151010626901413,
+        "epsilon_solve": 1.2366410655474875e-10,
+        "epsilon_z": 0.002741942441926306
+      },
+      "conservative_sum_rule": true,
+      "epsilon_lin": {
+        "status": "NOT_APPLICABLE_TO_EXACT_ZERO_RATE_DERIVATIVE; required only before finite-rate extrapolation in Tasks 09-10",
+        "value": null
+      },
+      "epsilon_total_zero_rate": 0.0326893848520759,
+      "inherited_bounds_source": {
+        "adoption_status": "DATED_OPERATIONAL_TRANSFER_AMENDMENT_2026-08-10",
+        "by_direction": {
+          "dephasing": {
+            "epsilon_repr": null,
+            "epsilon_z": null
+          },
+          "downward": {
+            "epsilon_repr": null,
+            "epsilon_z": null
+          },
+          "upward": {
+            "epsilon_repr": null,
+            "epsilon_z": null
+          }
+        },
+        "global": {
+          "epsilon_repr": null,
+          "epsilon_repr_relative_to_accepted_response_norm": 0.02354,
+          "epsilon_z": null,
+          "epsilon_z_relative_to_accepted_response_norm": 0.004
+        },
+        "interpretation": "Direction-specific absolute bounds are derived at runtime by multiplying the accepted ds=0.05 complete signed-response norm by predeclared relative envelopes. This is an operational inherited-bound amendment, not a direct Cartesian response rerun or direct Nz=2000 response calculation.",
+        "provenance": {
+          "bound_definition": "relative inherited transfer envelope multiplied by the accepted insertion-refined complete signed-response norm",
+          "limitations": [
+            "The representation envelope is transferred from the audited static first-shell response contrast, not measured directly for each dynamical environmental direction.",
+            "The longitudinal envelope is transferred from a demanding zero-bath observable, not measured directly on the Task-07 response kernel.",
+            "The final Part-I publication audit should retain this qualification or replace it with direct response-level representation and longitudinal-grid refinements."
+          ],
+          "longitudinal_relative_envelope": 0.004,
+          "longitudinal_source": "Accepted spinor-ABC supplementary convergence record: Nz=1500 to Nz=2000 changes the demanding-regime restricted mean by less than 0.4 percent.",
+          "notes": "Selecting this file explicitly adopts the dated operational transfer amendment for Task-08 and Task-09 finite-rate-validation authorization. It does not close the final publication-level representation/grid audit.",
+          "representation_relative_envelope": 0.02354,
+          "representation_source": "Current Task-05/06 master audit, Cartesian--oscillator recovery section: the omega=100 first-shell response contrast differs by 2.354 percent between representations; individual-curve discrepancies are retained separately."
+        },
+        "schema": "Task08_inherited_bounds_v2"
+      },
+      "longitudinal_bound_derivation": {
+        "accepted_response_norm": 0.6854856104815765,
+        "derived_absolute_bound": 0.002741942441926306,
+        "mode": "relative_to_accepted_response_norm",
+        "relative_envelope": 0.004
+      },
+      "missing_required_components": [],
+      "representation_bound_derivation": {
+        "accepted_response_norm": 0.6854856104815765,
+        "derived_absolute_bound": 0.01613633127073631,
+        "mode": "relative_to_accepted_response_norm",
+        "relative_envelope": 0.02354
+      },
+      "solve_component_detail": {
+        "components": {
+          "Krylov_residual_bound": 9.775720163898736e-13,
+          "final_tangent_closure_bound": 1.2240675140162693e-10,
+          "reduced_benchmark_complete_measure_bound": 6.9345263902729484e-18,
+          "source_trace_horizon_bound": 2.7977620220553945e-13
+        },
+        "epsilon_solve": 1.2366410655474875e-10,
+        "formula": "max(Krylov residual)*max(response norm,1) + T*max source trace + conservative reduced-benchmark complete-measure discrepancy + final tangent closure",
+        "observed_maximum_branch_true_relative_residual": 9.775720163898736e-13,
+        "observed_maximum_reference_true_relative_residual": 7.000003532102677e-14
+      }
+    }
+  }
+}

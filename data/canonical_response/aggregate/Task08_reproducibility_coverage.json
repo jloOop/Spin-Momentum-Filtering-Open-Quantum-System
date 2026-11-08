@@ -1,0 +1,47 @@
+{
+  "all_18_role_closed_count": 1,
+  "all_18_role_total": 18,
+  "closed_cases": [
+    "D3"
+  ],
+  "coverage_status": "PER_CASE_RERUN_COVERAGE_INCOMPLETE",
+  "per_case_rerun_coverage_count": 1,
+  "per_case_rerun_coverage_fraction": 0.06666666666666667,
+  "per_case_rerun_coverage_total": 15,
+  "representative_deterministic_certification_case": "D3",
+  "representative_deterministic_certification_pass": true,
+  "rerun_pending_cases": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5"
+  ],
+  "scientific_independence_policy": "Default Task-08 scientific validity is independent of complete per-case rerun coverage; strict mode may require 15/15.",
+  "supplemental_roles": {
+    "D2-I": {
+      "reproducibility_closed": false,
+      "scientifically_admissible": true,
+      "status": "RERUN_PENDING"
+    },
+    "P2-I": {
+      "reproducibility_closed": false,
+      "scientifically_admissible": true,
+      "status": "RERUN_PENDING"
+    },
+    "U2-I": {
+      "reproducibility_closed": false,
+      "scientifically_admissible": true,
+      "status": "RERUN_PENDING"
+    }
+  }
+}

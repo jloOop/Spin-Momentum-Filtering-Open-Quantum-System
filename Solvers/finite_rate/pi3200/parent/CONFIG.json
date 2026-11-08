@@ -1,0 +1,269 @@
+{
+  "campaign_output_relative": "Task09_ES_G6H_PC2/4990.Pi3200_8849_To12000_PilotGated_v1",
+  "checkpoint_payloads": {
+    "checkpoint_manifest.json": "5ee4441b45207b1f23a98f18c3d9453dddb71cd77e4ea7d985985b6e3f9d8e1c",
+    "checkpoint_metadata.json": "41aa38863170835800fbfea1f1ead7dc2aa59428ed910bc815c741732efe6a55",
+    "histories.npz": "8decfaa516fa09ba9738e085f5f74f223614b5b6dd3ac9973beaaa5370526056",
+    "sector_0.npy": "4c0684c6e837100088da7441b1e10827fea42cc9be977d3c678dd8509b911cff",
+    "sector_1.npy": "7eacd4973f00acbe46b12879a718416f29e125ba884ac48e9969bc37c3c9f020",
+    "sector_2.npy": "2d4dd3ccdbdd8fc223c88c418c103ddd2a420e79e11e1e83eb3e04a0573d65ec",
+    "sector_3.npy": "09a3a77bd6f9af83cb56651801f16319f38af1d179ce76441e83d795cc698088",
+    "sector_4.npy": "365d4584693e16758927d558da5b09872ea59780e39ca234d71ee78a84d5009c",
+    "zero_state.npy": "00cc2d1e87382c5864b5565e509d8f75af722e2bf4c5753aaec1b56d9a623ec5"
+  },
+  "checkpoint_relative": "Task09_ES_G6H_PC2/4989.Pi3200_7200_To12000_PC2_H100_RankGuard2600_NonAccepting_v1/checkpoint_step8849",
+  "claim_boundary": "Nonaccepting frozen finite-model pi/3200 continuation with a forward-only same-total-budget compression pilot. No physical acceptance, continuum convergence, interval-arithmetic certification, or demonstrated H100 speedup is claimed at construction. No history through step8849 is replayed or changed.",
+  "gate": {
+    "automatic_resume": false,
+    "bridge_factor_relative_tolerance": 5e-11,
+    "bridge_scalar_absolute_tolerance": 5e-12,
+    "checkpoint_headroom_count": 2,
+    "checkpoint_prediction_floor_seconds": 120.0,
+    "checkpoint_stride": 100,
+    "end_step": 8949,
+    "finalization_reserve_seconds": 7200,
+    "memory_guard_mib": 88064.0,
+    "minimum_free_disk_gib": 120,
+    "minimum_step_reserve_seconds": 600.0,
+    "physical_claim": false,
+    "production_authorized": false,
+    "rank_guard": 2600,
+    "runtime_free_disk_floor_gib": 16,
+    "slurm_wall_seconds": 86400,
+    "step_prediction_safety_factor": 2.5,
+    "task10_eligible": false,
+    "terminal_checkpoint_on_clean_stop": true,
+    "wall_guard_seconds": 79200.0,
+    "zero_crossrun_tolerance": 2e-09
+  },
+  "hardware": {
+    "account": "hpc-prf-gasqd",
+    "base_requested_modules": [
+      "lang/Python/3.11.5-GCCcore-13.2.0"
+    ],
+    "cluster": "NHR@PC2/Otus",
+    "cpus_per_task": 3,
+    "gpu_count": 1,
+    "gpu_name_contains": "H100",
+    "host_memory_gib": 128,
+    "max_requested_wall_seconds": 86400,
+    "minimum_compute_capability_major": 9,
+    "minimum_gpu_memory_mib": 90000,
+    "partition": "gpu_h100",
+    "require_partition_max_seconds_at_least": 86400
+  },
+  "job_name": "T09H8849PilotV1",
+  "legacy": {
+    "call": 6200,
+    "event_ledger": 0.0,
+    "event_ledger_convention": "historically accepted first-crossing ledger, followed by ordered full-step terms",
+    "historical_result_sha256": "886e637b8dd95d404c0b8d5ad12f3328f3ab484358952c3693624a78325b4c26",
+    "historical_source_sha256": "f4a07d6557d7fd0df2b6ade138aed4d590bc005d7e4356762db100a836d23ff0",
+    "representation_ledger": 1.2499320134473635e-08,
+    "representation_ledger_convention": "previously-certified historical direct-deficit ledger; not retroactively relabeled spectral",
+    "step": 3100
+  },
+  "output_relative": "Task09_ES_G6H_PC2/4990.Pi3200_8849_To12000_PilotGated_v1/candidate_pilot",
+  "package_name": "Task09_Pi3200_8849_To12000_PC2_H100_PilotGated_2026-09-12_v1",
+  "parent_kind": "certified_uploaded_checkpoint",
+  "parent_output_relative": "Task09_ES_G6H_PC2/4989.Pi3200_7200_To12000_PC2_H100_RankGuard2600_NonAccepting_v1",
+  "parent_result": {
+    "audit_sha256": "4b851f5ec2f445e858eb7a1f2f8371facccf800ae7f3c563fa635c6d84ad1f55",
+    "checkpoint_step": 8849,
+    "compact_file": "PARENT_SOURCE/Task09_Pi3200_PC2_H100_7200_To12000_v1_Result_2895255_Compact.zip",
+    "compact_sha256": "99d3fe59da3980446679b29666beb99f42ae82258e4b2e073cc128bcdafae162",
+    "compact_top": "Task09_Pi3200_PC2_H100_7200_To12000_v1_Result_2895255_Compact",
+    "driver_sha256": "78370683499a5bd5b672dd85e064d390396b59ab6e1f3d24f7cfaeb9f7e7b78d",
+    "evidence_member_hashes": {
+      "OUTPUT/independent_audit_report.json": "4b851f5ec2f445e858eb7a1f2f8371facccf800ae7f3c563fa635c6d84ad1f55",
+      "OUTPUT/run_status.json": "18dacad28d4d56e7f99b0f6b3b3921ef43690f514c03331c209de7afdcf3c8a3",
+      "RUNTIME/pc2_port_audit.json": "39524b1d13f97daa8371267c38114a9384bec96865c68d7bcc114eef7707cc62",
+      "RUNTIME/wrapper_status.json": "8bd3d74870ce34dd322613ce40e474ecfedb96f9be161280dcf0ddbe78715def"
+    },
+    "implementation_bridge_sha256": "c0e0e9f647d52e24ebfbe386c55cdbaf3c059f0a9cf9e104d1287df4ce02b242",
+    "job_id": "2895255",
+    "name": "Task09_Pi3200_PC2_H100_7200_To12000_v1_Result_2895255.zip",
+    "recorded_audit_verdict": "PASS_TASK09_PC2_PI3200_7200_TO12000_V1_CLEAN_STOP_INDEPENDENT_AUDIT",
+    "recorded_status": "clean_nonaccepting_stop",
+    "sha256": "167a8a6988c19721b7a3140cf073d4dd6c4c89774de0464750b765f1256dc3d1"
+  },
+  "parent_runtime_relative": "Task09_Pi3200_PC2_H100_7200_To12000_v1_Run_2895255",
+  "phase": "candidate_pilot",
+  "physical": {
+    "d_channels": 182,
+    "dimension": 273000,
+    "dt": 0.0005,
+    "h_z": 0.013333333656191826,
+    "l_z": 20.0,
+    "max_event_sector": 4,
+    "n_shell": 12,
+    "n_z": 1500,
+    "omega": 100.0,
+    "rate_label": "lambda0_over_8",
+    "rate_lambda": 0.0009817477042468104
+  },
+  "policy": {
+    "budget_extension_is_prospective_only": true,
+    "end_call": 24000,
+    "event_sectors": 4,
+    "final_ceiling_decimal": "8.03361617937869639024390243902439024390243902439024390243902E-8",
+    "forward_ledger_convention": "ordered math.fsum of strictly positive production Gram eigenvalues actually discarded",
+    "frontload_denominator": 2,
+    "frontload_numerator": 1,
+    "future_borrowing": false,
+    "historical_segment": {
+      "budget_extension_is_prospective_only": true,
+      "end_call": 24000,
+      "event_sectors": 4,
+      "final_ceiling_decimal": "8.03361617937869639024390243902439024390243902439024390243902E-8",
+      "forward_ledger_convention": "ordered math.fsum of strictly positive production Gram eigenvalues actually discarded",
+      "future_borrowing": false,
+      "historical_segment": {
+        "budget_extension_is_prospective_only": true,
+        "end_call": 14400,
+        "event_sectors": 4,
+        "final_ceiling_decimal": "4.375e-8",
+        "forward_ledger_convention": "ordered math.fsum of strictly positive production Gram eigenvalues actually discarded",
+        "future_borrowing": false,
+        "legacy_prefix_ledger_inherited_unchanged": true,
+        "name": "H8_ProspectiveLinearReserveTo360_v1",
+        "prefix_ledger_convention": "previously-certified historical direct-deficit ledger; not retroactively relabeled spectral",
+        "start_call": 6201,
+        "start_ledger_decimal": "1.2499320134473635e-8",
+        "trace_restoration": false
+      },
+      "historical_segment_last_call": 14400,
+      "legacy_prefix_ledger_inherited_unchanged": true,
+      "name": "H8_Post360_SameSlopeReserveTo600_v1",
+      "prefix_ledger_convention": "previously-certified historical direct-deficit ledger; not retroactively relabeled spectral",
+      "scope": "New prospective operational allowance after call14400; same per-call slope, no reset/rebase or earlier borrowing. Not a physical convergence certificate.",
+      "slope_denominator_calls": 8200,
+      "slope_numerator_decimal": "3.1250679865526365E-8",
+      "start_call": 14401,
+      "start_ledger_decimal": "4.375e-8",
+      "trace_restoration": false
+    },
+    "historical_segment_last_call": 17698,
+    "kind": "fixed_cap_frontloaded_remaining_allowance",
+    "legacy_prefix_ledger_inherited_unchanged": true,
+    "name": "H8_Post8849_HalfFrontload_SameFinalCap_v1",
+    "prefix_ledger_convention": "previously-certified historical direct-deficit ledger; not retroactively relabeled spectral",
+    "rate_budget_copied_from_pi1600": false,
+    "remaining_calls": 6302,
+    "scope": "Same final cap as strict; half of the unissued remaining cap becomes available at the first NEW bath compression call17699; the other half is released uniformly to24000. This explicitly replaces only the uncommitted future schedule. No charge or factor change at8849; no trace restoration or ledger rebasing.",
+    "start_call": 17699,
+    "start_ledger_decimal": "5.63188709995738965573170731707317073170731707317073170731707E-8",
+    "total_ceiling_increased": false,
+    "trace_restoration": false
+  },
+  "port": {
+    "base_environment_modified": false,
+    "base_python_version": "3.11.5",
+    "cross_hardware_bitwise_identity_claimed": false,
+    "mathematical_primitives_byte_identical_to_parent": true,
+    "numpy_overlay_relative": "PREPARED/numpy_2_4_2",
+    "numpy_wheel_name": "numpy-2.4.2-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "numpy_wheel_sha256": "c02ef4401a506fb60b411467ad501e1429a3487abca4664871d9ae0b46c8ba32",
+    "numpy_wheel_url": "https://files.pythonhosted.org/packages/1b/46/6fa4ea94f1ddf969b2ee941290cca6f1bfac92b53c76ae5f44afe17ceb69/numpy-2.4.2-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "original_historical_implementation_bridge_repeated": false,
+    "precontinuation_smoke_scope": "Checkpoint identity, bath completeness and sampled detector gate; trial outputs never committed. Both forward pilot arms start from exact8849.",
+    "production_driver_byte_identical_to_a100": false,
+    "production_driver_byte_identical_to_parent": false,
+    "schema": "task09-pc2-step8849-pilot-envelope-v1",
+    "smoke_detector_columns_per_sector": 4,
+    "source_a100_release_sha256": "599df8e86394abda890ca51ced18551affe8f0e00d2df937ce339b2948811df0",
+    "source_a100_zip_sha256": "dec33c4a337af3331ef0c26719fe8d57bf145031c7614489bcfef9c1104e5c0d",
+    "source_continuation_driver_sha256": "5f94192efc5a40f6c54827d95bf6c425b02d04c554d108356f5c67ae96d972e9",
+    "source_runtime_version_pins_preserved": true
+  },
+  "project_root": "[ARCHIVE_PATH]",
+  "python": "[ARCHIVE_PATH_794119aa1f239670]/python",
+  "reference_source_sha256": {
+    "block": "e38505fef24ba4d8c6cd1b01b988e5227ff96a0e8af9f07a2feac931deb68390",
+    "kernels": "e56240c069d201f9edf72369cd18734bffdb60d33ba7754cd10a1ee9b01c9cfe",
+    "oracle": "4987072f1889f78d2d156464b1a8818a85a3922f8d52b18d847a12b6824be40b",
+    "pool": "620f0cf139464e4050a51d30214d98da1cfd7d0fce0b9b5c3b15ec6bbb7ea3ec"
+  },
+  "required_runtime_versions": {
+    "cuda_runtime": 12090,
+    "cupy": "14.0.1",
+    "numpy": "2.4.2",
+    "scipy": "1.17.1"
+  },
+  "result_prefix": "Task09_Pi3200_8849_PilotGated_v1_Result_",
+  "runtime_package": "RUNTIME_SOURCES",
+  "runtime_prefix": "Task09_Pi3200_8849_PilotGated_v1_Run_",
+  "runtime_sources": {
+    "PARENT_Task09_ES_G1P_production_one_step_event_sectors_nonaccepting.py": "39f1306b371f2664a9ed89b25efc1967bae9b15c8b8dc5a3e2934815ce1a7a02",
+    "PARENT_Task09_ES_G2P_prefix155_event_sectors_nonaccepting.py": "f423324063207d2143fb42920ec76695f70b70b4065cc8118b0ad7bd278efb70",
+    "Task09_4901_U2_low_v4_nonaccepting_D2PR2G1FMP_BATCH64_REPAIRED_RANK_WHOLEHALF_G0.py": "d0bcd5af9b12b4d21ec897b87151006a1d9e1a7e035172ddf73c1c41c8a111c7"
+  },
+  "schema": "task09-pi3200-step8849-pilotgated-config-v1",
+  "start": {
+    "event_ledger": 0.0,
+    "inherited_event_term_count": 5749,
+    "inherited_internal_memory_peak_mib": 69276.0625,
+    "inherited_representation_term_count": 11498,
+    "overflow": 9.591498343626701e-12,
+    "positive_click_sum": 0.4256397590611223,
+    "positive_survival_history": 0.5743601846198263,
+    "positive_survival_metadata": 0.5743601846198264,
+    "previous_overflow_intensity": 1.0850649200935938e-12,
+    "ranks": [
+      1,
+      1698,
+      95,
+      4,
+      0
+    ],
+    "representation_ledger": 5.631754299534141e-08,
+    "step": 8849,
+    "time": 4.4245,
+    "zero_click_sum": 0.4261667857879136,
+    "zero_survival_history": 0.5738332142081899,
+    "zero_survival_metadata": 0.5738332142081899
+  },
+  "zero_reference": {
+    "arrays": [
+      {
+        "dtype": "float64",
+        "name": "times",
+        "raw_c_order_sha256": "61fb68a63bca07416f6d5d5bc45831bb25257caa7f1ec94a81ff661b8b1286dc",
+        "shape": [
+          5601
+        ]
+      },
+      {
+        "dtype": "float64",
+        "name": "zero_survival",
+        "raw_c_order_sha256": "08731ea66a6a8f1762dc2ba1c06eb21046af66883c2b5b495c0958f92ab753a9",
+        "shape": [
+          5601
+        ]
+      },
+      {
+        "dtype": "float64",
+        "name": "zero_step_click",
+        "raw_c_order_sha256": "ca820944ac4a7d96f9bf5f328b08933d86b1fbb15745d560768e446d2170e298",
+        "shape": [
+          5600
+        ]
+      },
+      {
+        "dtype": "float64",
+        "name": "cumulative_zero_click",
+        "raw_c_order_sha256": "773e33a67a7475d506017e83890d1ab2e72c9b11526491a4746b258f6006ba35",
+        "shape": [
+          5601
+        ]
+      }
+    ],
+    "available_through_step": 5600,
+    "file": "REFERENCE_DATA/quarter_zero_history.npz",
+    "scope": "byte-identical selected scalar arrays through step 5600; no pi/1600 finite-rate quantum state",
+    "sha256": "04fcc346eb63662c80558deac1f5c3e16fc0df221b9409c14159bda49f17d045",
+    "source_history_member_sha256": "f39c1f20482807ab2efddd324852bcc9032c0186fefb389147011d782c41b283",
+    "source_result_sha256": "21c8c4a06b90ab8c826794d967e0c86fe81fec10134733c9d150a7cdde654ec6",
+    "use": "Historical scalar cross-run through5600 only; own zero checkpoint/history7200 is carried forward. No future independent zero is supplied."
+  }
+}

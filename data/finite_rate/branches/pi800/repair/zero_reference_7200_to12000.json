@@ -1,0 +1,41 @@
+{
+  "anchor_manifest_sha256": "ee74a8e6a47c746abdbb0e07ac04beded0ecc0fc4dddd1c2b1b19a6f2a40fce0",
+  "anchor_zero_state_sha256": "0ebdc72cbef3e902425a9a4f4e61d5a1bdca73d64713fb8a36d124fedd47be19",
+  "array_sha256": "51574ec148fe582a6f028a123e51d904cdb3081f07ae013f91ef4ab56c6400e8",
+  "end_step": 12000,
+  "numpy": "2.4.2",
+  "old_prefix_rebuilt": false,
+  "passed": true,
+  "physical": {
+    "d_channels": 182,
+    "dimension": 273000,
+    "dt": 0.0005,
+    "h_z": 0.013333333656191826,
+    "l_z": 20.0,
+    "max_event_sector": 6,
+    "n_shell": 12,
+    "n_z": 1500,
+    "omega": 100.0,
+    "rate_label": "pi_over_800",
+    "rate_lambda": 0.003926990816987242
+  },
+  "positive_state_touched": false,
+  "python": "3.11.5",
+  "reference_solver_sha256": "91e357b1fc0805976bf3763b57231c108604d23e3d78f0ab2c8c2eca3b602682",
+  "reference_state_imported_into_production": false,
+  "scipy": "1.17.1",
+  "scope": "Same finite direct-Cayley algorithm independently continued for verification from the pinned saved corrected zero. Not an independent discretization or a new zero-rate physical solution.",
+  "script_sha256": "8a22d8c34964a17106ef1d64ccb22ecfe262f0522538a8867ba4f8ae0b25d167",
+  "seconds": 49.47078590595629,
+  "start_step": 7200,
+  "zero_solver": {
+    "benchmark_click_l1_tolerance": 5e-11,
+    "benchmark_survival_tolerance": 5e-11,
+    "cumulative_closure_limit": 5e-10,
+    "historical_tolerance_unchanged": 2e-09,
+    "method": "sparse_direct_cayley_superlu_complex128",
+    "permutation": "COLAMD",
+    "step_closure_limit": 5e-12,
+    "true_relative_residual_limit": 5e-13
+  }
+}

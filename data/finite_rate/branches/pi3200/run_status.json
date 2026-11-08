@@ -1,0 +1,18 @@
+{
+  "automatic_resume": false,
+  "classification": "CERTIFIED_DECLARED_NONACCEPTING_PHASE",
+  "completed_step": 12000,
+  "completed_utc": "2026-09-28T05:39:51+00:00",
+  "elapsed_seconds": 34913.982176291756,
+  "last_persisted_step": 12000,
+  "passed": true,
+  "physical_claim": false,
+  "production_authorized": false,
+  "schema": "task09-half-rate-continuation-status-v1",
+  "start_step": 11845,
+  "started_utc": "2026-09-27T19:57:57+00:00",
+  "status": "completed",
+  "target_step": 12000,
+  "task10_eligible": false,
+  "verdict": "PASS_TASK09_PC2_PI3200_11845_TO12000_V2_NONACCEPTING"
+}

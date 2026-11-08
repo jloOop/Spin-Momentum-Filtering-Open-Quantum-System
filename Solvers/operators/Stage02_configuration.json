@@ -1,0 +1,61 @@
+{
+  "N_shell": 12,
+  "authoritative_representation": "complete_shell_oscillator_basis",
+  "bath_generator_active": false,
+  "cartesian_grid_sizes": [
+    50,
+    100,
+    200
+  ],
+  "cartesian_role": "Stage-01 low-mode cross-check only",
+  "complete_shell_dimension": 91,
+  "configuration_sha256": "f171150a34efdd2d3fbc89ddd91e86caca422eb89a9b0b320654082c7bfefb07",
+  "detector_core_imported": false,
+  "detector_core_modified": false,
+  "ell": 10.0,
+  "hbar": 1.0,
+  "mass": 1.0,
+  "omega_cases": [
+    1.0,
+    100.0
+  ],
+  "output_directory_policy": "fixed directory; reused; no timestamp or parameter directory",
+  "physics_configuration_sha256": "77fb21375eb68ae94d0bce955d4dc46e95d79cfa1c9174c73758b995b402158f",
+  "reference_grid": 100,
+  "reference_omega": 100.0,
+  "reviewed_input_sha256": {
+    "4002_reference_regression(1).py": "facecb007572b5409d9d1ddb34c874a234f0d70059780551dc2179a7d66d8b48",
+    "4031_static_mode_library(2).py": "eee0326442a7ddde4cc423f63c916810adec6f77202a72817db5f60f384b7dea",
+    "4032_static_mode_library(1).py": "11a7316ed997aa36f271ea47c2f1272dae86606053da6a84df958630e7fbf9b9",
+    "750.Ref(3).py": "8cf2095b2d760a0b702c930fe5690fe762d08ad7c721a8c53b5ed498d1744009",
+    "NUM_Stage01_Static_Mode_Complete_Audit_and_Next_Workflow_2026-08-02(3).md": "7b2444f5b10bcd3a86a2d301a40ebcaf2e88b8b28d329c8d3e069c4e97fc6f65"
+  },
+  "run_name": "4050.Bath_operator_tests",
+  "runtime": {
+    "generated_utc": "2026-08-02T21:08:03+00:00",
+    "numpy_version": "2.3.5",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]"
+  },
+  "script_sha256": "2ed0daf88dca64d33896d42e53d93c1e57b85d7e22391498babd4f7588b273b2",
+  "script_version": "2026-08-02-bath-operator-tests-solver-v3-audited",
+  "stage": "02_bath_operator_tests",
+  "stage01_archive_sha256": "f17502b7ec643593c4690aa0c30fb868e0a9853eaca41cc94228a0e32e2379f7",
+  "time_propagation_active": false,
+  "tolerances": {
+    "CCR_coefficient": 1.25,
+    "K_hermiticity": 1e-12,
+    "K_scale_collapse": 1e-12,
+    "adjoint": 1e-12,
+    "bohr_relative": 1e-12,
+    "exact": 1e-12,
+    "isotropy": 1e-12,
+    "ladder_coefficient": 0.75,
+    "minimum_refinement_order": 1.9,
+    "mode_overlap": 1e-08,
+    "occupation_coefficient": 0.5,
+    "omega_collapse": 1e-12,
+    "psd": 1e-11,
+    "wall_leakage": 1e-08
+  }
+}

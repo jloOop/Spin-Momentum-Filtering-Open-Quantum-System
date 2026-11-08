@@ -1,0 +1,42 @@
+{
+  "all_three_baselines_available": true,
+  "basis": {
+    "dephasing": {
+      "available": true,
+      "chi_D": 0.004578837853923686,
+      "chi_D_E": 0.002902018486975798,
+      "chi_D_L": 0.0016768194067192732,
+      "chi_mu": -0.02974497781302884,
+      "matrix_id": "P2",
+      "scientifically_admissible": true,
+      "time_node_count": 101
+    },
+    "downward": {
+      "available": true,
+      "chi_D": 0.002806284536032889,
+      "chi_D_E": 0.0019172180109487981,
+      "chi_D_L": 0.0008890665525797029,
+      "chi_mu": -0.018932281707108325,
+      "matrix_id": "D2",
+      "scientifically_admissible": true,
+      "time_node_count": 101
+    },
+    "upward": {
+      "available": true,
+      "chi_D": -0.5277629841739806,
+      "chi_D_E": -0.4193951626048593,
+      "chi_D_L": -0.1083678216902825,
+      "chi_mu": 3.5571854427641982,
+      "matrix_id": "U2",
+      "scientifically_admissible": true,
+      "time_node_count": 101
+    }
+  },
+  "common_response_grid": true,
+  "finite_rate_or_temperature_trajectory_simulation": false,
+  "formal_superposition": "chi[c_down,c_up,c_phi] = c_down*chi_down + c_up*chi_up + c_phi*chi_phi",
+  "interpretation": "Linearity is at the tangent-generator level. This record does not authorize a finite-rate or finite-temperature trajectory claim.",
+  "passed": true,
+  "status": "PASS_LINEAR_BASIS_AVAILABLE",
+  "thermal_linear_response_example": "chi_thermal(nbar) = (nbar+1)*chi_down + nbar*chi_up"
+}

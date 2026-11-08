@@ -1,0 +1,100 @@
+{
+  "gpu_reference_crosscheck": {
+    "passed": true,
+    "records": [
+      {
+        "checked_step": 3701,
+        "click_absolute_difference": 6.776263578034403e-19,
+        "direct_true_residual": 2.514651532775387e-16,
+        "gpu_true_residual": 5.609418405713287e-14,
+        "start_step": 3700,
+        "state_relative_difference": 4.3664284933790524e-14
+      },
+      {
+        "checked_step": 3793,
+        "click_absolute_difference": 7.182839392716467e-19,
+        "direct_true_residual": 2.6216780446436924e-16,
+        "gpu_true_residual": 5.846584819418245e-14,
+        "start_step": 3792,
+        "state_relative_difference": 4.5521601702639084e-14
+      }
+    ],
+    "scope": "GPU single-column vs CPU direct solve at recovery time and old failure time; not positive-state production replay"
+  },
+  "new_zero_survival": 0.9580749375077711,
+  "next_step": 3701,
+  "old_failure_relabelled": false,
+  "old_tolerance_increased": false,
+  "old_vs_replayed_zero_physical_state_norm": 4.921002361345647e-08,
+  "old_zero_survival": 0.9580749347951962,
+  "origin": "explicit_pi800_v1_zero_reference_repair",
+  "original_checkpoint": "[ARCHIVE_PATH]",
+  "original_job_id": "2878201",
+  "original_last_committed_step": 3792,
+  "original_manifest_sha256": "e05e782d325787d144e109a3b355c7ec8d1ee6b0deb135924dca664967d59dd9",
+  "original_prefix_kept_in_package_provenance": true,
+  "original_result_sha256": "b93565278701fc4f4f3d58b402f25019e469f2041f4bdf3576aaebe238d82d2e",
+  "passed": true,
+  "physical_claim": false,
+  "positive_factors_modified": false,
+  "positive_prefix_fields_unchanged": [
+    "analytic_event_tail_bound",
+    "batch_sample_relative_error",
+    "complete_step_ledger_closure",
+    "cumulative_overflow_bound",
+    "cumulative_positive_click",
+    "detector_batch64_contract_passed",
+    "detector_maximum_actual_batch_columns",
+    "detector_number_batches",
+    "detector_number_rhs",
+    "event_first_crossing_ledger",
+    "event_increment",
+    "gmres_max_residual",
+    "positive_step_click",
+    "positive_survival",
+    "representation_ceiling",
+    "representation_increment",
+    "representation_ledger",
+    "sector_ranks",
+    "sector_traces",
+    "step_wall_seconds",
+    "times",
+    "top_shell_population",
+    "total_rank"
+  ],
+  "recorded_residual_envelope": 7.896337909720062e-07,
+  "recovered_step": 3700,
+  "reference_audit": {
+    "cpu_benchmark_click_L1_difference": 0.0,
+    "cpu_benchmark_max_survival_difference": 0.0,
+    "historical_compared_through_step": 5600,
+    "historical_max_step": 4313,
+    "historical_max_survival_difference": 1.7561443410585298e-09,
+    "historical_tolerance": 2e-09,
+    "historical_tolerance_increased": false,
+    "max_cumulative_closure": 1.1588507931037384e-12,
+    "max_true_residual": 2.892957558233292e-16,
+    "method": "sparse_direct_cayley_superlu_complex128",
+    "passed": true,
+    "steps": 7200
+  },
+  "replayed_positive_steps_3701_to3792": 92,
+  "residual_envelope_is_interval_certificate": false,
+  "task10_eligible": false,
+  "zero_history_fields_rebuilt": [
+    "cumulative_zero_click",
+    "zero_step_click",
+    "zero_step_closure",
+    "zero_survival"
+  ],
+  "zero_reference_solver": {
+    "benchmark_click_l1_tolerance": 5e-11,
+    "benchmark_survival_tolerance": 5e-11,
+    "cumulative_closure_limit": 5e-10,
+    "historical_tolerance_unchanged": 2e-09,
+    "method": "sparse_direct_cayley_superlu_complex128",
+    "permutation": "COLAMD",
+    "step_closure_limit": 5e-12,
+    "true_relative_residual_limit": 5e-13
+  }
+}

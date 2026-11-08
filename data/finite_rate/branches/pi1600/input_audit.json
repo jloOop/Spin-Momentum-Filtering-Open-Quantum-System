@@ -1,0 +1,132 @@
+{
+  "checkpoint_path": "[ARCHIVE_PATH]",
+  "checkpoint_payload_hashes": {
+    "checkpoint_manifest.json": "a6db023b2c06b26c44b26a2deb6272a70ea33a7408efd235836ee7509e7f4d00",
+    "checkpoint_metadata.json": "a1ce7ff1eb19a2717c6818b8b01c8af61e8bb3bce668192a4b5ba8a8955483c1",
+    "histories.npz": "31b6b79a43a7c59d674201038f7e8477169a8bc07fb6c67eedcaa94c9e43e35d",
+    "sector_0.npy": "d159ca2461b83e621562a636643d837d8a251ea185b3e7d0aaffc3767e326c8b",
+    "sector_1.npy": "e5f50af57c04b17558df5ec59986c66b1df683f5513c917525333f9fd1ed290b",
+    "sector_2.npy": "8775eeb40fc19fb3922dafcce16b5480122ad1ccec192d781999af47a0cbc224",
+    "sector_3.npy": "e30673cd9851015a312e2d51f79933fc476bc72429a95ff60b886f3570064854",
+    "sector_4.npy": "98dbacedca39287f820767b38abcbcc57234d73a72d2940a8346e6eaed04de96",
+    "zero_state.npy": "13f38e46c6d6556cbb81a3a3470f5b46e5072a10f64b7d343ec798c0cba3d40d"
+  },
+  "compact_hashes_verified": 30,
+  "factor_audit": {
+    "0": {
+      "dtype": "complex128",
+      "finite": true,
+      "shape": [
+        273000,
+        1
+      ],
+      "trace": 0.4721508276231835
+    },
+    "1": {
+      "dtype": "complex128",
+      "finite": true,
+      "shape": [
+        273000,
+        768
+      ],
+      "trace": 0.01870231523397758
+    },
+    "2": {
+      "dtype": "complex128",
+      "finite": true,
+      "shape": [
+        273000,
+        133
+      ],
+      "trace": 0.0005470219199502571
+    },
+    "3": {
+      "dtype": "complex128",
+      "finite": true,
+      "shape": [
+        273000,
+        15
+      ],
+      "trace": 1.410075313747495e-05
+    },
+    "4": {
+      "dtype": "complex128",
+      "finite": true,
+      "shape": [
+        273000,
+        5
+      ],
+      "trace": 3.333810960965829e-07
+    }
+  },
+  "free_filesystem_bytes_now": 1215115034624,
+  "half_rate_quantum_state_loaded": false,
+  "inherited_event_terms": 13831,
+  "inherited_representation_terms": 27662,
+  "inherited_step_ledgers_reconstructed": 13831,
+  "inherited_terms_rebased": false,
+  "large_state_hashes_and_traces": "Recorded only here; live payloads checked by read_inputs.",
+  "legacy_representation_ledger": 1.7499772167089214e-07,
+  "live_factors_hashed_now": true,
+  "live_factors_traced_now": true,
+  "next_global_call": 38655,
+  "next_reserve_line": 6.039843130347534e-07,
+  "old_spectra_freshly_reconstructed": false,
+  "one_time_implementation_bridge_repeated": false,
+  "original5496_anchor_and_ordered_sums_preserved": true,
+  "original_artifact_subset_hashes_verified": 28,
+  "original_full_result_freshly_audited": false,
+  "parent_checkpoint_step": 19327,
+  "parent_evidence_kind": "Locally extracted immutable compact parent from a finalized, audited wall-time stop; not the full original result",
+  "parent_job_id": "2966988",
+  "parent_result_sha256": "4e68b240b5a2a4b232f995726002e2912179cd564a91458aa6bfa0c22470813f",
+  "parent_solver_status": "clean_nonaccepting_stop",
+  "passed": true,
+  "physical_steps_performed": 0,
+  "separate_user_quota_assessed": false,
+  "source_equivalence_scope": "Pinned numerical primitives; no new physical GPU trajectory or cross-hardware equality claim.",
+  "starting_representation_ledger": 6.039531548748312e-07,
+  "state_modified": false,
+  "zero_crossrun_future_claimed": false,
+  "zero_crossrun_maximum_difference_on_available_prefix": 1.947076166963768e-09,
+  "zero_crossrun_reference_available_through_step": 7200,
+  "zero_reference": {
+    "arrays": [
+      {
+        "dtype": "float64",
+        "name": "times",
+        "raw_c_order_sha256": "19bf9e5620a5fb4f420c485fa6e45cc873bdad53a053fe750c0014dfa06c5d31",
+        "shape": [
+          7201
+        ]
+      },
+      {
+        "dtype": "float64",
+        "name": "zero_survival",
+        "raw_c_order_sha256": "e782184500439284083b5cbdc991dc434e76884c1b7c33ab30a76bc9e4925a5e",
+        "shape": [
+          7201
+        ]
+      }
+    ],
+    "available_through_step": 7200,
+    "file": "REFERENCE_DATA/standalone_zero_2878654_to360.npz",
+    "original_full_zero_job_archive_freshly_audited_here": false,
+    "physical_state_used_for_restart": false,
+    "sha256": "55f112967afcfc080fbacdbd20ec59d0e9268e926c8479ced5b769749980cca3",
+    "source_archive_name": "General_Analyze_Task09_pi3200_Verified(3).zip",
+    "source_archive_sha256": "7686670506ff3aba372d5691056b1945885cba70088da437b1efa1b7dbcd5cf0",
+    "source_branch": "independent standalone zero; scalar observables only",
+    "source_job_id": "2878654",
+    "source_member": "General_Analyze_Task09_pi3200_Verified/data/standalone_zero_histories.npz"
+  },
+  "zero_state_audit": {
+    "dtype": "complex128",
+    "finite": true,
+    "shape": [
+      273000,
+      1
+    ],
+    "trace": 0.4904182529117835
+  }
+}

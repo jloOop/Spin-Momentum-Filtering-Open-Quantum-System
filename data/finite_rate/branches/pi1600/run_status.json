@@ -1,0 +1,18 @@
+{
+  "automatic_resume": false,
+  "classification": "CERTIFIED_PI1600_CONTINUATION_TO1000",
+  "completed_step": 20000,
+  "completed_utc": "2026-09-28T08:24:16+00:00",
+  "elapsed_seconds": 49777.607182818465,
+  "last_persisted_step": 20000,
+  "passed": true,
+  "physical_claim": false,
+  "production_authorized": false,
+  "schema": "task09-pi1600-continuation-status-v1",
+  "start_step": 19327,
+  "started_utc": "2026-09-27T18:34:38+00:00",
+  "status": "completed",
+  "target_step": 20000,
+  "task10_eligible": false,
+  "verdict": "PASS_TASK09_PC2_PI1600_12000_TO20000_V1_NONACCEPTING"
+}

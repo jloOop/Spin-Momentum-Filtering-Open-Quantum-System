@@ -1,0 +1,17 @@
+{
+  "automatic_resume": false,
+  "backend_requested": "cupy",
+  "completed_step": 7200,
+  "elapsed_seconds": 277.6753533212468,
+  "finished_utc": "2026-09-06T11:21:31+00:00",
+  "last_persisted_step": 7200,
+  "parent_checkpoint": null,
+  "physical_claim": false,
+  "rate_lambda": 0.0,
+  "schema": "task09-lambda0-session-status-v1",
+  "start_step": 0,
+  "started_utc": "2026-09-06T11:16:53+00:00",
+  "status": "completed",
+  "target_step": 7200,
+  "task10_eligible": false
+}

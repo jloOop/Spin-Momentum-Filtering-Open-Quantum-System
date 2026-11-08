@@ -1,0 +1,15 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "checkpoint_metadata.json": "f4ae5d69e9b15820bebf5e536fa78f361cb06740de6cef00468f5dca4b3125ba",
+    "histories.npz": "2511c61ffe9cf61e8fbd8dd92d0ee6ed698bdf32db72e705c1e581cd7e5e702a",
+    "sector_0.npy": "daf334fb02b46b30fc917c857872c980531bf54ea370bfbba856de69b3feb1c1",
+    "sector_1.npy": "ab5bf3304f71cb4c668341737e05429ddbdaf3d8aa5752db5dc452ccad419dfc",
+    "sector_2.npy": "1ee411208398a6c511f6001b6cf2f277a698b8ce738735fc4966ebc65454f950",
+    "sector_3.npy": "af0a93463e6bac5fc59280600e3581f302bd8bc29dcd5f6b79b4f9440b07a18c",
+    "sector_4.npy": "c16cdc244fe5a701a8abd7f22d2d0b3ae2b6f0c5bed5891157e62dcd9a423441",
+    "sector_5.npy": "365d4584693e16758927d558da5b09872ea59780e39ca234d71ee78a84d5009c",
+    "sector_6.npy": "365d4584693e16758927d558da5b09872ea59780e39ca234d71ee78a84d5009c",
+    "zero_state.npy": "ed716dbbadca1f8f6d477793ab7d59e640e960a4900d55fd1acb72543c7a3022"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "scope": "Repository packaging and bounded saved-array reconstruction; not scientific convergence or production authorization",
+  "status": "local_checks_passed_clean_checkout_pending",
+  "passed": [
+    "18 canonical identities and native-kernel reconstructions",
+    "16 detector cohort records retained",
+    "12 static and 12 bath saved-observable comparisons",
+    "four finite-rate endpoints and own paired-zero records",
+    "28 A127 metric regressions and336 table-cell comparisons",
+    "224 preparation/horizon table comparisons and3 configuration contracts",
+    "source/distributed hashes including selected payloads over5MiB",
+    "ZIP CRC/privacy/array-schema inspection; numerical payloads unchanged",
+    "three principal figures visually reviewed"
+  ],
+  "failed": [],
+  "pending": [
+    "fresh local checkout exact CPU commands and final integrity verification"
+  ],
+  "skipped": [
+    "production GPU/cluster simulations",
+    "Task06 original full aggregate raw-array audit",
+    "Task09 full spectra/factor and restart re-audits",
+    "native reconstruction of all extension figures",
+    "optional archived PDF report generation"
+  ],
+  "historical_results_not_rerun": "Original PASS/FAIL/QUALIFIED and scientific_acceptance=false records remain scoped historical evidence.",
+  "tested_environment": {
+    "python": "3.13.15",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2"
+  },
+  "licensing_review": "Selected source/text/archive members inspected; no pre-existing license grant found. Attribution retained; no blanket license added."
+}

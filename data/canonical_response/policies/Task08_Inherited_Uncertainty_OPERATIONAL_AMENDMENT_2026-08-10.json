@@ -1,0 +1,38 @@
+{
+  "schema": "Task08_inherited_bounds_v2",
+  "adoption_status": "DATED_OPERATIONAL_TRANSFER_AMENDMENT_2026-08-10",
+  "interpretation": "Direction-specific absolute bounds are derived at runtime by multiplying the accepted ds=0.05 complete signed-response norm by predeclared relative envelopes. This is an operational inherited-bound amendment, not a direct Cartesian response rerun or direct Nz=2000 response calculation.",
+  "global": {
+    "epsilon_repr": null,
+    "epsilon_z": null,
+    "epsilon_repr_relative_to_accepted_response_norm": 0.02354,
+    "epsilon_z_relative_to_accepted_response_norm": 0.004
+  },
+  "by_direction": {
+    "downward": {
+      "epsilon_repr": null,
+      "epsilon_z": null
+    },
+    "upward": {
+      "epsilon_repr": null,
+      "epsilon_z": null
+    },
+    "dephasing": {
+      "epsilon_repr": null,
+      "epsilon_z": null
+    }
+  },
+  "provenance": {
+    "representation_source": "Current Task-05/06 master audit, Cartesian--oscillator recovery section: the omega=100 first-shell response contrast differs by 2.354 percent between representations; individual-curve discrepancies are retained separately.",
+    "representation_relative_envelope": 0.02354,
+    "longitudinal_source": "Accepted spinor-ABC supplementary convergence record: Nz=1500 to Nz=2000 changes the demanding-regime restricted mean by less than 0.4 percent.",
+    "longitudinal_relative_envelope": 0.004,
+    "bound_definition": "relative inherited transfer envelope multiplied by the accepted insertion-refined complete signed-response norm",
+    "limitations": [
+      "The representation envelope is transferred from the audited static first-shell response contrast, not measured directly for each dynamical environmental direction.",
+      "The longitudinal envelope is transferred from a demanding zero-bath observable, not measured directly on the Task-07 response kernel.",
+      "The final Part-I publication audit should retain this qualification or replace it with direct response-level representation and longitudinal-grid refinements."
+    ],
+    "notes": "Selecting this file explicitly adopts the dated operational transfer amendment for Task-08 and Task-09 finite-rate-validation authorization. It does not close the final publication-level representation/grid audit."
+  }
+}

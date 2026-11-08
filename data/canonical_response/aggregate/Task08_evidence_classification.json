@@ -1,0 +1,34 @@
+{
+  "by_direction": {
+    "dephasing": {
+      "accepted_response_matrix_id": "P2-I",
+      "baseline_matrix_id": "P2",
+      "classification": "RESOLVED_NONZERO",
+      "epsilon_total_zero_rate": 0.0003616152761608674,
+      "physical_claim_eligible_from_evidence_alone": true,
+      "resolved_nonzero_factor": 5.0,
+      "response_norm": 0.004657311188913776,
+      "signal_to_uncertainty_ratio": 12.87918817578363
+    },
+    "downward": {
+      "accepted_response_matrix_id": "D2-I",
+      "baseline_matrix_id": "D2",
+      "classification": "RESOLVED_NONZERO",
+      "epsilon_total_zero_rate": 0.00017131999241069387,
+      "physical_claim_eligible_from_evidence_alone": true,
+      "resolved_nonzero_factor": 5.0,
+      "response_norm": 0.0028561776225212703,
+      "signal_to_uncertainty_ratio": 16.671595546621017
+    },
+    "upward": {
+      "accepted_response_matrix_id": "U2-I",
+      "baseline_matrix_id": "U2",
+      "classification": "RESOLVED_NONZERO",
+      "epsilon_total_zero_rate": 0.0326893848520759,
+      "physical_claim_eligible_from_evidence_alone": true,
+      "resolved_nonzero_factor": 5.0,
+      "response_norm": 0.6854856104815765,
+      "signal_to_uncertainty_ratio": 20.969669927516108
+    }
+  }
+}

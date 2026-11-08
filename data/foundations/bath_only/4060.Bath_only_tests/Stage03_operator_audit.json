@@ -1,0 +1,67 @@
+{
+  "maximum_defects": {
+    "bohr_relation_error": 1.5987211554602254e-14,
+    "hamiltonian_diagonal_error": 3.552713678800501e-15,
+    "hermiticity_action_relative_error": 3.8981326328953035e-17,
+    "liouvillian_trace_row_error": 4.996003610813204e-16,
+    "number_diagonal_error": 1.7763568394002505e-15,
+    "top_shell_upward_identity_error": 3.552713678800501e-15,
+    "vectorization_action_relative_error": 1.8849380005701299e-16
+  },
+  "per_cutoff": {
+    "12": {
+      "annihilation_x_nnz": 78,
+      "annihilation_y_nnz": 78,
+      "audit_liouvillian_nnz": 32617,
+      "basis_order": "shell ascending, n_x descending within each shell",
+      "bohr_relation_error": 1.1546319456101628e-14,
+      "cutoff": 12,
+      "density_vectorization": "column-major order='F'",
+      "dimension": 91,
+      "hamiltonian_diagonal_error": 1.7763568394002505e-15,
+      "hermiticity_action_relative_error": 3.8417531708598745e-17,
+      "liouville_dimension": 8281,
+      "liouvillian_trace_row_error": 2.7755575615628914e-16,
+      "number_diagonal_error": 1.7763568394002505e-15,
+      "top_shell_upward_identity_error": 3.552713678800501e-15,
+      "vectorization_action_relative_error": 1.8570878930503194e-16
+    },
+    "16": {
+      "annihilation_x_nnz": 136,
+      "annihilation_y_nnz": 136,
+      "audit_liouvillian_nnz": 97393,
+      "basis_order": "shell ascending, n_x descending within each shell",
+      "bohr_relation_error": 1.5987211554602254e-14,
+      "cutoff": 16,
+      "density_vectorization": "column-major order='F'",
+      "dimension": 153,
+      "hamiltonian_diagonal_error": 3.552713678800501e-15,
+      "hermiticity_action_relative_error": 3.8981326328953035e-17,
+      "liouville_dimension": 23409,
+      "liouvillian_trace_row_error": 4.996003610813204e-16,
+      "number_diagonal_error": 1.7763568394002505e-15,
+      "top_shell_upward_identity_error": 3.552713678800501e-15,
+      "vectorization_action_relative_error": 1.8849380005701299e-16
+    },
+    "8": {
+      "annihilation_x_nnz": 36,
+      "annihilation_y_nnz": 36,
+      "audit_liouvillian_nnz": 7209,
+      "basis_order": "shell ascending, n_x descending within each shell",
+      "bohr_relation_error": 6.217248937900877e-15,
+      "cutoff": 8,
+      "density_vectorization": "column-major order='F'",
+      "dimension": 45,
+      "hamiltonian_diagonal_error": 1.7763568394002505e-15,
+      "hermiticity_action_relative_error": 3.452104376331269e-17,
+      "liouville_dimension": 2025,
+      "liouvillian_trace_row_error": 2.7755575615628914e-16,
+      "number_diagonal_error": 1.7763568394002505e-15,
+      "top_shell_upward_identity_error": 3.552713678800501e-15,
+      "vectorization_action_relative_error": 1.8057274255485156e-16
+    }
+  },
+  "scientific_scope": "Independent complete-shell oscillator and Liouvillian certification; no detector operator is constructed or propagated.",
+  "script_version": "2026-08-02-stage03-bath-only-fock-v3-audited",
+  "stage": "03_bath_only_fock_test"
+}
