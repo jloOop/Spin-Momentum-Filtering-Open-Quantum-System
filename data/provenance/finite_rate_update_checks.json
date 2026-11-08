@@ -1,0 +1,104 @@
+{
+  "scope": "Focused Task09 saved-data reproduction, provenance and presentation update; no new scientific acceptance decision",
+  "baseline_commit": "a1a7384ba4bf88787bc3cad9cb16871734df5047",
+  "baseline_checks": "data/provenance/release_checks.json retains prior-release results and tested-code identity; unrelated groups are not rerun by this update",
+  "local_finite_rate_command": "python Loaders/reproduce.py --group finite-rate --output build/finite-rate",
+  "local_command_exit_code": 0,
+  "poster_regression": {
+    "historical_cutoffs": {
+      "pi3200": 5.65,
+      "pi1600": 8.3,
+      "pi800": 3.6
+    },
+    "source": "poster_provenance/ archived Sofat targets",
+    "prefix_basis": "All 27 native arrays per branch verified as exact continuation prefixes in prefix_verification.json; no independent run implied.",
+    "fsum_values": {
+      "pi3200": {
+        "positive_roof_mass_fsum": 0.4646999416540048,
+        "paired_zero_roof_mass_fsum": 0.46521623237446946,
+        "delta_C_native_increment_fsum": -0.000516290720464702,
+        "delta_C_saved_cumulative_difference": -0.0005162907204654954,
+        "crosscheck_difference": 7.934191498248921e-16
+      },
+      "pi1600": {
+        "positive_roof_mass_fsum": 0.46418439251401117,
+        "paired_zero_roof_mass_fsum": 0.46521623217835667,
+        "delta_C_native_increment_fsum": -0.0010318396643455164,
+        "delta_C_saved_cumulative_difference": -0.0010318396643498318,
+        "crosscheck_difference": 4.315341486926805e-15
+      }
+    },
+    "doubling_ratio": 0.9992816289790954,
+    "absolute_deviation_percent": 0.07183710209045513,
+    "signed_residual_Q_C": 7.417765838875403e-07,
+    "scalar_regressions": 15,
+    "table_cells": 250,
+    "tolerances": {
+      "fsum_absolute": 2e-14,
+      "ratio_absolute": 2e-12,
+      "historical_table_absolute": 2e-12,
+      "historical_table_relative": 1e-10
+    },
+    "poster_printed_ratio": "approximately 0.9992; historical display retained, not conventional 4-decimal rounding",
+    "scope": "Saved-observable regression and historical cutoff reconstruction only; no solver or complete finite-rate convergence audit."
+  },
+  "a127_metric_regressions": [
+    "A127 endpoint T",
+    "A127 endpoint step",
+    "A127 endpoint S_lambda",
+    "A127 endpoint S_paired_zero",
+    "A127 endpoint C_lambda_saved",
+    "A127 endpoint C_paired_zero_saved",
+    "A127 endpoint delta_C_saved",
+    "A127 endpoint delta_C_from_fsum_differences",
+    "A127 endpoint delta_S_retained",
+    "A127 endpoint B_rep",
+    "A127 endpoint B_event",
+    "A127 endpoint restricted_retained_survival_change_trapezoids",
+    "A127 endpoint click_conditional_mean_lambda",
+    "A127 endpoint click_conditional_mean_zero",
+    "A127 endpoint click_conditional_mean_change",
+    "A127 endpoint rank",
+    "A127 tangent chi_D_from_panel_sum",
+    "A127 tangent chi_D_from_survival",
+    "A127 tangent linear_endpoint_prediction",
+    "A127 tangent finite_endpoint_from_dp_sum",
+    "A127 tangent finite_minus_linear_endpoint",
+    "A127 tangent complete_panel_record_residual",
+    "A127 tangent endpoint_relative_departure_percent",
+    "A127 signed record norm",
+    "A127 adjacent-bin sign changes",
+    "A127 endpoint table",
+    "A127 window table",
+    "A127 sign-change table"
+  ],
+  "a127_table_regression_cells": 336,
+  "prefix_evidence": "data/finite_rate/poster_provenance/prefix_verification.json",
+  "native_array_prefixes_bitwise_equal": 81,
+  "derived_native_bin_arrays_exact": 30,
+  "derived_doubling_arrays_exact": 22,
+  "historical_archive_hashes": "Reported only; not freshly rehashed",
+  "visual_review": [
+    "four finite-rate PNGs: rate labels, signs, horizons, legends, tangent panel units and readability"
+  ],
+  "clean_checkout": {
+    "status": "pending"
+  },
+  "not_run": [
+    "production simulations",
+    "historical heavy-state restart",
+    "full Task09 spectrum/factor re-audit",
+    "complete finite-rate convergence campaign"
+  ],
+  "analysis_code_sha256": {
+    "Loaders/finite_rate.py": "784db529f15f6b5d892759ba75f14e5859eda4db9d6e84a830a7ca8fec0b22f2",
+    "Loaders/reproduce.py": "c19c9e9f4bb78fed19d5f12ba8078181f3c7d8554efdd9964937a63f8773daee",
+    "Loaders/verify_release.py": "1abf0f6256ab097ea802f319af76a40825b62b91d2e25d9d787d8e56e719cbb1",
+    "requirements.txt": "cd7e74e025f6b882d7f0304c617e63232236297751012eca72e7ab78f1792dbd"
+  },
+  "test_environment": {
+    "python": "3.13.15",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2"
+  }
+}

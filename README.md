@@ -41,15 +41,20 @@ The [canonical register](data/canonical_response/CANONICAL_CASE_MASTER_TABLE.csv
 | Exact affine preparation mixing cancels integrated detection response while preserving timing response. | [Archived response arrays](data/extensions/horizon/reconstructed_arrays.npz) |
 | The same finite transverse operation has opposite effects at a common deadline when applied earlier or later. | [Operation comparison](data/extensions/causal_operation/endpoint_comparison.csv) |
 | Equal-energy, equal-initial-RMS-momentum second-shell preparations have different detector laws; independent propagation tests a launch-kernel prediction. | [Second-shell endpoints](data/extensions/second_shell/endpoint_metrics.csv) |
-| Continuous finite-rate records show small differences and approximate integrated rate scaling on actual common support. | [Branch histories](data/finite_rate/branches/) |
 
 ![Preparation and observation-horizon control](data/figures/preparation_horizon.png)
 
 *Upward response at $\omega=144$, $N=12$, $N_z=1500$, detector step $0.00025$, panels $0.05$. For the mixture $(1-p)\rho_{00}+p(\rho_{10}+\rho_{01})/2$, terminal cancellation occurs near $p=0.8104$ at $T=10$ and $0.8048$ at $20$, with nonzero restricted-mean response. This is an affine cancellation, not the scalar null or a phase transition. The figure reduces archived derived arrays; native kernel reconstruction is separate.*
 
-![Finite-rate changes against paired zero controls](data/figures/finite_rate.png)
+## Finite-rate results — Task09
 
-*Ground preparation at $\omega=100$, $N=12$, $N_z=1500$, detector step $0.0005$. Native probability-bin differences use each branch’s own paired zero; matched tangent comparisons aggregate probabilities before comparing panels. Current saved endpoints are $10,6,3.825,3.6$ for pi1600, pi3200, pi800, and standalone zero. Standalone zero is a separate consistency control.*
+An unobserved upward-excitation bath acts on the transverse ground preparation at $\omega=100$, $N=12$, $N_z=1500$, with detector step $0.0005$. The three rates are $\lambda=\pi/3200,\pi/1600,\pi/800$. Each curve subtracts its **own paired zero**: $\Delta p_n=p_{\lambda,n}-p_{0,n}$ and $\Delta g_n=\Delta p_n/\Delta t_n$.
+
+![Three-rate native click-density changes through each saved endpoint](data/figures/finite_rate.png)
+
+*Actual saved horizons: $T=6$ (π/3200), $10$ (π/1600), and $3.825$ (π/800). Later positive intervals partly recover the prompt detection deficit, while the cumulative change since launch remains negative at every saved endpoint. The standalone zero ends at $3.6$ and is a separate consistency check.*
+
+The [finite-rate results page](data/finite_rate/README.md) shows cumulative changes, the matched U2-I tangent comparison, and the historical poster view ($5.65,8.3,3.6$), including its reproduced doubling statistic. [Compact native inputs](data/finite_rate/branches/) and the [reproduction command](REPRODUCING.md#finite-rate-views-and-outputs) support both views.
 
 ## Repository and quick start
 

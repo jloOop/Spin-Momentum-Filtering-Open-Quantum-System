@@ -95,7 +95,7 @@ def main():
     det=list(csv.DictReader((REPO/'data/detector_controls/case_index.csv').open()))
     if len(det)!=16:errors.append('detector cohort coverage')
     # Check portable primary documentation only; archived reports retain historical references.
-    for name in ['README.md','PROJECT_SCOPE.md','REPRODUCING.md','paper/README.md']:
+    for name in ['README.md','PROJECT_SCOPE.md','REPRODUCING.md','paper/README.md','data/finite_rate/README.md','data/finite_rate/poster_provenance/README.md']:
         p=REPO/name
         if not p.exists():errors.append('missing documentation '+name);continue
         for target in re.findall(r'!?\[[^\]]*\]\(([^)]+)\)',p.read_text()):

@@ -1,0 +1,22 @@
+branch,direction,left_midpoint,right_midpoint,display_amplitude_threshold,interpretation
+pi3200,negative_to_positive,4.92375,4.924250000000001,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi3200,positive_to_negative,5.52375,5.52425,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi3200,negative_to_positive,5.97575,5.97625,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,negative_to_positive,4.92375,4.924250000000001,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,positive_to_negative,5.52425,5.52475,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,negative_to_positive,5.97575,5.97625,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,positive_to_negative,7.22575,7.22625,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,negative_to_positive,7.30175,7.302250000000001,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,positive_to_negative,7.5177499999999995,7.51825,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,negative_to_positive,7.62975,7.63025,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,positive_to_negative,7.79075,7.79125,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,negative_to_positive,7.97025,7.970750000000001,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,positive_to_negative,8.126750000000001,8.12725,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,negative_to_positive,8.31925,8.319749999999999,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,positive_to_negative,8.495750000000001,8.49625,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,negative_to_positive,8.72775,8.72825,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,positive_to_negative,8.882750000000001,8.88325,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,negative_to_positive,9.161750000000001,9.16225,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,positive_to_negative,9.30175,9.30225,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,negative_to_positive,9.62875,9.629249999999999,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound
+pi1600,positive_to_negative,9.78575,9.786249999999999,1e-10,adjacent native-bin bracket; no interpolated root or uncertainty bound

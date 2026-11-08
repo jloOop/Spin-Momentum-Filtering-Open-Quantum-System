@@ -235,11 +235,16 @@ def _rate_comparison(low, high):
     large, hiidx = aggregate_native(high, edges, high["dp"])
     residual = large - 2 * small
     ds_residual = float(high["ds"][hiidx[-1]] - 2 * low["ds"][loidx[-1]])
+    denominator = 2 * total(small)
+    guard = max(1e-12, 1e-6 * float(np.max(np.abs(2 * np.cumsum(low["dp"][:count])))))
+    meaningful = abs(denominator) > guard
     row = {
         "low_rate": low["rate"], "high_rate": high["rate"], "common_T": float(endpoint),
         "common_native_intervals": count, "panels": len(edges) - 1,
         "low_delta_click": total(small), "high_delta_click": total(large),
-        "high_over_twice_low_endpoint": total(large) / (2 * total(small)),
+        "high_over_twice_low_endpoint": total(large) / denominator if meaningful else None,
+        "absolute_endpoint_residual": abs(total(large) - denominator),
+        "endpoint_ratio_denominator_guard": guard, "endpoint_denominator_meaningful": meaningful,
         "complete_panel_record_scaling_residual": .5 * (total(np.abs(residual)) + abs(ds_residual)),
         "interpretation": "descriptive common-support rate scaling; not quadratic-remainder certification",
     }
@@ -313,6 +318,300 @@ def _a127_tables(record, references, output):
     return checked
 
 
+RATES = ("pi3200", "pi1600", "pi800")
+POSTER_ENDS = {"pi3200": 5.65, "pi1600": 8.3, "pi800": 3.6}
+COLORS = {"pi3200": "#398653", "pi1600": "#2767a1", "pi800": "#bf5045"}
+
+
+def _node(record, horizon):
+    index = round(horizon / record["dt"])
+    require(0 <= index < len(record["t"]), "Requested horizon exceeds saved support")
+    close(record["t"][index], horizon, "Exact native horizon", atol=1e-12, rtol=0)
+    return index
+
+
+def _native_cumulative(record):
+    # Add measured roof increments, never infer roof clicks from retained survival.
+    return np.r_[0., np.cumsum(record["dp"])]
+
+
+def _three_rate_tables(records, output):
+    matched, doubling, windows, sign_runs, changes, observations = [], [], [], [], [], {}
+    horizons = (3.6, 3.825, 5.65, 6., 8.3, 10.)
+    for branch in RATES:
+        r = records[branch]
+        dc = _native_cumulative(r)
+        for horizon in horizons:
+            row = {"branch": branch, "T": horizon, "saved_T": float(r["t"][-1]),
+                   "supported": bool(horizon <= r["t"][-1] + 1e-12)}
+            if row["supported"]:
+                j = _node(r, horizon)
+                row.update(C_lambda_native_fsum=total(r["p"][:j]),
+                           C_paired_zero_native_fsum=total(r["p0"][:j]),
+                           delta_C_native_fsum=total(r["dp"][:j]),
+                           delta_C_saved=float(r["dc"][j]),
+                           B_rep=float(r["h"]["representation_ledger"][j]),
+                           B_event=float(r["h"]["event_first_crossing_ledger"][j]))
+            matched.append(row)
+        signs = np.sign(r["dg"])
+        breaks = np.r_[0, np.flatnonzero(signs[1:] != signs[:-1]) + 1, len(signs)]
+        runs = []
+        for i, j in zip(breaks[:-1], breaks[1:]):
+            run = {"branch": branch, "start": float(r["t"][i]), "end": float(r["t"][j]),
+                   "first_bin": int(i), "last_bin": int(j-1), "sign": int(signs[i]),
+                   "max_abs_delta_g": float(np.max(np.abs(r["dg"][i:j]))),
+                   "net_response_mass": total(r["dp"][i:j])}
+            run["resolves_1e_minus10_display_threshold"] = run["max_abs_delta_g"] >= 1e-10
+            runs.append(run)
+            sign_runs.append(run)
+        for left, right in zip(runs[:-1], runs[1:]):
+            if (left["sign"] * right["sign"] < 0
+                    and left["resolves_1e_minus10_display_threshold"]
+                    and right["resolves_1e_minus10_display_threshold"]):
+                changes.append({"branch": branch,
+                                "direction": "negative_to_positive" if left["sign"] < 0 else "positive_to_negative",
+                                "left_midpoint": float(r["mid"][left["last_bin"]]),
+                                "right_midpoint": float(r["mid"][right["first_bin"]]),
+                                "display_amplitude_threshold": 1e-10,
+                                "interpretation": "adjacent native-bin bracket; no interpolated root or uncertainty bound"})
+        minimum = int(np.argmin(dc))
+        chosen = [(0., 3.6, "launch_to_3.6"), (3.6, 6., "3.6_to_6"),
+                  (6., 8.3, "6_to_8.3"), (6., 10., "6_to_10"), (8.3, 10., "8.3_to_10"),
+                  (0., float(r["t"][-1]), "launch_to_saved_endpoint"),
+                  (3.6, float(r["t"][-1]), "3.6_to_saved_endpoint"),
+                  (float(r["t"][minimum]), float(r["t"][-1]), "cumulative_minimum_to_saved_endpoint")]
+        chosen += [(run["start"], run["end"], "positive_native_sign_run") for run in runs
+                   if run["sign"] > 0 and run["resolves_1e_minus10_display_threshold"]]
+        for start, end, name in chosen:
+            available = end > start and end <= r["t"][-1] + 1e-12
+            row = {"branch": branch, "window": name, "start": start, "end": end,
+                   "fully_available": bool(available)}
+            if available:
+                i, j = _node(r, start), _node(r, end)
+                dp = r["dp"][i:j]
+                row.update(positive_mass=total(dp[dp > 0]), negative_mass_signed=total(dp[dp < 0]),
+                           net_mass=total(dp), delta_C_at_start=total(r["dp"][:i]),
+                           delta_C_at_end=total(r["dp"][:j]))
+            windows.append(row)
+        observations[branch] = {
+            "saved_T": float(r["t"][-1]), "minimum_delta_C": total(r["dp"][:minimum]),
+            "minimum_delta_C_time": float(r["t"][minimum]), "endpoint_delta_C": total(r["dp"]),
+            "change_from_minimum_to_endpoint": total(r["dp"][minimum:]),
+            "final_bin_delta_g": float(r["dg"][-1]),
+            "cumulative_negative_at_every_saved_node_from_t1": bool(np.all(dc[r["t"] >= 1.] < 0)),
+            "resolved_positive_native_sign_runs": sum(run["sign"] > 0 and run["resolves_1e_minus10_display_threshold"] for run in runs),
+            "display_threshold_scope": "Historical 1e-10 amplitude filter suppresses tiny launch sign noise; it is not a numerical error bar.",
+        }
+    for low, high in [("pi3200", "pi1600"), ("pi1600", "pi800")]:
+        a, b = records[low], records[high]
+        count = min(len(a["p"]), len(b["p"]))
+        require(np.array_equal(a["t"][:count+1], b["t"][:count+1]), "Identical doubling time grid")
+        threshold = max(1e-12, 1e-6 * float(np.max(np.abs(2 * _native_cumulative(a)[:count+1]))))
+        common_end = float(a["t"][count])
+        for horizon in horizons[:4]:
+            row = {"low_branch": low, "high_branch": high, "T": horizon, "common_saved_T": common_end,
+                   "supported": horizon <= common_end + 1e-12, "denominator_guard": threshold,
+                   "definition": "fsum(delta_p_high)/(2*fsum(delta_p_low)); each uses own paired zero"}
+            if row["supported"]:
+                j = _node(a, horizon)
+                low_dc, high_dc = total(a["dp"][:j]), total(b["dp"][:j])
+                meaningful = abs(2 * low_dc) > threshold
+                residual = high_dc - 2 * low_dc
+                row.update(low_delta_C=low_dc, high_delta_C=high_dc, signed_residual_Q_C=residual,
+                           absolute_residual=abs(residual), denominator_meaningful=meaningful,
+                           R=high_dc / (2 * low_dc) if meaningful else None,
+                           absolute_deviation_percent=100 * abs(high_dc/(2*low_dc)-1) if meaningful else None)
+            doubling.append(row)
+    for filename, rows in [("matched_horizons.csv", matched), ("integrated_rate_doubling.csv", doubling),
+                           ("response_mass_windows.csv", windows), ("native_sign_runs.csv", sign_runs),
+                           ("significant_sign_changes.csv", changes)]:
+        table(output / filename, rows)
+    return {"matched_horizons": matched, "integrated_rate_doubling": doubling,
+            "native_sign_observations": observations,
+            "sign_threshold": "Display filter inherited from Sofat; no scientific acceptance or convergence decision."}
+
+
+def _poster_regression(records, references, output):
+    """Historical cutoffs of verified continuation prefixes; small archived targets only."""
+    target = json.loads((references / "integrated_rate_doubling_T5p65_recomputed.json").read_text())
+    close(target["common_horizon"], 5.65, "Sofat target horizon", rtol=0)
+    close(target["dt"], records["pi3200"]["dt"], "Sofat target detector step", rtol=0)
+    require(target["native_bin_count"] == _node(records["pi3200"], 5.65), "Sofat native bin count")
+    # Preserve the explicitly recomputed fsum statistic, distinct from old C-C0 arithmetic.
+    fsum_values = {}
+    checked = 0
+    for branch in ("pi3200", "pi1600"):
+        r, saved = records[branch], target["rates"][branch]
+        j = _node(r, 5.65)
+        values = {"positive_roof_mass_fsum": total(r["p"][:j]),
+                  "paired_zero_roof_mass_fsum": total(r["p0"][:j]),
+                  "delta_C_native_increment_fsum": total(r["dp"][:j]),
+                  "delta_C_saved_cumulative_difference": float(r["dc"][j])}
+        values["crosscheck_difference"] = values["delta_C_native_increment_fsum"] - values["delta_C_saved_cumulative_difference"]
+        for key, value in values.items():
+            close(value, saved[key], "Sofat fsum " + branch + "/" + key, atol=2e-14, rtol=0)
+            checked += 1
+        fsum_values[branch] = values
+    low = fsum_values["pi3200"]["delta_C_native_increment_fsum"]
+    high = fsum_values["pi1600"]["delta_C_native_increment_fsum"]
+    ratio, residual = high / (2 * low), high - 2 * low
+    # Field names follow the archived explicit recomputation JSON.
+    for key, value in [("doubling_ratio", ratio), ("absolute_deviation_percent", 100*abs(ratio-1)),
+                       ("relative_signed_deviation_percent", 100*(ratio-1)), ("high_over_low", high/low),
+                       ("Q_C", residual)]:
+        close(value, target[key], "Sofat unrounded " + key, atol=2e-12 if key != "Q_C" else 2e-14, rtol=0)
+        checked += 1
+    cells = 0
+    for filename in ("endpoints.csv", "matched_horizons.csv", "response_mass_windows.csv", "rate_scaling.csv"):
+        with (references / filename).open(newline="", encoding="utf-8") as source:
+            stored_rows = list(csv.DictReader(source))
+        for stored in stored_rows:
+            branch = stored.get("rate", stored.get("low"))
+            r = records[branch]
+            # The source tables use separately accumulated C and C0, then subtract.
+            c, c0 = np.r_[0., np.cumsum(r["p"])], np.r_[0., np.cumsum(r["p0"])]
+            dc = c - c0
+            if filename in ("endpoints.csv", "matched_horizons.csv"):
+                horizon = float(stored["T"])
+                require(horizon <= POSTER_ENDS[branch] + 1e-12, "Historical table inside declared cutoff")
+                j = _node(r, horizon)
+                values = {"S": r["h"]["positive_survival"][j], "S0_paired": r["h"]["zero_survival"][j],
+                          "C": c[j], "C0_paired": c0[j], "delta_C": dc[j],
+                          "delta_C_relative_percent": 100 * dc[j] / c0[j],
+                          "B_rep": r["h"]["representation_ledger"][j], "B_event": r["h"]["event_first_crossing_ledger"][j]}
+            elif filename == "response_mass_windows.csv":
+                if stored["fully_available"] != "True":
+                    continue
+                i, j = _node(r, float(stored["start"])), _node(r, float(stored["end"]))
+                require(r["t"][j] <= POSTER_ENDS[branch] + 1e-12, "Historical window cutoff")
+                dp = r["dp"][i:j]
+                values = {"positive_mass": total(dp[dp > 0]), "negative_mass_signed": total(dp[dp < 0]),
+                          "negative_mass_magnitude": -total(dp[dp < 0]), "net_mass": total(dp),
+                          "delta_C_endpoint_difference": dc[j] - dc[i]}
+            else:
+                high_record = records[stored["high"]]
+                n = _node(r, min(POSTER_ENDS[branch], POSTER_ENDS[stored["high"]]))
+                high_dc = np.r_[0., np.cumsum(high_record["p"])] - np.r_[0., np.cumsum(high_record["p0"])]
+                j = _node(r, float(stored["T"]))
+                require(j <= n, "Historical doubling common support")
+                threshold = max(1e-12, 1e-6 * float(np.max(np.abs(2*dc[:n+1]))))
+                qg = high_record["dg"][:n] - 2 * r["dg"][:n]
+                values = {"Q_C": high_dc[j] - 2*dc[j], "delta_C_high_over_2low": high_dc[j]/(2*dc[j]),
+                          "C_ratio_denominator_threshold": threshold,
+                          "full_common_endpoint": float(r["t"][n]),
+                          "max_abs_Q_g_full_common_support": float(np.max(np.abs(qg)))}
+            for key, value in values.items():
+                close(value, float(stored[key]), "Sofat " + filename + "/" + key, atol=2e-12, rtol=1e-10)
+                cells += 1
+    result = {"historical_cutoffs": POSTER_ENDS, "source": "poster_provenance/ archived Sofat targets",
+              "prefix_basis": "All 27 native arrays per branch verified as exact continuation prefixes in prefix_verification.json; no independent run implied.",
+              "fsum_values": fsum_values, "doubling_ratio": ratio,
+              "absolute_deviation_percent": 100*abs(ratio-1), "signed_residual_Q_C": residual,
+              "scalar_regressions": checked, "table_cells": cells,
+              "tolerances": {"fsum_absolute": 2e-14, "ratio_absolute": 2e-12,
+                             "historical_table_absolute": 2e-12, "historical_table_relative": 1e-10},
+              "poster_printed_ratio": "approximately 0.9992; historical display retained, not conventional 4-decimal rounding",
+              "scope": "Saved-observable regression and historical cutoff reconstruction only; no solver or complete finite-rate convergence audit."}
+    dump(output / "poster_regression.json", result)
+    return result
+
+
+def _figures(records, tt, linear, main_rate, output):
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    with plt.rc_context({"path.simplify": False, "font.size": 10, "axes.spines.top": False,
+                         "axes.spines.right": False, "savefig.dpi": 170}):
+        def label(branch, end):
+            return rf"$\lambda=\pi/{branch[2:]}$; $T={end:g}$"
+
+        def native_figure(filename, cutoffs, title):
+            fig, axes = plt.subplots(2, 1, figsize=(11, 7.2), gridspec_kw={"height_ratios": [1.25, 1.]})
+            for branch in RATES:
+                r, end = records[branch], cutoffs[branch]
+                n = _node(r, end)
+                for ax in axes:
+                    ax.plot(r["mid"][:n], r["dg"][:n], color=COLORS[branch], lw=1.2, label=label(branch, end))
+                    ax.plot(r["mid"][n-1], r["dg"][n-1], ".", color=COLORS[branch], ms=5)
+            xmax = max(cutoffs.values())
+            for ax in axes:
+                ax.axhline(0, color="0.45", lw=.7)
+                ax.set(xlabel="Time", ylabel=r"$\Delta g_\lambda=(p_\lambda-p_{0,\lambda})/\Delta t$")
+                ax.ticklabel_format(axis="y", style="sci", scilimits=(-3, 3))
+            axes[0].set(xlim=(0, xmax + .07), title=title)
+            axes[0].legend(frameon=False, ncols=3, loc="lower right", fontsize=9)
+            # Magnify the late native bins without discarding or smoothing samples.
+            late_values = np.concatenate([records[b]["dg"][(records[b]["mid"] >= 3.4)
+                              & (records[b]["mid"] < cutoffs[b])] for b in RATES])
+            lo, hi = min(float(np.min(late_values)), 0.), max(float(np.max(late_values)), 0.)
+            pad = .1 * (hi - lo)
+            axes[1].set(xlim=(3.4, xmax+.07), ylim=(lo-pad, hi+pad), title="Late-time detail: positive density windows do not imply positive cumulative change")
+            fig.text(.08, .025, r"$\omega=100$, $N=12$, $N_z=1500$, mode 00, upward bath; $\Delta t=0.0005$. "
+                     "Each rate uses its own paired zero.\nEvery saved detector bin is shown; markers mark final-bin midpoints (T minus half a step). No smoothing or extrapolation.", fontsize=8.5)
+            fig.subplots_adjust(hspace=.45, bottom=.15, left=.1, right=.97, top=.95)
+            fig.savefig(output / filename)
+            plt.close(fig)
+
+        native_figure("finite_rate.png", {b: float(records[b]["t"][-1]) for b in RATES},
+                      "Task09 finite-rate roof-click response — extended saved histories")
+        native_figure("finite_rate_poster.png", POSTER_ENDS,
+                      "Poster-era support — exact prefixes of the selected histories")
+        fig, axes = plt.subplots(2, 1, figsize=(11, 7.2), gridspec_kw={"height_ratios": [1.3, 1.]})
+        for branch in RATES:
+            r, dc = records[branch], _native_cumulative(records[branch])
+            for ax in axes:
+                ax.plot(r["t"], dc, color=COLORS[branch], lw=1.4, label=label(branch, r["t"][-1]))
+                ax.plot(r["t"][-1], dc[-1], ".", color=COLORS[branch], ms=5)
+        for ax in axes:
+            ax.axhline(0, color="0.45", lw=.7)
+            ax.set(xlabel="Time", ylabel=r"$\Delta C_\lambda(T)=\sum_{t_{n+1}\leq T}(p_\lambda-p_{0,\lambda})$")
+            ax.ticklabel_format(axis="y", style="sci", scilimits=(-3, 3))
+        axes[0].set(xlim=(0, 10.07), title="Cumulative roof-click change from launch — full saved support")
+        axes[0].legend(frameon=False, ncols=3, fontsize=9)
+        axes[1].set(xlim=(3.4, 10.07), ylim=(-.00115, -.0003), title="Late detail for the two lower rates (high-rate curve remains below this zoom)")
+        fig.text(.09, .025, "Own paired zeros; cumulative sums of native roof-probability differences. Late positive increments can reduce an earlier deficit.\n"
+                 "All three cumulative changes remain negative at saved nodes from t=1. Native floating-point sums are not forced to close.", fontsize=8.5)
+        fig.subplots_adjust(hspace=.45, bottom=.15, left=.1, right=.97, top=.95)
+        fig.savefig(output / "finite_rate_cumulative.png")
+        plt.close(fig)
+        fig, axes = plt.subplots(2, 1, figsize=(11, 7.5))
+        panel_rows = []
+        chi_p = linear / main_rate
+        for branch in RATES:
+            r = records[branch]
+            axes[0].plot(r["mid"], r["dg"]/r["rate"], color=COLORS[branch], lw=1.15,
+                         label=label(branch, r["t"][-1]))
+            axes[0].plot(r["mid"][-1], r["dg"][-1]/r["rate"], ".", color=COLORS[branch], ms=5)
+            # Only whole tangent panels whose endpoints exist in the finite history.
+            edge_count = int(np.count_nonzero(tt <= r["t"][-1] + 1e-12))
+            edges = tt[:edge_count]
+            panels, _ = aggregate_native(r, edges, r["dp"])
+            widths = np.diff(edges)
+            centers = (edges[:-1] + edges[1:])/2
+            residual = panels/r["rate"] - chi_p[:len(panels)]
+            axes[1].plot(centers, residual/widths, color=COLORS[branch], lw=1.3,
+                         label=rf"$\pi/{branch[2:]}$; panels through {edges[-1]:g}")
+            for j in range(len(panels)):
+                panel_rows.append({"branch": branch, "left": float(edges[j]), "right": float(edges[j+1]),
+                                   "finite_panel_probability": float(panels[j]),
+                                   "finite_density_over_lambda": float(panels[j]/widths[j]/r["rate"]),
+                                   "chi_g_panel_average": float(chi_p[j]/widths[j]),
+                                   "normalized_density_residual": float(residual[j]/widths[j])})
+        for ax in axes:
+            ax.axhline(0, color="0.45", lw=.7)
+            ax.set(xlim=(0, 10.07), xlabel="Time")
+            ax.legend(frameon=False, ncols=3, fontsize=9)
+        axes[0].set(ylabel=r"Native $\Delta g_\lambda/\lambda$", title="Rate-normalized response — each curve ends at its own saved endpoint")
+        axes[1].set(ylabel=r"Panel $(\Delta g_\lambda/\lambda)-\chi_g$", title="Departure from U2-I tangent on matched 0.05-wide probability panels")
+        axes[1].ticklabel_format(axis="y", style="sci", scilimits=(-3, 3))
+        fig.text(.09, .025, "Top: every native detector bin. Bottom: sum fine probability bins before dividing by panel width and rate; tangent is per unit rate.\n"
+                 "The pi/800 comparison ends at 3.8 (last complete tangent panel); its native history ends at 3.825. Descriptive, not a convergence certificate.", fontsize=8.5)
+        fig.subplots_adjust(hspace=.45, bottom=.15, left=.1, right=.97, top=.95)
+        fig.savefig(output / "finite_rate_normalized.png")
+        plt.close(fig)
+        table(output / "three_rate_tangent_panels.csv", panel_rows)
+
+
 def run(repo: Path, output: Path):
     repo, output = repo.resolve(), output.resolve()
     require(output != repo and not output.is_relative_to(repo / "data")
@@ -366,9 +665,12 @@ def run(repo: Path, output: Path):
     table(output / "tangent_panels.csv", [
         {"left": float(tt[j]), "right": float(tt[j+1]), "finite_delta_probability": float(finite[j]),
          "linear_delta_probability": float(linear[j])} for j in range(len(finite))])
+    three_rate = _three_rate_tables(records, output)
+    poster = _poster_regression(records, repo / "data" / "finite_rate" / "poster_provenance", output)
     summary = {
+        "three_rate": three_rate, "poster_regression": poster,
         "check_scope": "New saved-observable/schema/metadata/reduction checks only; no simulations or spectrum/factor re-audit.",
-        "source_method": "A127 analyze_native.py native-bin definitions and causal U2-I quadrature, portable adaptation.",
+        "source_method": "A127 analyze_native.py native-bin definitions and causal U2-I quadrature; Sofat analyze.py historical cutoffs and native-sum comparisons, portable adaptations.",
         "endpoints": endpoints, "tangent": tan, "common_support_rate_scaling": scaling,
         "standalone_zero_consistency": zero_checks,
         "ordered_loss_checks": {b: records[b]["ordered"] for b in BRANCHES},
@@ -394,48 +696,5 @@ def run(repo: Path, output: Path):
     np.savez_compressed(output / "finite_rate_arrays.npz", times=main["t"], midpoint_times=main["mid"],
                         delta_probability=main["dp"], delta_g=main["dg"], delta_C=main["dc"],
                         tangent_edges=tt, finite_delta_panels=finite, linear_delta_panels=linear)
-    import matplotlib
-    matplotlib.use("Agg")
-    import matplotlib.pyplot as plt
-    with plt.rc_context({"path.simplify": False, "font.size": 10, "axes.spines.top": False,
-                         "axes.spines.right": False, "savefig.dpi": 170}):
-        fig = plt.figure(figsize=(11, 8))
-        grid = fig.add_gridspec(2, 2, hspace=.4, wspace=.3)
-        ax = fig.add_subplot(grid[0, :])
-        ax.plot(main["mid"], main["dg"], color="#245c8d", lw=1.25)
-        ax.axhline(0, color="0.45", lw=.7)
-        ax.set(xlim=(0, main["t"][-1]), xlabel="Time", ylabel=r"$\Delta g_\lambda=(p_\lambda-p_0)/\Delta t$",
-               title=r"Native roof-click response, $\lambda=\pi/1600$, own paired zero")
-        ax.ticklabel_format(axis="y", style="sci", scilimits=(-3, 3))
-        ax = fig.add_subplot(grid[1, 0])
-        centers, widths = (tt[:-1]+tt[1:])/2, np.diff(tt)
-        ax.plot(centers, finite/widths, color="#245c8d", label="Finite rate", lw=1.3)
-        ax.plot(centers, linear/widths, color="#c25728", ls="--", label=r"$\lambda\,\chi_g$ (U2-I)", lw=1.2)
-        ax.axhline(0, color="0.45", lw=.7)
-        ax.set(xlim=(0, tt[-1]), xlabel="Time", ylabel="Panel-average response",
-               title="Same 0.05-wide probability panels")
-        ax.ticklabel_format(axis="y", style="sci", scilimits=(-3, 3))
-        ax.legend(frameon=False)
-        ax = fig.add_subplot(grid[1, 1])
-        common_end = min(records[b]["t"][-1] for b in BRANCHES[:-1])
-        count = min(len(records[b]["t"]) for b in BRANCHES[:-1])-1
-        ids = np.unique(np.r_[np.arange(0, count+1, 100), count]).astype(int)
-        edges = main["t"][ids]
-        for b, color in [("pi3200", "#53955b"), ("pi1600", "#245c8d"), ("pi800", "#ad4b45")]:
-            record = records[b]
-            panels, _ = aggregate_native(record, edges, record["dp"])
-            ax.plot((edges[:-1]+edges[1:])/2, panels/np.diff(edges)/record["rate"],
-                    label=r"$\pi/"+b[2:]+r"$", color=color, lw=1.3)
-        ax.axhline(0, color="0.45", lw=.7)
-        ax.set(xlim=(0, common_end), xlabel="Time", ylabel=r"Panel response / $\lambda$",
-               title=f"Three rates, common saved support to {common_end:g}")
-        ax.legend(frameon=False)
-        fig.text(.07, .015,
-                 r"$\omega=100$, $N=12$, $N_z=1500$, mode 00, $\Delta t=0.0005$. "
-                 "Native probabilities; no smoothing or extrapolation.\n"
-                 "Each positive branch uses its own zero. Tangent/rate scaling is descriptive, not a convergence certificate.",
-                 fontsize=8.5)
-        fig.subplots_adjust(bottom=.12)
-        fig.savefig(output / "finite_rate.png")
-        plt.close(fig)
+    _figures(records, tt, linear, main["rate"], output)
     return summary

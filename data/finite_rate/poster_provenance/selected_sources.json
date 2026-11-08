@@ -1,0 +1,47 @@
+[
+  {
+    "rate": "pi3200",
+    "lambda": 0.0009817477042468104,
+    "source": "V16_t=3.6to/pi3200_3.6to4.4245/3_4.475to6/Output_to5.4/Task09_Pi3200_2969484_step11300_ReadOnly_Snapshot.zip",
+    "member": "CHECKPOINT/histories.npz",
+    "source_sha256": "5b404ae90d598c2d82460f15b2ca22c8e9f03813d174079fc29660e8c60618a4",
+    "member_sha256": "f8cd4df003417b3451b2802ca4d2f48857aa2e853d90780b644f2a3f8de60526",
+    "start": 0.0,
+    "endpoint": 5.65,
+    "step": 11300,
+    "status": "interim snapshot; job 2969484",
+    "native_arrays": 27,
+    "configuration_member": "SOURCE/PREPARED/PROMOTION/CONFIG.json",
+    "checkpoint_metadata_member": "CHECKPOINT/checkpoint_metadata.json"
+  },
+  {
+    "rate": "pi1600",
+    "lambda": 0.001963495408493621,
+    "source": "V16_t=3.6to/pi1600_3.6to10/2_to8.3/Task09_Pi1600_2966988_Live_t6_to_step16600_20260917T173757Z.zip",
+    "member": "original/checkpoint_step16600/histories.npz",
+    "source_sha256": "495dcd2d9c1e8181d7b3e99c50326c951aee040bb8939264150ee0baaf0e2806",
+    "member_sha256": "896f6fe6e74aa99510662a9fc7f6f04f211df847b28f4e742468ace017c9a7f7",
+    "start": 0.0,
+    "endpoint": 8.3,
+    "step": 16600,
+    "status": "interim snapshot; job 2966988",
+    "native_arrays": 27,
+    "configuration_member": "original/PACKAGE/CONFIG.json",
+    "checkpoint_metadata_member": "original/checkpoint_step16600/checkpoint_metadata.json"
+  },
+  {
+    "rate": "pi800",
+    "lambda": 0.003926990816987242,
+    "source": "V16_t=3.6to/pi800_3.6to6/2/Task09_Pi800_6230_To7200_v1_Core_2965353.zip",
+    "member": "SESSION/block_histories.npz",
+    "source_sha256": "cef0c1acfb454bbd775fa73038f651aeae5105b2a78d27ac0840569bc4acc63b",
+    "member_sha256": "48ea4507430a884523b3a7d59a3942a8cc40dad0726caae0cc206ca866f91a9b",
+    "start": 0.0,
+    "endpoint": 3.6,
+    "step": 7200,
+    "status": "finalized requested prefix; job 2965353",
+    "native_arrays": 27,
+    "configuration_member": "PACKAGE/CONFIG.json",
+    "checkpoint_metadata_member": "SESSION/checkpoint_step7200/checkpoint_metadata.json"
+  }
+]

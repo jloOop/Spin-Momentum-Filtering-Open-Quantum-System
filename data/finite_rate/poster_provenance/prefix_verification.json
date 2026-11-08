@@ -1,0 +1,1409 @@
+{
+  "schema_version": 1,
+  "scope": "Read-only saved-array provenance and reduction checks; no simulations or scientific acceptance audit. Historical archive SHA values were not freshly verified. No source modules were imported or executed.",
+  "source_root_alias": "TASKS",
+  "source_package": "Stage09/V16_t=3.6to/Task09_Analysis_Sofat_20260917T180007Z",
+  "comparison_method": "For every native array, compare dtype, trailing shape, and complete C-order bytes against the leading prefix of the committed later history; additionally np.array_equal with no tolerance. No inherited prefix is concatenated or treated as an independent run.",
+  "sources": [
+    {
+      "rate": "pi3200",
+      "lambda": 0.0009817477042468104,
+      "historical_npz": "data/pi3200_native_histories.npz",
+      "historical_npz_bytes": 1609156,
+      "historical_npz_sha256_verified": "f8cd4df003417b3451b2802ca4d2f48857aa2e853d90780b644f2a3f8de60526",
+      "selected_sources_member_sha256_reported": "f8cd4df003417b3451b2802ca4d2f48857aa2e853d90780b644f2a3f8de60526",
+      "historical_npz_matches_reported_member_hash": true,
+      "historical_archive": "V16_t=3.6to/pi3200_3.6to4.4245/3_4.475to6/Output_to5.4/Task09_Pi3200_2969484_step11300_ReadOnly_Snapshot.zip",
+      "historical_archive_member": "CHECKPOINT/histories.npz",
+      "historical_archive_sha256_reported_not_rehashed": "5b404ae90d598c2d82460f15b2ca22c8e9f03813d174079fc29660e8c60618a4",
+      "historical_endpoint": 5.65,
+      "historical_completed_step": 11300,
+      "later_repository_npz": "data/finite_rate/branches/pi3200/history.npz",
+      "later_npz_sha256_verified": "dfb31d05c1fdbc39481c3388a72d568fd7a36e8d6768e54ed62ab0efaa6e0597",
+      "later_endpoint": 6.0,
+      "later_completed_step": 12000,
+      "later_metadata": "data/finite_rate/branches/pi3200/checkpoint_metadata.json",
+      "later_metadata_sha256_verified": "87853ce3df55831808e0b42de69559e45bfdc6260fbea82e78acd7952076d719",
+      "later_metadata_endpoint": 6.0,
+      "later_metadata_completed_step": 12000,
+      "later_time_and_metadata_agree": true,
+      "historical_grid_exact_n_dt": true,
+      "later_grid_exact_n_dt": true,
+      "all_arrays_finite": true,
+      "native_arrays_checked": 27,
+      "physical_arrays_checked": 7,
+      "diagnostic_arrays_checked": 20,
+      "all_native_array_prefixes_exact": true,
+      "diagnostic_differences": [],
+      "prefix_checks": [
+        {
+          "array": "times",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            11301
+          ],
+          "later_shape": [
+            12001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "positive_survival",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            11301
+          ],
+          "later_shape": [
+            12001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "zero_survival",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            11301
+          ],
+          "later_shape": [
+            12001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "positive_step_click",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            11300
+          ],
+          "later_shape": [
+            12000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "zero_step_click",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            11300
+          ],
+          "later_shape": [
+            12000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "cumulative_positive_click",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            11301
+          ],
+          "later_shape": [
+            12001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "cumulative_zero_click",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            11301
+          ],
+          "later_shape": [
+            12001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "representation_ledger",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11301
+          ],
+          "later_shape": [
+            12001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "representation_ceiling",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11301
+          ],
+          "later_shape": [
+            12001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "event_first_crossing_ledger",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11301
+          ],
+          "later_shape": [
+            12001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "analytic_event_tail_bound",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11301
+          ],
+          "later_shape": [
+            12001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "cumulative_overflow_bound",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11301
+          ],
+          "later_shape": [
+            12001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "top_shell_population",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11301
+          ],
+          "later_shape": [
+            12001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "total_rank",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11301
+          ],
+          "later_shape": [
+            12001
+          ],
+          "dtype": "int64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "sector_traces",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11301,
+            5
+          ],
+          "later_shape": [
+            12001,
+            5
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "sector_ranks",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11301,
+            5
+          ],
+          "later_shape": [
+            12001,
+            5
+          ],
+          "dtype": "int64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "gmres_max_residual",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11300
+          ],
+          "later_shape": [
+            12000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "batch_sample_relative_error",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11300
+          ],
+          "later_shape": [
+            12000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "complete_step_ledger_closure",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11300
+          ],
+          "later_shape": [
+            12000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "zero_step_closure",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11300
+          ],
+          "later_shape": [
+            12000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "step_wall_seconds",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11300
+          ],
+          "later_shape": [
+            12000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "representation_increment",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11300
+          ],
+          "later_shape": [
+            12000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "event_increment",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11300
+          ],
+          "later_shape": [
+            12000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "detector_number_rhs",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11300
+          ],
+          "later_shape": [
+            12000
+          ],
+          "dtype": "int64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "detector_number_batches",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11300
+          ],
+          "later_shape": [
+            12000
+          ],
+          "dtype": "int64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "detector_maximum_actual_batch_columns",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11300
+          ],
+          "later_shape": [
+            12000
+          ],
+          "dtype": "int64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "detector_batch64_contract_passed",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            11300
+          ],
+          "later_shape": [
+            12000
+          ],
+          "dtype": "int8",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ],
+      "derived_native_bins_checks": {
+        "bin_index_zero_based": true,
+        "t_left": true,
+        "t_right": true,
+        "t_mid": true,
+        "positive_step_click": true,
+        "zero_step_click_paired": true,
+        "g_lambda": true,
+        "g0_paired": true,
+        "delta_g": true,
+        "delta_g_over_lambda": true
+      }
+    },
+    {
+      "rate": "pi1600",
+      "lambda": 0.001963495408493621,
+      "historical_npz": "data/pi1600_native_histories.npz",
+      "historical_npz_bytes": 2552015,
+      "historical_npz_sha256_verified": "896f6fe6e74aa99510662a9fc7f6f04f211df847b28f4e742468ace017c9a7f7",
+      "selected_sources_member_sha256_reported": "896f6fe6e74aa99510662a9fc7f6f04f211df847b28f4e742468ace017c9a7f7",
+      "historical_npz_matches_reported_member_hash": true,
+      "historical_archive": "V16_t=3.6to/pi1600_3.6to10/2_to8.3/Task09_Pi1600_2966988_Live_t6_to_step16600_20260917T173757Z.zip",
+      "historical_archive_member": "original/checkpoint_step16600/histories.npz",
+      "historical_archive_sha256_reported_not_rehashed": "495dcd2d9c1e8181d7b3e99c50326c951aee040bb8939264150ee0baaf0e2806",
+      "historical_endpoint": 8.3,
+      "historical_completed_step": 16600,
+      "later_repository_npz": "data/finite_rate/branches/pi1600/history.npz",
+      "later_npz_sha256_verified": "486f5af572ecac7fb4f90a5dd9b86edd1be48b69da0b5d6533e8523f29b276c4",
+      "later_endpoint": 10.0,
+      "later_completed_step": 20000,
+      "later_metadata": "data/finite_rate/branches/pi1600/checkpoint_metadata.json",
+      "later_metadata_sha256_verified": "8e781959f70ce5b68a41fb4e6d8c2b75fbc31995a2b116bb430b9b03f8358b56",
+      "later_metadata_endpoint": 10.0,
+      "later_metadata_completed_step": 20000,
+      "later_time_and_metadata_agree": true,
+      "historical_grid_exact_n_dt": true,
+      "later_grid_exact_n_dt": true,
+      "all_arrays_finite": true,
+      "native_arrays_checked": 27,
+      "physical_arrays_checked": 7,
+      "diagnostic_arrays_checked": 20,
+      "all_native_array_prefixes_exact": true,
+      "diagnostic_differences": [],
+      "prefix_checks": [
+        {
+          "array": "times",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            16601
+          ],
+          "later_shape": [
+            20001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "positive_survival",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            16601
+          ],
+          "later_shape": [
+            20001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "zero_survival",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            16601
+          ],
+          "later_shape": [
+            20001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "cumulative_positive_click",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            16601
+          ],
+          "later_shape": [
+            20001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "cumulative_zero_click",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            16601
+          ],
+          "later_shape": [
+            20001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "representation_ledger",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16601
+          ],
+          "later_shape": [
+            20001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "representation_ceiling",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16601
+          ],
+          "later_shape": [
+            20001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "event_first_crossing_ledger",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16601
+          ],
+          "later_shape": [
+            20001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "cumulative_overflow_bound",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16601
+          ],
+          "later_shape": [
+            20001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "total_rank",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16601
+          ],
+          "later_shape": [
+            20001
+          ],
+          "dtype": "int64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "sector_traces",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16601,
+            5
+          ],
+          "later_shape": [
+            20001,
+            5
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "sector_ranks",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16601,
+            5
+          ],
+          "later_shape": [
+            20001,
+            5
+          ],
+          "dtype": "int64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "analytic_event_tail_bound",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16601
+          ],
+          "later_shape": [
+            20001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "top_shell_population",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16601
+          ],
+          "later_shape": [
+            20001
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "positive_step_click",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            16600
+          ],
+          "later_shape": [
+            20000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "zero_step_click",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            16600
+          ],
+          "later_shape": [
+            20000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "gmres_max_residual",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16600
+          ],
+          "later_shape": [
+            20000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "batch_sample_relative_error",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16600
+          ],
+          "later_shape": [
+            20000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "complete_step_ledger_closure",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16600
+          ],
+          "later_shape": [
+            20000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "zero_step_closure",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16600
+          ],
+          "later_shape": [
+            20000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "step_wall_seconds",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16600
+          ],
+          "later_shape": [
+            20000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "representation_increment",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16600
+          ],
+          "later_shape": [
+            20000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "event_increment",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16600
+          ],
+          "later_shape": [
+            20000
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "detector_number_rhs",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16600
+          ],
+          "later_shape": [
+            20000
+          ],
+          "dtype": "int64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "detector_number_batches",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16600
+          ],
+          "later_shape": [
+            20000
+          ],
+          "dtype": "int64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "detector_maximum_actual_batch_columns",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16600
+          ],
+          "later_shape": [
+            20000
+          ],
+          "dtype": "int64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "detector_batch64_contract_passed",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            16600
+          ],
+          "later_shape": [
+            20000
+          ],
+          "dtype": "int8",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ],
+      "derived_native_bins_checks": {
+        "bin_index_zero_based": true,
+        "t_left": true,
+        "t_right": true,
+        "t_mid": true,
+        "positive_step_click": true,
+        "zero_step_click_paired": true,
+        "g_lambda": true,
+        "g0_paired": true,
+        "delta_g": true,
+        "delta_g_over_lambda": true
+      }
+    },
+    {
+      "rate": "pi800",
+      "lambda": 0.003926990816987242,
+      "historical_npz": "data/pi800_native_histories.npz",
+      "historical_npz_bytes": 1095049,
+      "historical_npz_sha256_verified": "48ea4507430a884523b3a7d59a3942a8cc40dad0726caae0cc206ca866f91a9b",
+      "selected_sources_member_sha256_reported": "48ea4507430a884523b3a7d59a3942a8cc40dad0726caae0cc206ca866f91a9b",
+      "historical_npz_matches_reported_member_hash": true,
+      "historical_archive": "V16_t=3.6to/pi800_3.6to6/2/Task09_Pi800_6230_To7200_v1_Core_2965353.zip",
+      "historical_archive_member": "SESSION/block_histories.npz",
+      "historical_archive_sha256_reported_not_rehashed": "cef0c1acfb454bbd775fa73038f651aeae5105b2a78d27ac0840569bc4acc63b",
+      "historical_endpoint": 3.6,
+      "historical_completed_step": 7200,
+      "later_repository_npz": "data/finite_rate/branches/pi800/history.npz",
+      "later_npz_sha256_verified": "2511c61ffe9cf61e8fbd8dd92d0ee6ed698bdf32db72e705c1e581cd7e5e702a",
+      "later_endpoint": 3.825,
+      "later_completed_step": 7650,
+      "later_metadata": "data/finite_rate/branches/pi800/checkpoint_metadata.json",
+      "later_metadata_sha256_verified": "fb62972bddb320fbc85bb3f9370604386e86e1508f9a2ca1a57b468186d15713",
+      "later_metadata_endpoint": 3.825,
+      "later_metadata_completed_step": 7650,
+      "later_time_and_metadata_agree": true,
+      "historical_grid_exact_n_dt": true,
+      "later_grid_exact_n_dt": true,
+      "all_arrays_finite": true,
+      "native_arrays_checked": 27,
+      "physical_arrays_checked": 7,
+      "diagnostic_arrays_checked": 20,
+      "all_native_array_prefixes_exact": true,
+      "diagnostic_differences": [],
+      "prefix_checks": [
+        {
+          "array": "times",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            7201
+          ],
+          "later_shape": [
+            7651
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "positive_survival",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            7201
+          ],
+          "later_shape": [
+            7651
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "zero_survival",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            7201
+          ],
+          "later_shape": [
+            7651
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "positive_step_click",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            7200
+          ],
+          "later_shape": [
+            7650
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "zero_step_click",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            7200
+          ],
+          "later_shape": [
+            7650
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "cumulative_positive_click",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            7201
+          ],
+          "later_shape": [
+            7651
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "cumulative_zero_click",
+          "role": "physical_observable_or_time_grid",
+          "historical_shape": [
+            7201
+          ],
+          "later_shape": [
+            7651
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "representation_ledger",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7201
+          ],
+          "later_shape": [
+            7651
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "representation_ceiling",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7201
+          ],
+          "later_shape": [
+            7651
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "event_first_crossing_ledger",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7201
+          ],
+          "later_shape": [
+            7651
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "analytic_event_tail_bound",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7201
+          ],
+          "later_shape": [
+            7651
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "cumulative_overflow_bound",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7201
+          ],
+          "later_shape": [
+            7651
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "top_shell_population",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7201
+          ],
+          "later_shape": [
+            7651
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "total_rank",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7201
+          ],
+          "later_shape": [
+            7651
+          ],
+          "dtype": "int64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "sector_traces",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7201,
+            7
+          ],
+          "later_shape": [
+            7651,
+            7
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "sector_ranks",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7201,
+            7
+          ],
+          "later_shape": [
+            7651,
+            7
+          ],
+          "dtype": "int64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "gmres_max_residual",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7200
+          ],
+          "later_shape": [
+            7650
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "batch_sample_relative_error",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7200
+          ],
+          "later_shape": [
+            7650
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "complete_step_ledger_closure",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7200
+          ],
+          "later_shape": [
+            7650
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "zero_step_closure",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7200
+          ],
+          "later_shape": [
+            7650
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "step_wall_seconds",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7200
+          ],
+          "later_shape": [
+            7650
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "representation_increment",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7200
+          ],
+          "later_shape": [
+            7650
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "event_increment",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7200
+          ],
+          "later_shape": [
+            7650
+          ],
+          "dtype": "float64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "detector_number_rhs",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7200
+          ],
+          "later_shape": [
+            7650
+          ],
+          "dtype": "int64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "detector_number_batches",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7200
+          ],
+          "later_shape": [
+            7650
+          ],
+          "dtype": "int64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "detector_maximum_actual_batch_columns",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7200
+          ],
+          "later_shape": [
+            7650
+          ],
+          "dtype": "int64",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        },
+        {
+          "array": "detector_batch64_contract_passed",
+          "role": "diagnostic_or_accounting",
+          "historical_shape": [
+            7200
+          ],
+          "later_shape": [
+            7650
+          ],
+          "dtype": "int8",
+          "array_equal": true,
+          "bitwise_prefix_equal": true,
+          "max_abs_difference": 0.0
+        }
+      ],
+      "derived_native_bins_checks": {
+        "bin_index_zero_based": true,
+        "t_left": true,
+        "t_right": true,
+        "t_mid": true,
+        "positive_step_click": true,
+        "zero_step_click_paired": true,
+        "g_lambda": true,
+        "g0_paired": true,
+        "delta_g": true,
+        "delta_g_over_lambda": true
+      }
+    }
+  ],
+  "integrated_rate_doubling_T5p65": {
+    "common_horizon": 5.65,
+    "dt": 0.0005,
+    "native_bin_count": 11300,
+    "definition": "math.fsum((positive_step_click-zero_step_click)[:11300]); each rate uses its own paired zero",
+    "rates": {
+      "pi3200": {
+        "positive_roof_mass_fsum": 0.4646999416540048,
+        "paired_zero_roof_mass_fsum": 0.46521623237446946,
+        "delta_C_native_increment_fsum": -0.000516290720464702,
+        "delta_C_saved_cumulative_difference": -0.0005162907204654954,
+        "crosscheck_difference": 7.934191498248921e-16,
+        "source_npz_sha256": "f8cd4df003417b3451b2802ca4d2f48857aa2e853d90780b644f2a3f8de60526"
+      },
+      "pi1600": {
+        "positive_roof_mass_fsum": 0.46418439251401117,
+        "paired_zero_roof_mass_fsum": 0.46521623217835667,
+        "delta_C_native_increment_fsum": -0.0010318396643455164,
+        "delta_C_saved_cumulative_difference": -0.0010318396643498318,
+        "crosscheck_difference": 4.315341486926805e-15,
+        "source_npz_sha256": "896f6fe6e74aa99510662a9fc7f6f04f211df847b28f4e742468ace017c9a7f7"
+      }
+    },
+    "doubling_ratio": 0.9992816289790954,
+    "relative_signed_deviation_percent": -0.07183710209045513,
+    "absolute_deviation_percent": 0.07183710209045513,
+    "high_over_low": 1.998563257958191,
+    "Q_C": 7.417765838875403e-07,
+    "matches_reported_json_all_numeric_fields": true
+  },
+  "poster_section_6": {
+    "source_alias": "RESEARCH_REFERENCE",
+    "relative_path": "OpenQuantumExtension_SoFar/BeyondC_A-Jozani.pdf",
+    "page": 1,
+    "inspection": "Page rendered and Section 6 visually inspected; text extraction alone misread mathematical glyphs.",
+    "historical_endpoints": {
+      "pi3200": 5.65,
+      "pi1600": 8.3,
+      "pi800": 3.6
+    },
+    "printed_doubling_ratio": 0.9992,
+    "printed_absolute_deviation_percent": 0.072,
+    "reproduced_ratio_rounded_4_decimals": 0.9993,
+    "discrepancy": "Native roof-increment sum gives 0.9992816289790954, which rounds to 0.9993 at four decimals. The historical 0.9992 display is not nearest-four-decimal rounding; its specific editorial origin cannot be established from the supplied PDF/package. The separately recomputed deviation 0.07183710209045513% rounds to the printed 0.072%. Do not infer deviation from the rounded ratio. Saved-cumulative subtraction produces 0.999281628981739 (floating accumulation/cancellation difference), which does not explain the four-decimal display difference.",
+    "association_evidence": [
+      "Selected member hashes exactly match all three native NPZ bytes.",
+      "Historical time arrays and selected_sources agree with the three endpoint labels in Section 6.",
+      "analyze.py SPEC names selected rates/members; essential builds delta_g from own paired roof increments and figure1 plots full native midpoints.",
+      "All ten derived native-bin arrays per rate exactly reproduce source data from the native histories.",
+      "The separate unrounded T5.65 JSON exactly agrees with a fresh math.fsum reduction.",
+      "All 81 historical arrays are bitwise prefixes of committed later histories; explicit cutoffs reconstruct the same inputs."
+    ],
+    "limit": "No editable poster document or cryptographic link from embedded poster chart to original arrays was supplied; association rests on the joint source selection, native arrays, analysis definitions, matching supports and statistic, plus visual inspection.",
+    "source_pdf_bytes": 9043730,
+    "source_pdf_sha256_verified": "3b500d174ead26d501d3c81c72ce48f000bf9111fee5999771c3f9edf25c8be2"
+  },
+  "source_files_sha256_verified": {
+    "selected_sources.json": "d865c8620de72d3cd87cb5b78afd45c5e98fcf120ac6643aad12fca75aa230f2",
+    "analyze.py": "4f69efc6eb5011b04a039e703492835ea03c79b779c0382a3b0dd543f85d42e0",
+    "support.py": "cf80e8a74f0eeef1cd3ae7d0bb9de9db35d642caeebec95614e50bb32fc1652f",
+    "run_analysis.py": "56d0e5547c558d4a5d84f0c14aee852e5f92a806524b675b1eede4f1a639b12b",
+    "README.md": "38aa657b01caeeb6f0f6560ac00322fef96844a3bb37bf244757a4353841db7f",
+    "FINDINGS.md": "38554f32ec6944813f6c4b7c0f176da8d17bbc1a6105754ec47fb03440368eee",
+    "tables/integrated_rate_doubling_T5p65_recomputed.json": "680b61f3eeb1bb4356300e7aff4316118e9d205632c2430a11e75c9f104939f0",
+    "tables/endpoints.csv": "717ed117f9b75c352e967e335959fde85efaf4993c599df3b15523ad741e5a3e",
+    "tables/matched_horizons.csv": "f5f8bffbf0bb26b5def08e6ff91c4f087386ac3012b96f3b0fb3e03ab721a397",
+    "tables/rate_scaling.csv": "f1e31e8a0079497cb46cbafdcf2654a7879774bcab276c10ded429ef4cb78213",
+    "tables/response_mass_windows.csv": "767656a63bcaeef9db0c0147a7484c2e47d4bfa8b46d977040ec32fd397ed9a2",
+    "tables/paired_zero_comparisons.csv": "1b47cde799294f125fe9b7de2f93692632cd337776a6ef5a423d59ec77cdc968",
+    "tables/pi800_repaired_zero_ancestry.csv": "4ae4253e3b5685b73d6467c45e01f1854f450de701fd4ea970bb9aadccb25f49"
+  },
+  "recommendation": "Reuse the committed later histories with explicit poster cutoffs; retain selected_sources.json, the unrounded T5p65 JSON and this compact prefix evidence. Preserve small scoped ancestry/status tables where useful. Do not copy historical NPZs, source_cache, python_deps or the full historical analysis tree.",
+  "historical_doubling_derived_array_checks": [
+    {
+      "low": "pi3200",
+      "high": "pi1600",
+      "array_checks": {
+        "times": true,
+        "mid": true,
+        "Q_C": true,
+        "Q_g": true,
+        "C_ratio": true,
+        "g_ratio": true,
+        "C_ratio_mask": true,
+        "g_ratio_mask": true,
+        "C_threshold": true,
+        "g_threshold": true,
+        "recorded_loss_scale": true
+      },
+      "all_arrays_exact_from_historical_code_formulas": true
+    },
+    {
+      "low": "pi1600",
+      "high": "pi800",
+      "array_checks": {
+        "times": true,
+        "mid": true,
+        "Q_C": true,
+        "Q_g": true,
+        "C_ratio": true,
+        "g_ratio": true,
+        "C_ratio_mask": true,
+        "g_ratio_mask": true,
+        "C_threshold": true,
+        "g_threshold": true,
+        "recorded_loss_scale": true
+      },
+      "all_arrays_exact_from_historical_code_formulas": true
+    }
+  ],
+  "historical_figure_dependencies": {
+    "01_extended_density_change": "All native bin midpoints and own-paired delta_g from the three historical histories; reconstructed native_bins exact for every sample.",
+    "02_late_density_zoom": "Same native difference samples, x-range3.4 onward; no added numerical input.",
+    "03_cumulative_change": "Own-paired separate np.cumsum(p)-np.cumsum(p0) on native nodes.",
+    "04_rate_normalized_response": "Same native delta_g divided by selected lambda; exact native-bin reconstruction checked.",
+    "05_absolute_density": "Native positive and own paired-zero p/DT curves.",
+    "06_rate_doubling": "Saved doubling arrays; all11 arrays perpair reproduced exactly includingratio masks from sourcecode formulas.",
+    "07_accounting_and_policy": "Native survival, roofcumulative, representation/event ledgers plus activepolicy reconstructed by sourcecode; policy reconstruction not freshlyrerun."
+  }
+}

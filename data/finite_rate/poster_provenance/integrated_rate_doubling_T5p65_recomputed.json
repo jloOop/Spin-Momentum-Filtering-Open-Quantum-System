@@ -1,0 +1,29 @@
+{
+  "common_horizon": 5.65,
+  "dt": 0.0005,
+  "native_bin_count": 11300,
+  "definition": "sum((positive_step_click-zero_step_click)[:11300]); each rate uses its own paired zero",
+  "rates": {
+    "pi3200": {
+      "positive_roof_mass_fsum": 0.4646999416540048,
+      "paired_zero_roof_mass_fsum": 0.46521623237446946,
+      "delta_C_native_increment_fsum": -0.000516290720464702,
+      "delta_C_saved_cumulative_difference": -0.0005162907204654954,
+      "crosscheck_difference": 7.934191498248921e-16,
+      "source_npz_sha256": "f8cd4df003417b3451b2802ca4d2f48857aa2e853d90780b644f2a3f8de60526"
+    },
+    "pi1600": {
+      "positive_roof_mass_fsum": 0.46418439251401117,
+      "paired_zero_roof_mass_fsum": 0.46521623217835667,
+      "delta_C_native_increment_fsum": -0.0010318396643455164,
+      "delta_C_saved_cumulative_difference": -0.0010318396643498318,
+      "crosscheck_difference": 4.315341486926805e-15,
+      "source_npz_sha256": "896f6fe6e74aa99510662a9fc7f6f04f211df847b28f4e742468ace017c9a7f7"
+    }
+  },
+  "doubling_ratio": 0.9992816289790954,
+  "relative_signed_deviation_percent": -0.07183710209045513,
+  "absolute_deviation_percent": 0.07183710209045513,
+  "high_over_low": 1.998563257958191,
+  "Q_C": 7.417765838875403e-07
+}
