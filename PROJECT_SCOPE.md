@@ -42,4 +42,4 @@ New release-integrity and reduction checks establish only their stated software/
 
 The release manifest distinguishes source identity, distributed identity, extraction, sanitization and adaptation. Documented entry-point wrappers handle relocations; preserved internal paths are historical context. No archive, manifest or folder name alone proves missing state bytes are present. Reproduction notes separate tests actually performed from archived records and unrun historical analyses.
 
-This repository does not assign a new blanket license to material with unresolved redistribution status. Existing attribution and copyright notices are retained. The supplied working research-reference PDF is identified in paper/README.md but is not redistributed, and no journal acceptance, DOI, ORCID or release date is invented.
+No new blanket license is assigned. Existing attribution and copyright notices are retained. The supplied working research-reference PDF is identified in paper/README.md but is not redistributed, and no journal acceptance, DOI, ORCID or release date is invented.

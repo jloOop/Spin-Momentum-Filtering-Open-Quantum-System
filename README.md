@@ -2,6 +2,8 @@
 
 Research code, compact numerical records, and CPU analysis for the open-system extension of [boundary spin–momentum filtering](https://github.com/jloOop/Boundary-Spin-Momentum-Filtering-Data). The question is how an unobserved transverse environment changes the **complete first-click law** of a fixed detector, including trials still undetected at the observation deadline.
 
+Research snapshot accompanying a manuscript in preparation. This repository provides selected finite-model numerical results and code for reconstructing the included analyses. Analytical identities, operationally qualified zero-rate responses and finite-rate numerical observations are distinguished. Complete response-level refinement and finite-rate error assessment remain ongoing; historical simulation restart is not supported by this compact release.
+
 ## Physical mechanism
 
 A trace-preserving transverse environment is invisible to the roof-integrated **scalar** click-time law under longitudinal–transverse factorization and a fixed longitudinal marginal. A spin–momentum boundary can instead make that law sensitive to transverse excitation, relaxation, and coherence:
