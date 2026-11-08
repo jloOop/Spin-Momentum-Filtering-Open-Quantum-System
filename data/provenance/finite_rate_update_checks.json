@@ -82,7 +82,46 @@
     "four finite-rate PNGs: rate labels, signs, horizons, legends, tangent panel units and readability"
   ],
   "clean_checkout": {
-    "status": "pending"
+    "status": "passed",
+    "tested_code_commit": "1f6b3d0384068728a7ce15e4feb4ed043472f126",
+    "commands": [
+      {
+        "command": "python Loaders/reproduce.py --group finite-rate --output build/finite-rate",
+        "exit_code": 0
+      },
+      {
+        "command": "python Loaders/verify_release.py --output build/finite-rate-integrity.json",
+        "exit_code": 0
+      }
+    ],
+    "source_archive_reads_denied": true,
+    "original_checkout_reads_denied": true,
+    "network_denied": true,
+    "isolation_probes_passed": true,
+    "tracked_files_changed_by_tests": false,
+    "byte_matched_outputs": [
+      "endpoints.csv",
+      "finite_rate.png",
+      "finite_rate_arrays.npz",
+      "finite_rate_cumulative.png",
+      "finite_rate_normalized.png",
+      "finite_rate_poster.png",
+      "integrated_rate_doubling.csv",
+      "matched_horizons.csv",
+      "native_sign_runs.csv",
+      "paired_zero_comparisons.csv",
+      "pi1600_endpoints.csv",
+      "poster_regression.json",
+      "rate_scaling.csv",
+      "response_mass_windows.csv",
+      "sign_changes.csv",
+      "significant_sign_changes.csv",
+      "summary.json",
+      "tangent_panels.csv",
+      "three_rate_tangent_panels.csv",
+      "window_masses.csv"
+    ],
+    "test_environment": "Reused isolated prior clean-checkout venv with only pinned requirements; no project installation or source imports outside this checkout"
   },
   "not_run": [
     "production simulations",
@@ -100,5 +139,24 @@
     "python": "3.13.15",
     "numpy": "2.5.4",
     "matplotlib": "3.11.2"
-  }
+  },
+  "release_integrity_at_tested_code_commit": {
+    "scope": "release integrity, privacy patterns, syntax, declared identities and safe saved-array schemas; not scientific acceptance",
+    "passed": true,
+    "failed": [],
+    "payload_files": 545,
+    "payload_bytes": 97321034,
+    "manifest_records": 1303,
+    "archive_count": 34,
+    "numerical_containers": 206,
+    "canonical_roles": 18,
+    "detector_controls": 16,
+    "not_run": [
+      "production simulations",
+      "original full Task06 aggregate re-audit",
+      "Task09 full spectral/factor re-audit",
+      "historical state restart"
+    ]
+  },
+  "status": "passed"
 }
