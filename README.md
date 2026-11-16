@@ -2,43 +2,61 @@
 
 **Alireza Jozani · ongoing, unpublished research**
 
-How can an environment acting only on transverse motion change the time at which a particle is detected at the end of a guide? This repository studies that question for a fixed detector whose absorbing boundary couples spin to transverse momentum. It contains generating code, compact numerical records, and CPU analyses of **zero-rate environmental susceptibilities and finite-rate upward-excitation trajectories**.
+**Project goal.** Determine how transverse excitation, relaxation, and dephasing reshape the **complete detection-time law** of a fixed spin–momentum absorbing boundary. A factorized scalar detector provides the environmental null control. The repository contains generating code, compact numerical records, and CPU analyses of **zero-rate environmental susceptibilities and finite-rate upward-excitation trajectories**.
 
 This is the open-system extension of [boundary spin–momentum filtering](https://github.com/jloOop/Boundary-Spin-Momentum-Filtering-Data). The detector already makes the no-click evolution nonunitary; the extension adds an independent, unobserved transverse environment. The results accompany working lecture notes and draft studies, with full convergence assessment still in progress.
 
 [Reproduce the saved-data analyses](REPRODUCING.md) · [Detailed finite-rate results](data/finite_rate/README.md) · [Evidence and limitations](PROJECT_SCOPE.md) · [Draft context](paper/README.md)
 
+## How the tasks fit together
+
+The task numbers label construction and audit stages of the same project:
+
+| Task | Purpose |
+|---|---|
+| **00 — Detector reference** | Historical Cartesian zero-bath references; check survival against positive roof-click probabilities. |
+| **01 — Static preparation** | Compare ground and first-shell transverse preparations for scalar and spinor detectors. |
+| **02 — Operator checks** | Verify projected oscillator ladder, number, Hamiltonian, and spin–momentum boundary operators. |
+| **03 — Bath solver** | Test detector-free relaxation, excitation, dephasing, thermal stationarity, and cutoff controls. |
+| **04 — Bath audit** | Independently reconstruct and verify the bath-only results. |
+| **05 — Detector recovery** | Recover zero-bath dynamics in oscillator channels; check scalar factorization and detector-generated excitation/coherence. |
+| **06 — Detector audit** | Independently reconstruct Task05 outputs and compare detector controls. |
+| **07/08 — Environmental response** | Task07 computes causal zero-rate susceptibilities; Task08 independently reconstructs and audits the canonical responses. |
+| **09 — Finite-rate evolution** | Propagate upward-excitation trajectories and compare their roof-click laws with paired zero-rate histories. |
+
+Tasks03/04 test the bath without the detector; Tasks05/06 test the detector with the ambient bath off. These controls support the later combined response/evolution studies. Stage00 references are documented in the historical audits; the release bundles selected records, with the [scope qualifications](PROJECT_SCOPE.md) retained.
+
 ## Physical model and mechanism
 
 A spin-1/2 particle moves in a harmonic transverse guide with a nondetecting Dirichlet lower wall and an absorbing roof. In numerical units with $`\hbar=m=1`$, the spin-independent bulk Hamiltonian and spinor roof condition are
 
-$$
+```math
 H_{\mathrm{bulk}}=\left[-\frac12\nabla^2+\frac{\omega^2}{2}(x^2+y^2)\right]I_2,
-$$
+```
 
-$$
+```math
 \partial_z\Psi=(i\kappa I_2-K)\Psi,
 \qquad K=\sigma_xp_y-\sigma_yp_x,
 \qquad p_j=-i\partial_j.
-$$
+```
 
 The scalar control sets $`K=0`$. Both boundaries have the same positive local roof-loss density $`\kappa\Psi^\dagger\Psi`$, but they evolve different surviving states. The Hermitian operator $`K`$ acts through the boundary condition, with no added bulk spin–orbit interaction or second absorbing channel. For normal wave number $`k>0`$ and tangential magnitude $`R`$, the two local boundary branches have equal one-encounter absorption,
 
-$$
+```math
 A_+(k,R)=A_-(k,R)=\frac{4k\kappa}{(k+\kappa)^2+R^2},
-$$
+```
 
 and generally different reflection phases. Thus transverse momentum affects detection through the evolving state and its encounters with the roof; this local formula alone does not determine the complete time distribution.
 
 The unnormalized no-click state obeys the organizing master equation
 
-$$
+```math
 \dot{\widetilde\rho}
 =\mathcal L_{\mathrm{ABC}}^{\mathrm{nc}}[\widetilde\rho]
 +\sum_r\lambda_r\mathcal B_r[\widetilde\rho],
 \qquad
 \mathcal D[L]\rho=L\rho L^\dagger-\frac12\{L^\dagger L,\rho\}.
-$$
+```
 
 The three environmental directions are $`\mathcal B_\downarrow=\sum_{j=x,y}\mathcal D[a_j]`$, $`\mathcal B_\uparrow=\sum_{j=x,y}\mathcal D[a_j^\dagger]`$, and $`\mathcal B_\phi=\sum_{j=x,y}\mathcal D[N_j]`$, where $`N_j=a_j^\dagger a_j`$. Raising/lowering refer to **orbital** excitation/relaxation. Number dephasing is independent in the two transverse directions and preserves oscillator populations and energy under its own action. All recycling terms are retained: bath events are unobserved, the summed bath evolution preserves trace, and the roof is the sole monitored sink. The upward-only runs are excitation controls, without an equilibrium thermal-bath interpretation.
 
@@ -50,30 +68,53 @@ One fixed time unit $`t_0`$ defines $`t_{\mathrm{phys}}=t_0t`$, $`\omega=\Omega_
 
 For the ideal detector law, normalized at launch,
 
-$$
-S(t)=\operatorname{Tr}\widetilde\rho(t),\qquad
+```math
+S(t)=\mathrm{Tr}\,\widetilde\rho(t),\qquad
 g(t)=-\dot S(t),\qquad
 D(T)=\int_0^T g(t)\,dt=1-S(T),
-$$
+```
 
-$$
+```math
 \mu^{\ast}(T)=\int_0^T S(t)\,dt,
 \qquad
 \overline\tau_{\mathrm{cond}}(T)
 =\frac{\mu^{\ast}(T)-T S(T)}{D(T)}\quad[D(T)>0].
-$$
+```
 
 Here $`g`$ is the first-click density, $`D`$ the detected fraction, and $`\mu^{\ast}`$ the restricted mean, including trials still undetected at $`T`$. The conditional mean uses only detected trials. Full-law comparisons retain the no-click probability $`S(T)`$ as a censoring outcome; it is not a physical click at the deadline or evidence of permanent nondetection. For compressed Task09 records, numerical mass losses require the separate accounting described below.
 
 ## Canonical zero-rate responses — Task07/08
 
-At fixed preparation and detector, the susceptibility is the derivative at zero environmental rate, with other rates held at zero:
+At fixed detector, normalized preparation, finite model, and observation horizon, turn on one environmental rate $`\lambda_r\to0^+`$, keeping the other rates zero:
 
-$$
-\chi_{X,r}(T)=\left.\frac{\partial X(T)}{\partial\lambda_r}\right|_{\lambda_r=0^+}.
-$$
+```math
+g(t;\lambda_r)=g_0(t)+\lambda_r\chi_{g,r}(t)+O(\lambda_r^2),
+```
 
-These coefficients describe the leading change $`\lambda_r\chi_{X,r}`$; they are not themselves finite-rate percentage changes.
+```math
+\mu^{\ast}(T;\lambda_r)=\mu^{\ast}_0(T)+\lambda_r\chi_{\mu^{\ast},r}(T)+O(\lambda_r^2).
+```
+
+The subscript $`0`$ denotes the detector-present, bath-off reference with the same preparation. Susceptibilities are right derivatives at zero rate:
+
+```math
+\chi_{g,r}(t)=\left.\frac{\partial g(t;\lambda_r)}{\partial\lambda_r}\right|_{\lambda_r=0^+},
+\qquad
+\chi_{\mu^{\ast},r}(T)=\left.\frac{\partial\mu^{\ast}(T;\lambda_r)}{\partial\lambda_r}\right|_{\lambda_r=0^+}.
+```
+
+Defining $`\chi_{S,r}`$ and $`\chi_{D,r}`$ by the same derivative gives
+
+```math
+\chi_{D,r}(T)=\int_0^T\chi_{g,r}(t)\,dt=-\chi_{S,r}(T),
+```
+
+```math
+\chi_{\mu^{\ast},r}(T)=\int_0^T\chi_{S,r}(t)\,dt
+=-\int_0^T(T-t)\chi_{g,r}(t)\,dt.
+```
+
+Thus $`\chi_D`$ is the sensitivity of detection probability by $`T`$ to the environmental rate, while $`\chi_{\mu^{\ast}}`$ is the sensitivity of the restricted mean time, including undetected trials. Positive $`\chi_{\mu^{\ast}}`$ means an increased restricted mean; it is not the shift of the conditional click-time mean. These fixed-model identities follow V10, §§5.1 and 5.5 ([draft context](paper/README.md)). Task07 estimates the coefficients using its declared detector step and insertion quadrature. The coefficients are per-unit-rate responses: the leading change is $`\lambda_r\chi_{X,r}`$. The $`O(\lambda_r^2)`$ notation does not certify a finite-rate error bound for compressed numerical trajectories.
 
 The [canonical register](data/canonical_response/CANONICAL_CASE_MASTER_TABLE.csv) specifies transverse ground preparation, $`\omega=100`$, $`T=10`$, detector step $`\Delta t=0.0005`$, and refined source-insertion/response-panel spacing $`0.05`$. The common longitudinal preparation has $`L_z=20`$, $`z_0=10`$, Gaussian **amplitude** width $`\sigma_z=0.5`$, $`k_0=\kappa=\pi`$, and $`N_z=1500`$. Its initial spin angles are $`\theta=\pi/6`$, $`\phi=0`$, using $`(\cos(\theta/2),e^{i\phi}\sin(\theta/2))^T`$. The endpoint-excluded grid places the roof at $`z_R\simeq19.98666573`$. The cutoff $`N=12`$ retains all shells $`n_x+n_y\le12`$: **91 orbital modes and 182 spin-resolved transverse channels**.
 
@@ -109,11 +150,11 @@ The response depends on which transverse state reaches the detector and on the o
 
 The upward bath acts on the transverse ground preparation at $`\omega=100`$, $`N=12`$, $`N_z=1500`$, with detector step $`0.0005`$. Each trajectory is compared with **its own paired zero-rate history**. For native roof-bin probabilities,
 
-$$
+```math
 \Delta p_n=p_{\lambda,n}-p_{0,n},\qquad
 \Delta g_n=\frac{\Delta p_n}{\Delta t_n},\qquad
 \Delta C(T)=\sum_{t_{n+1}\le T}\Delta p_n.
-$$
+```
 
 | Upward rate | Saved endpoint $`T`$ | Cumulative roof-detection change $`\Delta C(T)`$ |
 |---|---:|---:|
@@ -133,10 +174,10 @@ The [finite-rate results page](data/finite_rate/README.md) retains cumulative an
 
 **Clicks and numerical loss are separate.** The retained-state accounting is
 
-$$
+```math
 S_{\mathrm{ret}}+C_{\mathrm{roof}}+B_{\mathrm{rep}}+B_{\mathrm{event}}
 =S_{\mathrm{ret}}(0)+\varepsilon_{\mathrm{acct}}.
-$$
+```
 
 Representation loss and omitted event-sector mass are recorded separately from roof clicks. Therefore the saved roof sum is not replaced by $`1-S_{\mathrm{ret}}`$, and survival is not differentiated or renormalized to manufacture click probabilities. Small accounting residuals and successful continuation checks establish their stated numerical properties; full finite-rate physical/convergence acceptance remains open.
 
