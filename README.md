@@ -21,7 +21,7 @@ The task numbers label construction and audit stages of the same project:
 | **04 — Bath audit** | Independently reconstruct and verify the bath-only results. |
 | **05 — Detector recovery** | Recover zero-bath dynamics in oscillator channels; check scalar factorization and detector-generated excitation/coherence. |
 | **06 — Detector audit** | Independently reconstruct Task05 outputs and compare detector controls. |
-| **07/08 — Environmental response** | Task07 computes causal zero-rate susceptibilities; Task08 independently reconstructs and audits the canonical responses. |
+| **07/08 — Environmental response/Zero rate** | Task07 computes causal zero-rate susceptibilities; Task08 independently reconstructs and audits the canonical responses. |
 | **09 — Finite-rate evolution** | Propagate upward-excitation trajectories and compare their roof-click laws with paired zero-rate histories. |
 
 Tasks03/04 test the bath without the detector; Tasks05/06 test the detector with the ambient bath off. These controls support the later combined response/evolution studies. Stage00 references are documented in the historical audits; the release bundles selected records, with the [scope qualifications](PROJECT_SCOPE.md) retained.
